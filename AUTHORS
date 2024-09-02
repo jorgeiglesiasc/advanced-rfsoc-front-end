@@ -1,0 +1,15 @@
+Jorge Iglesias Costas Authorship
+--------------------------------------------------------------------------------
+
+The Advanced-RFSoC-front-end project was selected by the Google Summer of Code
+(GSoC) 2024 and hosted by the Navigation & Positioning Research Unit at the
+Centre Tecnològic de Telecomunicacions de Catalunya (CTTC) in Barcelona, Spain.
+This project contributes to the GNSS-SDR organitzation, https://gnss-sdr.org.
+
+List of authors
+--------------------------------------------------------------------------------
+Jorge Iglesias Costas   jorgeiglesiascostas@gmail.com    Contributor
+Javier Arribas Lázaro   jarribas@cttc.es                 Tutor
+
+# SPDX-License-Identifier: GPL-3.0-or-later
+# SPDX-FileCopyrightText: 2024 Jorge Iglesias Costas <jorgeiglesiascostas@gmail.com>
