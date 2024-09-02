@@ -1,22 +1,42 @@
-### AL ###
-#Template for AL projects for Dynamics 365 Business Central
-#launch.json folder
-.vscode/
-#Cache folder
-.alcache/
-#Symbols folder
-.alpackages/
-#Snapshots folder
-.snapshots/
-#Testing Output folder
-.output/
-#Extension App-file
-*.app
-#Rapid Application Development File
-rad.json
-#Translation Base-file
-*.g.xlf
-#License-file
-*.flf
-#Test results file
-TestResults.xml
+/Vivado/RFSoC4x2/RFSoC4x2/base/base/*
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs
+/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/*
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/constrs_1
+/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/constrs_1/*
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/constrs_1/imports
+/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/constrs_1/imports/*
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/constrs_1/imports/common/
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1
+/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1/*
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1/bd
+/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1/bd/*
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1/bd/system
+/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1/bd/system/*
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1/bd/system/system.bd
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1/imports/
+/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1/imports/*
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.srcs/sources_1/imports/hdl
+!/Vivado/RFSoC4x2/RFSoC4x2/base/base/base.xpr
+/Vivado/RFSoC4x2/RFSoC4x2/base/base.xsa
+
+/Vivado/ZCU208/ZCU208/base/base/*
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs
+/Vivado/ZCU208/ZCU208/base/base/base.srcs/*
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs/constrs_1
+/Vivado/ZCU208/ZCU208/base/base/base.srcs/constrs_1/*
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs/constrs_1/imports
+/Vivado/ZCU208/ZCU208/base/base/base.srcs/constrs_1/imports/*
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs/constrs_1/imports/common/
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1
+/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1/*
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1/bd
+/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1/bd/*
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1/bd/system
+/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1/bd/system/*
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1/bd/system/system.bd
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1/imports/
+/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1/imports/*
+!/Vivado/ZCU208/ZCU208/base/base/base.srcs/sources_1/imports/hdl
+!/Vivado/ZCU208/ZCU208/base/base/base.xpr
+
+/.gitignore
