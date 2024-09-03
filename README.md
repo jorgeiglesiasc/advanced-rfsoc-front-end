@@ -12,6 +12,7 @@ GNSS is used to describe any satellite navigation system with global or regional
 *Figure 1: GNSS constellations, bands and frequencies.*
 
 The open source GNSS-SDR project allows implementing a SDR receiver to perform global satellite navigation using the C++ language. It implements the GNSS receiver software by creating a graph where the nodes are signal processing blocks and the lines represent the dataflow between them and, for that reason, it is used in this project. Figure 2 shows the general block diagram GNSS-SDR open-source project.
+
 ![general_block_diagram_gnss-sdr](figures/general_block_diagram_gnss-sdr.png)
 *Figure 2: General block diagram GNSS-SDR open-source project.*
 
@@ -41,49 +42,49 @@ The Zynq Ultrascale+ RFSoC processor, being a SoC system, has several programmin
 *Figure 6: The different software layers of the RFSoC processor.*
 
 ## Design and Implementation
-The direct RF sampling capability of RFSoC integrated circuits enables the implementation of a novel multi-band GNSS SDR front-end receiver. The available RF bandwidth is sufficient to simultaneously process all GNSS signals, using only one ADC from the RFSoC4x2. Figure 6 shows the ADC output signal processing chain that is composed of (left to right): the RFDC, the Frequency Translator (FT), the FIR IP core and the DMA. The GNSS signal goes through a series of transformations as it is processed by different blocks of the diagram:
+The direct RF sampling capability of RFSoC integrated circuits enables the implementation of a novel multi-band GNSS SDR front-end receiver. The available RF bandwidth is sufficient to simultaneously process all GNSS signals, using only one ADC from the RFSoC4x2. Figure 7 shows a single signal processing chain that is composed of (left to right): the RFDC, the Frequency Translator (FT), the FIR IP core and the DMA. The GNSS signal goes through a series of transformations as it is processed by different blocks of the diagram:
 1. ADC: The signal goes from being analog to digital from the ADC.
 2. RFDC: The signal goes from being real to IQ complex and is translated to baseband, through which the complex multiplier and the NCO of the DDC of one of the dual tile receivers frequently move the signal from its original centre frequency to 0Hz. Then,the signal is filtered by the corresponding programmable decimator, reducing its sample rate.
 3. Frequency Translator: A second baseband drop is produced from complex multipliers and NCOs so that the user can choose the desired frequency band within the one that had already been selected.
 4. FIR filter: The second filtering and decimation process is done by the FIR IP core. In this stage, the signal passes through a Low Pass Filter (LPF) type FIR filter which occupies a bandwidth of half the number of samples per second that the user want the end of the reception chain to go to.
 5. DMA: From the DMA the processed signal is sent to the CPU memory and from it, to the Ethernet port connected to the PS CPU and this will transfer the data to the device which will use the desired signal from the receiver.
+![main_design_diagram](figures/main_design_diagram.png)
 *Figure 7: A single processing chain diagram.*
 
 ### PL
-The PL scheme of the project can be mainly divided into two parts. The first part consists of processing the input signal using the hardware blocks provided by the RFSoC itself together with the base overlay. An
-overlay is a programmable FPGA design that contain all the information about the hardware blocks called Intellectual Property (IP) cores and how they relate to each other as if it were a hardware library. The second part consists of using the set of IP cores of the BaseOverlay, and custom-made SDR IP cores coded with Vitis HLS to process the antenna input signal and extract the desired GNSS bands.
+The PL scheme of the project can be mainly divided into two parts. The first part consists of processing the input signal using the hardware blocks provided by the RFSoC itself together with the base overlay. An overlay is a programmable FPGA design that contain all the information about the hardware blocks called Intellectual Property (IP) cores and how they relate to each other as if it were a hardware library. The second part consists of using the set of IP cores of the BaseOverlay, and custom-made SDR IP cores coded with Vitis HLS to process the antenna input signal and extract the desired GNSS bands. Figure 8 shows the RFSoC4x2 BaseOverlay.
+![rfsoc_4x2_base_overlay](figures/rfsoc_4x2_base_overlay.png)
 *Figure 8: RFSoC4x2 BaseOverlay hardware layer.*
 
 #### _RFDC_
-The RFDC IP core, is probably the most complex and characteristic block of an RFSoC, since from it all the functionalities related to the ADCs, DACs, DDCs and DUCs are configured. For this reason, it not only modifies the internal logic part of the processor that directs all the RF processes, but it also has to have a high temporal precision to not desynchronize any sample of the signal to be sent or received. The advantage of using the RFDC is that it configures in a simple and compact way both the functionalities to transfer the GNSS frequencies to baseband and those related to the programmable decimator.
+The RFDC IP core, is probably the most complex and characteristic block of an RFSoC, since from it all the functionalities related to the ADCs, DACs, DDCs and DUCs are configured. For this reason, it not only modifies the internal logic part of the processor that directs all the RF processes, but it also has to have a high temporal precision to not desynchronize any sample of the signal to be sent or received. The advantage of using the RFDC is that it configures in a simple and compact way both the functionalities to transfer the GNSS frequencies to baseband and those related to the programmable decimator. Figure 9 has been made to explain what a single Dual Tile contains. Also, Figure 10 shows the tile configuration and Figure 11 shows the clocking configuration.
+![rf_adc_hierarchy](figures/rf_adc_hierarchy.png)
 *Figure 9: RF-ADC Tile hierarchy for the ZU48DR model.*
+![rf_adc_tile_configuration](figures/rf_adc_tile_configuration.png)
 *Figure 10: RF-ADC Tile Configuration Vivado GUI.*
+![rf_adc_clocking_configuration](figures/rf_adc_clocking_configuration.png)
 *Figure 11: RF-ADC Clocking Configuration Vivado GUI.*
 
 #### _FT_
-Once the received signal that has information from all GNSS bands is translated to baseband, filtered and decimated, it is time to select which particular GNSS carrier frequency should be received by applying a translation from the apparent IF in the global baseband signal to baseband (zeroIF). This frequency translation process can be instantiated several times to complete a multi-band front-end. After applying a second baseband
-translation, the user can choose which GNSS frequency band they want to work with. In order to do this, it is necessary to pass the signal through a translation and decimation stages again. The first stage is based on programming a Frequency Translator from Vitis HLS and adapting the reception chain in Vivado to be able to control this new IP core correctly.
+Once the received signal that has information from all GNSS bands is translated to baseband, filtered and decimated, it is time to select which particular GNSS carrier frequency should be received by applying a translation from the apparent IF in the global baseband signal to baseband (zeroIF). This frequency translation process can be instantiated several times to complete a multi-band front-end. After applying a second baseband translation, the user can choose which GNSS frequency band they want to work with. In order to do this, it is necessary to pass the signal through a translation and decimation stages again. The first stage is based on programming a Frequency Translator from Vitis HLS and adapting the reception chain in Vivado to be able to control this new IP core correctly. Figure 12 shows a summary of the FT concept explanation.
+![freq_trans_explanation](figures/freq_trans_explanation.png)
 *Figure 12: Frequency Translator concept explanation.*
 
-As the I component and the Q component of the complex signal processed by the RFDC come out through different ports, a multiplexed concatenation is carried out, since the Frequency Translator input is made through a single port. It is true that two input streams could are implemented, but thereby the ’std::complex’ data type would not are used, generating a possible desynchronization of the processed data. This multiplexed concatenation is carried out directly in VHDL from Vivado creating a VHDL model, since thereby the implementation of the block is completely optimized. Creating native VHDL blocks to optimize certain simple processes, such as the one described above, has been a resource that has been used on several occasions throughout the signal processing.
+As the I component and the Q component of the complex signal processed by the RFDC come out through different ports, a multiplexed concatenation is carried out, since the Frequency Translator input is made through a single port. It is true that two input streams could are implemented, but thereby the ’std::complex’ data type would not are used, generating a possible desynchronization of the processed data. This multiplexed concatenation is carried out directly in VHDL from Vivado creating a VHDL model, since thereby the implementation of the block is completely optimized. Creating native VHDL blocks to optimize certain simple processes, such as the one described above, has been a resource that has been used on several occasions throughout the signal processing. Moreover, an AXI GPIO IP core, is added to control the state of the control flags. In this way, the FT can be controlled from the PS.
 
-Moreover, an AXI GPIO IP core is added to control the state of the control flags. In this way, the FT can be controlled from the PS.
-*Figure 13: AXI GPIO GUI.*
-
-Finally, to be able to configure the Frequency Translator parameters as those of the AXI GPIO IP core via AXI through the PS, these ports have to add as slaves to the PS block named ’zynq_ultra_ps_e_0’ in the memory map, as shown in Figure 14. To make this connection, the option provided by Vivado is used so that the wiring is automatically generated from the port without connecting to the specified IP core. It should been sured that the wiring does not pass through any other set of blocks than the desire done. If this occurs, once the new IP core is mapped, the relevant wiring should be eliminated and the desired port should be manually connected to the closest AXI Interconnect IP core where the connection of a new port is created. Thereby, when the specific driver for each block is created, the PS will have the memory address to whic hit has to send the information.
-*Figure 14: Frequency Translator memory map.*
+Finally, to be able to configure the Frequency Translator parameters as those of the AXI GPIO IP core via AXI through the PS, these ports have to add as slaves to the PS block named ’zynq_ultra_ps_e_0’ in the memory map, as shown in Figure 13. To make this connection, the option provided by Vivado is used so that the wiring is automatically generated from the port without connecting to the specified IP core. It should been sured that the wiring does not pass through any other set of blocks than the desire done. If this occurs, once the new IP core is mapped, the relevant wiring should be eliminated and the desired port should be manually connected to the closest AXI Interconnect IP core where the connection of a new port is created. Thereby, when the specific driver for each block is created, the PS will have the memory address to whic hit has to send the information.
+![ft_mem_map](figures/ft_mem_map.png)
+*Figure 13: Frequency Translator memory map.*
 
 #### _FIR_
-The Vivado FIR IP core it is responsible for filtering and decimating the signal once it has been transferred to baseband for the second time. The design of its coeficients was carried out using MATLAB’s ’Basic FIR Filter’ tool and the configuration via the Vivado GUI, changing the Super Sample Rate (SSR) and the decimation factor.
-*Figure 15: FIR filter IP core.*
-*Figure 16: Designing the filter in MATLAB Filter Design & Analysis Tool.*
-*Figure 17: Filter Coefficients and Filter Specification FIR GUI panel.*
-*Figure 18: Interleaved Channel, Parallel Channel and Hardware Oversampling FIR GUI panel.*
-*Figure 19: Summary FIR GUI panel.*
+The Vivado FIR IP core it is responsible for filtering and decimating the signal once it has been transferred to baseband for the second time. The design of its coeficients was carried out using MATLAB’s ’Basic FIR Filter’ tool, shown in Figure 14, and the configuration via the Vivado GUI, changing the Super Sample Rate (SSR) and the decimation factor. Figure 15 shows the summary of the FIR configurations.
+![fdatool_fir](figures/fdatool_fir.png)
+*Figure 14: Designing the filter in MATLAB Filter Design & Analysis Tool.*
+![fir_gui_panel](figures/fir_gui_panel.png)
+*Figure 15: Summary FIR GUI panel.*
 
 #### _Chain Selector_
-To create a system that allows working with several bands at the same time, a sample of each band should be provided to the final device consecutively. In other words, for the final device to be equipped with satellite navigation using several GNSS bands at the same time, it is necessary for the front-end to send it the data of the desired receiving chains consecutively. For this reason, a Chain Selector is implemented in Vitis HLS as shown in Figure 20.
-*Figure 20: Chain Selector IP core.*
+To create a system that allows working with several bands at the same time, a sample of each band should be provided to the final device consecutively. In other words, for the final device to be equipped with satellite navigation using several GNSS bands at the same time, it is necessary for the front-end to send it the data of the desired receiving chains consecutively. For this reason, a Chain Selector is implemented in Vitis HLS.
 
 #### _DMA_
 
