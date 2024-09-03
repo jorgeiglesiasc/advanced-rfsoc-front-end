@@ -100,7 +100,7 @@ The Vivado FIR IP core [5] it is responsible for filtering and decimating the si
 To create a system that allows working with several bands at the same time, a sample of each band should be provided to the final device consecutively. In other words, for the final device to be equipped with satellite navigation using several GNSS bands at the same time, it is necessary for the front-end to send it the data of the desired receiving chains consecutively. For this reason, a Chain Selector is implemented in Vitis HLS.
 
 ### DMA
-The process of configuring the DMA [4] and sending the data via socket has been done through a C program (*dma2udp*) so that the data transfer speed is correct, (4.5MB * 4Bytes * 4Chains = 72MB/s). Otherwise, in Python this rate is not achieved, causing the system to lose samples. Figure 16 shows the simplified diagram of the different stages through which the data packets pass from the moment they are received by the terrestrial antenna until they are sent to the final device.
+The process of configuring the DMA [4] and sending the data via socket has been done through a C program (*dma2udp*) so that the data transfer speed is correct, (4.5MB * 4Bytes * 4Chains = 72MB/s). Otherwise, in Python this rate is not achieved, causing the system to lose samples. A second version of the main Python code (*multipleChain_singleDMA_onlyPYNQ.ipynb*) has been created to verify that the transmission speed is slower. Figure 16 shows the simplified diagram of the different stages through which the data packets pass from the moment they are received by the terrestrial antenna until they are sent to the final device.
 
 ![packet_transmission_diagram](figures/packet_transmission_diagram.png)
 *Figure 16: Packet transmission diagram.*
@@ -118,7 +118,22 @@ This section details how to proceed in order to use the front-end with either a 
 1. Install the pynq boot image v3.0.1 inside of an SD card (https://www.pynq.io/boards.html), insert it into the device and check that the board boot is in SD card mode.
 2. Execute *git clone https://github.com/jorgeiglesiasc/advanced-rfsoc-front-end.git* in the terminal.
 3. Go to _*/advanced-rfsoc-front-end/Vivado/ZCU208_ and copy the bitstream file (.bit) and the hardware handoff file (.hwh).
-4. Go to _*/home/xilinx/pynq/overlays/base_ folder inside the ZCU208 and change the .bit and the .hwh. It is important not to change the name of any of the two files.
+4. Go to _*/xilinx/pynq/overlays/base_ inside the ZCU208 (the board password is _xilinx_) and replace the .bit and the .hwh. It is important not to change the name of any of the two files.
+5. Go to _*/advanced-rfsoc-front-end/JupyterNotebook_ and copy *multipleChain_singleDMA_system.ipynb*.
+6. Go to _*/xilinx/jupyter___notebooks_ inside the ZCU208 and paste *multipleChain_singleDMA_system.ipynb*.
+7. Go to _*/advanced-rfsoc-front-end_ and copy *dma2udp* folder.
+8. Go to _*/xilinx_ inside the ZCU208 and paste *dma2udp* folder.
+9. Go to  _http://ipDevice:portDevice/tree?_ in your browser. _ipDevice_ and _portDevice_ is the IP network and port of the ZCU208.
+10. Once inside Jupyter, open *multipleChain_singleDMA_system.ipynb*. This example is done with the ZCU208 ADC channel 20. If the user is using RFSoC4x2, the channel has to be the 21 (ADC_A).
+11. When everything in the notebook is set up as desired, click on the forward button (*restart the kernel, then re-run the whole network (with dialog)* button). Then click on *Restart and Run All Cells* button.
+12. When all cells are executed, go to the terminal and enter the board with ssh (the board password is _xilinx_).
+13. Execute _sudo ./dma2udp_ inside of _*/dma2udp/build_ folder and that's all.
+
+### How to use Vivado
+If the user wants to modify the overlay, the project has to be opened with Vivado as follows:
+1. Open de _.xpr_ project in Vivado. The path is _*/advanced-rfsoc-front-end/Vivado/ZCU208/ZCU208/base/base_
+2. Since Vivado stores the absolute path of the FIR coefficients, two _.coe_ files will appear in Sources->Design Sources->Coefficients Files. The one that does not belong to the corresponding path has to be deleted.
+3. Within the design block, the coefficients of the eight FIR filters have to be modified. These are located in radio->receiver->channel_XX, where XX is 20 or 21 depending on the device.
 
 ## Conclusion
 
