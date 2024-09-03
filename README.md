@@ -8,13 +8,7 @@ Nowadays, a superheterodyne analog front-end is normally used to receive carrier
 
 ### GNSS
 GNSS is used to describe any satellite navigation system with global or regional coverage. Satellite navigation systems transmit highly precise geolocation information to GNSS receiving devices to determine its current location. The proposed multi-band RFSoC front-end digital baseband sample stream will be connected to a SDR-GNSS receiver in real-time. The open source GNSS-SDR project allows implementing a SDR receiver to perform global satellite navigation using the C++ language. It implements the GNSS receiver software by creating a graph where the nodes are signal processing blocks and the lines represent the dataflow between them and, for that reason, it is used in this project.
-```{figures} ../figures/GNSSconstellations.png
-:alt: GNSSconstellations
-:class: bg-primary mb-1
-:width: 200px
-:align: center
-```
-![GNSSconstellations](../figures/GNSSconstellations.png)
+![GNSSconstellations](advanced-rfsoc-front-end/figures/GNSSconstellations.png)
 *Figure 1: GNSS constellations, bands and frequencies.*
 *Figure 2: General block diagram GNSS-SDR open-source project.*
 
