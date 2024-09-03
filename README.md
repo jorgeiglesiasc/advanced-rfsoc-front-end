@@ -8,6 +8,7 @@ Nowadays, a superheterodyne analog front-end is normally used to receive carrier
 
 ### GNSS
 GNSS is used to describe any satellite navigation system with global or regional coverage. Satellite navigation systems transmit highly precise geolocation information to GNSS receiving devices to determine its current location. The proposed multi-band RFSoC front-end digital baseband sample stream will be connected to a GNSS-SDR receiver in real-time. Figure 1 shows all the bands, depending on the frequency they use and the constellation [15] to which they belong.
+
 ![gnss_constellations](figures/gnss_constellations.png)
 *Figure 1: GNSS constellations, bands and frequencies.*
 
@@ -18,13 +19,16 @@ The open source GNSS-SDR project allows implementing a SDR receiver to perform g
 
 ### RFSoC
 ZYNQ Ultrascale+ RFSoC processor takes advantage of the high signal acquisition performance that Field Programmable Gate Arrays (FPGAs) provides and the computing power that Central Processing Units (CPUs) offers [1][2][7][11][12][13][17]. A SoC is an integrated circuit that brings together all the necessary components to process the received signal on a single piece of silicon. The RFSoC device is mainly divided by two parts: the Processing System (PS) and the Programmable Logic (PL). The PS is the equivalent of the CPU and the PL of the FPGA. The PL can be reprogrammed using Very High Speed Integrated Circuit Hardware Description Language (VHDL). The integrated ADCs [10] are capable of sampling signals up to 5 GSPS, and that is the reason why it is used for this project, since it is possible to sample radio signals directly from the antenna without any external front-end. Each ADC has a Digital Downconverter (DDC) to perform the translation of a high frequency RF signal to baseband. The PS executes instructions of an operating system and/or an application written with PYNQ. The PS incorporates the multiple processor cores of a Multi-Processor SoC (MPSoC). The architecture includes a quad-core APU, a dual-core RPU, a PMU and a CSU, and also contains local memories, interconnects and peripheral interfaces. Figure 3 shows the RFSoC4x2 [18] development board used.
+
 ![rfsoc4x2](figures/rfsoc4x2.png)
 *Figure 3: RFSoC4x2 development board components.*
 
 ### Multi-band
 A multi-band front-end implies that it is capable of simultaneously processing several bands, allowing the final device that receives not only to operate with different types of satellites, but also that the position estimates will be better, since it will be able to use more satellites at the same time. To obtain the desired bands, a first translation of the entire GNSS band to the baseband is made. Then the signal goes through different processing chains. Each one is responsible for transferring a single band to the baseband. Figure 4 shows the modifications that the GNSS signal would suffer if two translations to baseband are performed. Figure 5 is the diagram of the multiple processing chains.
+
 ![multi_bands_selection](figures/multi_bands_selection.png)
 *Figure 4: Two translations to baseband to select GPS L1.*
+
 ![multiple_processing_chains](figures/multiple_processing_chains.png)
 *Figure 5: Multiple processing chains diagram.*
 
@@ -38,6 +42,7 @@ The main objective of this project is the design and the implementation of an ad
 
 ## SDK and Software frameworks
 The Zynq Ultrascale+ RFSoC processor, being a SoC system, has several programming stages, which mainly differ in programming the PS, the PL and the connection between the two. While the PL requires several HDL-dedicated software, the PS and part of the processor connection are mainly implemented in Python through an open source framework called PYNQ [6][14][19][20][21]. Figure 6 shows the differents softwares that were used to control the RFSoC processor.
+
 ![software_frameworks](figures/software_frameworks.png)
 *Figure 6: The different software layers of the RFSoC processor.*
 
@@ -48,37 +53,46 @@ The direct RF sampling capability of RFSoC integrated circuits enables the imple
 3. Frequency Translator: A second baseband drop is produced from complex multipliers and NCOs so that the user can choose the desired frequency band within the one that had already been selected.
 4. FIR filter: The second filtering and decimation process is done by the FIR IP core. In this stage, the signal passes through a Low Pass Filter (LPF) type FIR filter which occupies a bandwidth of half the number of samples per second that the user want the end of the reception chain to go to.
 5. DMA: From the DMA the processed signal is sent to the CPU memory and from it, to the Ethernet port connected to the PS CPU and this will transfer the data to the device which will use the desired signal from the receiver.
+
 ![main_design_diagram](figures/main_design_diagram.png)
 *Figure 7: A single processing chain diagram.*
 
 The PL scheme of the project can be mainly divided into two parts. The first part consists of processing the input signal using the hardware blocks provided by the RFSoC itself together with the base overlay. An overlay is a programmable FPGA design that contain all the information about the hardware blocks called Intellectual Property (IP) cores and how they relate to each other as if it were a hardware library. The second part consists of using the set of IP cores of the BaseOverlay, and custom-made SDR IP cores coded with Vitis HLS [8] to process the antenna input signal and extract the desired GNSS bands. Figure 8 shows the RFSoC4x2 BaseOverlay.
+
 ![rfsoc_4x2_base_overlay](figures/rfsoc_4x2_base_overlay.png)
 *Figure 8: RFSoC4x2 BaseOverlay hardware layer.*
 
 ### RFDC
 The RFDC IP core, is probably the most complex and characteristic block of an RFSoC, since from it all the functionalities related to the ADCs, DACs, DDCs and DUCs are configured. For this reason, it not only modifies the internal logic part of the processor that directs all the RF processes, but it also has to have a high temporal precision to not desynchronize any sample of the signal to be sent or received. The advantage of using the RFDC is that it configures in a simple and compact way both the functionalities to transfer the GNSS frequencies to baseband and those related to the programmable decimator. Figure 9 has been made to explain what a single Dual Tile contains. Also, Figure 10 shows the tile configuration and Figure 11 shows the clocking configuration.
+
 ![rf_adc_hierarchy](figures/rf_adc_hierarchy.png)
 *Figure 9: RF-ADC Tile hierarchy for the ZU48DR model.*
+
 ![rf_adc_tile_configuration](figures/rf_adc_tile_configuration.png)
 *Figure 10: RF-ADC Tile Configuration Vivado GUI.*
+
 ![rf_adc_clocking_configuration](figures/rf_adc_clocking_configuration.png)
 *Figure 11: RF-ADC Clocking Configuration Vivado GUI.*
 
 ### FT
 Once the received signal that has information from all GNSS bands is translated to baseband, filtered and decimated, it is time to select which particular GNSS carrier frequency should be received by applying a translation from the apparent IF in the global baseband signal to baseband (zeroIF). This frequency translation process can be instantiated several times to complete a multi-band front-end. After applying a second baseband translation, the user can choose which GNSS frequency band they want to work with. In order to do this, it is necessary to pass the signal through a translation and decimation stages again. The first stage is based on programming a Frequency Translator from Vitis HLS and adapting the reception chain in Vivado [9][22] to be able to control this new IP core correctly. Figure 12 shows a summary of the FT concept explanation.
+
 ![freq_trans_explanation](figures/freq_trans_explanation.png)
 *Figure 12: Frequency Translator concept explanation.*
 
 As the I component and the Q component of the complex signal processed by the RFDC come out through different ports, a multiplexed concatenation is carried out, since the Frequency Translator input is made through a single port. It is true that two input streams could are implemented, but thereby the ’std::complex’ data type would not are used, generating a possible desynchronization of the processed data. This multiplexed concatenation is carried out directly in VHDL from Vivado creating a VHDL model, since thereby the implementation of the block is completely optimized. Creating native VHDL blocks to optimize certain simple processes, such as the one described above, has been a resource that has been used on several occasions throughout the signal processing. Moreover, an AXI GPIO IP core, is added to control the state of the control flags. In this way, the FT can be controlled from the PS.
 
 Finally, to be able to configure the Frequency Translator parameters as those of the AXI GPIO IP core via AXI through the PS, these ports have to add as slaves to the PS block named ’zynq_ultra_ps_e_0’ in the memory map, as shown in Figure 13. To make this connection, the option provided by Vivado is used so that the wiring is automatically generated from the port without connecting to the specified IP core. It should been sured that the wiring does not pass through any other set of blocks than the desire done. If this occurs, once the new IP core is mapped, the relevant wiring should be eliminated and the desired port should be manually connected to the closest AXI Interconnect IP core where the connection of a new port is created. Thereby, when the specific driver for each block is created, the PS will have the memory address to whic hit has to send the information.
+
 ![ft_mem_map](figures/ft_mem_map.png)
 *Figure 13: Frequency Translator memory map.*
 
 ### FIR
 The Vivado FIR IP core [5] it is responsible for filtering and decimating the signal once it has been transferred to baseband for the second time. The design of its coeficients was carried out using MATLAB’s ’Basic FIR Filter’ tool, shown in Figure 14, and the configuration via the Vivado GUI, changing the Super Sample Rate (SSR) and the decimation factor. Figure 15 shows the summary of the FIR configurations.
+
 ![fdatool_fir](figures/fdatool_fir.png)
 *Figure 14: Designing the filter in MATLAB Filter Design & Analysis Tool.*
+
 ![fir_gui_panel](figures/fir_gui_panel.png)
 *Figure 15: Summary FIR GUI panel.*
 
@@ -87,11 +101,13 @@ To create a system that allows working with several bands at the same time, a sa
 
 ### DMA
 The process of configuring the DMA [4] and sending the data via socket has been done through a C program (*dma2udp*) so that the data transfer speed is correct, (4.5MB * 4Bytes * 4Chains = 72MB/s). Otherwise, in Python this rate is not achieved, causing the system to lose samples. Figure 16 shows the simplified diagram of the different stages through which the data packets pass from the moment they are received by the terrestrial antenna until they are sent to the final device.
+
 ![packet_transmission_diagram](figures/packet_transmission_diagram.png)
 *Figure 16: Packet transmission diagram.*
 
 ### Entire front-end behaviour
 As a summary, a flowchart is made, shown in Figure 17, which defines the various states that the RFSoC4x2 and its control go through to end up obtaining positioning with the final device. At the beginning, the overlay is loaded, which contains all the instances of the generated IP cores and the drivers to make communication possible between the hardware, software and application layers. The GNSS bands to receive are selected by configuring the Chain Selector. After the signal has been processed by the PL, the dma2udp code transfers the data received from the PL DMA to the Ethernet port of the RFSoC4x2. Furthermore, the processed data is transmitted as User Datagram Protocol (UDP) packets to the specified IP and port through the Ethernet cable to the final device which performs satellite navigation.
+
 ![general_flowchart](figures/general_flowchart.png)
 *Figure 17: General flowchart of the project.*
 
@@ -111,24 +127,45 @@ By analysing in detail the satellite navigation signals and the RFSoC4x2 develop
 ## Bibliography
 
 [1] AMD, UltraScale Architecture Configurable Logic Block User Guide, February 2017.
+
 [2] AMD, Zynq UltraScale+ RFSoC RF Data Converter v2.6 Gen 1/2/3/DFE Logi-CORE IP Product Guide, October 2019.
+
 [3] AMD, ZCU208 Evaluation Board User Guide, July 2020.
+
 [4] AMD, AXI DMA v7.1 LogiCORE IP Product Guide, April 2022.
+
 [5] AMD, FIR Compiler: LogiCORE IP Product Guide, October 2022.
+
 [6] AMD, PYNQ: Python productivity for Adaptive Computing platforms, 2022.
+
 [7] AMD, UltraScale Architecture and Product Data Sheet: Overview , November 2022.
+
 [8] AMD, Vitis High-Level Synthesis User Guide, December 2023.
+
 [9] AMD, Vivado Design Suite User Guide: Designing IP Subsystems Using IP Integrator , October 2023.
+
 [10] AMD, Zynq UltraScale+ RFSoC Data Sheet: DC and AC Switching Characteristics, May 2023.
+
 [11] AMD, Zynq UltraScale+ RFSoC Data Sheet: Overview , June 2023.
+
 [12] AMD, Zynq UltraScale+ RFSoC: Product Brief , 2023.
+
 [13] AMD, Zynq UltraScale+ RFSoC Product Selection Guide, February 2023.
+
 [14] AMD, 2024, pynq boot image: https://www.pynq.io/boards.html.
+
 [15] Calian GNSS, 2024, gnss constellations, bands, frequencies and signals: https://www.tallysman.com/gnss-constellations-radio-frequencies-and-signals/.
+
 [16] C.Fernandez-Prades and J.Arribas, 2024, gnss-sdr project website: https://gnss-sdr.org/.
+
 [17] L. H. Crockett, D. Northcote, and R. W. Stewart, Software Defined Radio with Zynq UltraScale+ RFSoC , University of Strathclyde, Glasgow, Scotland, UK, 2023.
+
 [18] RealDigital, RFSoC 4x2 Reference Manual , 2024.
+
 [19] StrathSDR, 2023, pynq baseoverlay: https://www.rfsoc-pynq.io/overlays.html.
+
 [20] StrathSDR, 2023, rfsoc-book notebooks github: sdr/RFSoC-Book/tree/main/rfsoc book.
+
 [21] StrathSDR, 2024, rfsoc-book website: https://www.rfsocbook.com/.
+
 [22] Xilinx, 2024, vivado ide.
