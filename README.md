@@ -15,7 +15,7 @@ GNSS is used to describe any satellite navigation system with global or regional
 The open source GNSS-SDR project allows implementing a SDR receiver to perform global satellite navigation using the C++ language. It implements the GNSS receiver software by creating a graph where the nodes are signal processing blocks and the lines represent the dataflow between them and, for that reason, it is used in this project. Figure 2 shows the general block diagram GNSS-SDR open-source project.
 
 ![general_block_diagram_gnss-sdr](figures/general_block_diagram_gnss-sdr.png)
-*Figure 2: General block diagram GNSS-SDR open-source project.*
+*Figure 2: General block diagram GNSS-SDR open-source project [16].*
 
 ### RFSoC
 ZYNQ Ultrascale+ RFSoC processor takes advantage of the high signal acquisition performance that Field Programmable Gate Arrays (FPGAs) provides and the computing power that Central Processing Units (CPUs) offers [1][2][7][11][12][13][17]. A SoC is an integrated circuit that brings together all the necessary components to process the received signal on a single piece of silicon. The RFSoC device is mainly divided by two parts: the Processing System (PS) and the Programmable Logic (PL). The PS is the equivalent of the CPU and the PL of the FPGA. The PL can be reprogrammed using Very High Speed Integrated Circuit Hardware Description Language (VHDL). The integrated ADCs [10] are capable of sampling signals up to 5 GSPS, and that is the reason why it is used for this project, since it is possible to sample radio signals directly from the antenna without any external front-end. Each ADC has a Digital Downconverter (DDC) to perform the translation of a high frequency RF signal to baseband. The PS executes instructions of an operating system and/or an application written with PYNQ. The PS incorporates the multiple processor cores of a Multi-Processor SoC (MPSoC). The architecture includes a quad-core APU, a dual-core RPU, a PMU and a CSU, and also contains local memories, interconnects and peripheral interfaces. Figure 3 shows the RFSoC4x2 [18] development board used.
@@ -41,7 +41,7 @@ The main objective of this project is the design and the implementation of an ad
 - No sample losing
 
 ## SDK and Software frameworks
-The Zynq Ultrascale+ RFSoC processor, being a SoC system, has several programming stages, which mainly differ in programming the PS, the PL and the connection between the two. While the PL requires several HDL-dedicated software, the PS and part of the processor connection are mainly implemented in Python through an open source framework called PYNQ [6][14][19][20][21]. Figure 6 shows the differents softwares that were used to control the RFSoC processor.
+The Zynq Ultrascale+ RFSoC processor, being a SoC system, has several programming stages, which mainly differ in programming the PS, the PL and the connection between the two. While the PL requires several HDL-dedicated software, the PS and part of the processor connection are mainly implemented in Python through an open source framework called PYNQ [6][14][20][21]. Figure 6 shows the differents softwares that were used to control the RFSoC processor.
 
 ![software_frameworks](figures/software_frameworks.png)
 *Figure 6: The different software layers of the RFSoC processor.*
@@ -60,7 +60,7 @@ The direct RF sampling capability of RFSoC integrated circuits enables the imple
 The PL scheme of the project can be mainly divided into two parts. The first part consists of processing the input signal using the hardware blocks provided by the RFSoC itself together with the base overlay. An overlay is a programmable FPGA design that contain all the information about the hardware blocks called Intellectual Property (IP) cores and how they relate to each other as if it were a hardware library. The second part consists of using the set of IP cores of the BaseOverlay, and custom-made SDR IP cores coded with Vitis HLS [8] to process the antenna input signal and extract the desired GNSS bands. Figure 8 shows the RFSoC4x2 BaseOverlay.
 
 ![rfsoc_4x2_base_overlay](figures/rfsoc_4x2_base_overlay.png)
-*Figure 8: RFSoC4x2 BaseOverlay hardware layer.*
+*Figure 8: RFSoC4x2 BaseOverlay hardware layer [19].*
 
 ### RFDC
 The RFDC IP core, is probably the most complex and characteristic block of an RFSoC, since from it all the functionalities related to the ADCs, DACs, DDCs and DUCs are configured. For this reason, it not only modifies the internal logic part of the processor that directs all the RF processes, but it also has to have a high temporal precision to not desynchronize any sample of the signal to be sent or received. The advantage of using the RFDC is that it configures in a simple and compact way both the functionalities to transfer the GNSS frequencies to baseband and those related to the programmable decimator. Figure 9 has been made to explain what a single Dual Tile contains. Also, Figure 10 shows the tile configuration and Figure 11 shows the clocking configuration.
@@ -113,7 +113,12 @@ As a summary, a flowchart is made, shown in Figure 17, which defines the various
 
 ## How to use it
 
-This section details how to proceed in order to use the front-end with either a RFSoC4x2 or a ZCU208. It is recommended to use a ZCU208, since the RFSoC4x2 does not allow reaching an optimal data transmission speed with 4 chains. This tutorial assumes that the user have or know how to install Vivado, VitisHLS, MATLAB and GNURadio and is using Linux.
+This section details how to proceed in order to use the front-end with either a RFSoC4x2 or a ZCU208. It is recommended to use a ZCU208, since the RFSoC4x2 does not allow reaching an optimal data transmission speed with four chains. This tutorial assumes that the user have or know how to install Vivado, VitisHLS, MATLAB and GNURadio and is using Linux. The tutorial is made with the ZCU208 but is analogous for the RFSoC4x2:
+
+1. Install the pynq boot image v3.0.1 inside of an SD card (https://www.pynq.io/boards.html), insert it into the device and check that the board boot is in SD card mode.
+2. Execute *git clone https://github.com/jorgeiglesiasc/advanced-rfsoc-front-end.git* in the terminal.
+3. Go to _*/advanced-rfsoc-front-end/Vivado/ZCU208_ and copy the bitstream file (.bit) and the hardware handoff file (.hwh).
+4. Go to _*/home/xilinx/pynq/overlays/base_ folder inside the ZCU208 and change the .bit and the .hwh. It is important not to change the name of any of the two files.
 
 ## Conclusion
 
