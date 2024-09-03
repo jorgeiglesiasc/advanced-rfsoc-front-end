@@ -1,0 +1,3 @@
+/home/xilinx/jorge/dma2udp/build/CMakeFiles/dma2udp.dir
+/home/xilinx/jorge/dma2udp/build/CMakeFiles/edit_cache.dir
+/home/xilinx/jorge/dma2udp/build/CMakeFiles/rebuild_cache.dir

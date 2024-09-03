@@ -1,0 +1,1428 @@
+execve("/usr/bin/sudo", ["sudo", "./dma2udp"], 0xfffffdebe5a8 /* 26 vars */) = 0
+brk(NULL)                               = 0xaaaadb55d000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffae65d000
+faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/libexec/sudo/tls/aarch64/libaudit.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/libexec/sudo/tls/aarch64", 0xffffd92327f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/libexec/sudo/tls/libaudit.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/libexec/sudo/tls", 0xffffd92327f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/libexec/sudo/aarch64/libaudit.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/libexec/sudo/aarch64", 0xffffd92327f0, 0) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/libexec/sudo/libaudit.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+newfstatat(AT_FDCWD, "/usr/libexec/sudo", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=85973, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 85973, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffae613000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libaudit.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=128880, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 307328, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffae5c7000
+mmap(0xffffae5d0000, 241792, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffae5d0000
+munmap(0xffffae5c7000, 36864)           = 0
+munmap(0xffffae60c000, 24704)           = 0
+mprotect(0xffffae5ee000, 65536, PROT_NONE) = 0
+mmap(0xffffae5fe000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e000) = 0xffffae5fe000
+mmap(0xffffae600000, 45184, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffae600000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/libexec/sudo/libselinux.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=161936, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 300400, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffae586000
+mmap(0xffffae590000, 234864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffae590000
+munmap(0xffffae586000, 40960)           = 0
+munmap(0xffffae5ca000, 21872)           = 0
+mprotect(0xffffae5b6000, 65536, PROT_NONE) = 0
+mmap(0xffffae5c6000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0xffffae5c6000
+mmap(0xffffae5c8000, 5488, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffae5c8000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/libexec/sudo/libsudo_util.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=117496, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 247920, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffae553000
+mmap(0xffffae560000, 182384, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffae560000
+munmap(0xffffae553000, 53248)           = 0
+munmap(0xffffae58d000, 10352)           = 0
+mprotect(0xffffae57b000, 65536, PROT_NONE) = 0
+mmap(0xffffae58b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b000) = 0xffffae58b000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/libexec/sudo/libc.so.6", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1641496, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 1810024, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffae3a6000
+mmap(0xffffae3b0000, 1744488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffae3b0000
+munmap(0xffffae3a6000, 40960)           = 0
+munmap(0xffffae55a000, 24168)           = 0
+mprotect(0xffffae539000, 61440, PROT_NONE) = 0
+mmap(0xffffae548000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x188000) = 0xffffae548000
+mmap(0xffffae54e000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffae54e000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libcap-ng.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=22760, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 151880, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffae38a000
+mmap(0xffffae390000, 86344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffae390000
+munmap(0xffffae38a000, 24576)           = 0
+munmap(0xffffae3a6000, 37192)           = 0
+mprotect(0xffffae394000, 65536, PROT_NONE) = 0
+mmap(0xffffae3a4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0xffffae3a4000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=526784, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffae65b000
+mmap(NULL, 655992, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffae2ef000
+mmap(0xffffae2f0000, 590456, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffae2f0000
+munmap(0xffffae2ef000, 4096)            = 0
+munmap(0xffffae381000, 57976)           = 0
+mprotect(0xffffae370000, 61440, PROT_NONE) = 0
+mmap(0xffffae37f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x7f000) = 0xffffae37f000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffae658000
+set_tid_address(0xffffae6580f0)         = 2969
+set_robust_list(0xffffae658100, 24)     = 0
+rseq(0xffffae6587c0, 0x20, 0, 0xd428bc00) = 0
+mprotect(0xffffae548000, 16384, PROT_READ) = 0
+mprotect(0xffffae37f000, 4096, PROT_READ) = 0
+mprotect(0xffffae3a4000, 4096, PROT_READ) = 0
+mprotect(0xffffae58b000, 4096, PROT_READ) = 0
+mprotect(0xffffae5c6000, 4096, PROT_READ) = 0
+mprotect(0xffffae5fe000, 4096, PROT_READ) = 0
+mprotect(0xaaaad3491000, 8192, PROT_READ) = 0
+mprotect(0xffffae662000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0xffffae613000, 85973)           = 0
+statfs("/sys/fs/selinux", 0xffffd92336a0) = -1 ENOENT (No such file or directory)
+statfs("/selinux", 0xffffd92336a0)      = -1 ENOENT (No such file or directory)
+getrandom("\xff\xbf\x20\x6c\xf3\x4c\x0c\x53", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0xaaaadb55d000
+brk(0xaaaadb57e000)                     = 0xaaaadb57e000
+openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 406
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+faccessat(AT_FDCWD, "/etc/selinux/config", F_OK) = -1 ENOENT (No such file or directory)
+prlimit64(0, RLIMIT_AS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_CORE, NULL, {rlim_cur=0, rlim_max=0}) = 0
+prlimit64(0, RLIMIT_CPU, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_CPU, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_DATA, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_FSIZE, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_FSIZE, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_LOCKS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_MEMLOCK, NULL, {rlim_cur=503176*1024, rlim_max=503176*1024}) = 0
+prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=15203, rlim_max=15203}) = 0
+prlimit64(0, RLIMIT_NPROC, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_RSS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+fcntl(0, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(1, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(2, F_GETFL)                       = 0x2 (flags O_RDWR)
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5712208, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 5712208, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffadd7d000
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=114, ...}, AT_EMPTY_PATH) = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=114, ...}, AT_EMPTY_PATH) = 0
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 114
+lseek(3, -60, SEEK_CUR)                 = 54
+read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 4096) = 60
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/etc/sudo.conf", {st_mode=S_IFREG|0644, st_size=4573, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/sudo.conf", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4573, ...}, AT_EMPTY_PATH) = 0
+read(3, "#\n# Default /etc/sudo.conf file\n"..., 4096) = 4096
+read(3, "rity[,subsyste@priority]\n#\n# Sud"..., 4096) = 477
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+geteuid()                               = 0
+rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGCONT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTTOU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xaaaad3459644, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGCHLD, {sa_handler=0xaaaad3459644, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0xaaaad3459644, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaad3459644, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0xaaaad3459644, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0xaaaad3459644, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0xaaaad3459644, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGUSR1, {sa_handler=0xaaaad3459644, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGUSR2, {sa_handler=0xaaaad3459644, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/etc/sudo.conf", {st_mode=S_IFREG|0644, st_size=4573, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/sudo.conf", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=4573, ...}, AT_EMPTY_PATH) = 0
+read(3, "#\n# Default /etc/sudo.conf file\n"..., 4096) = 4096
+read(3, "rity[,subsyste@priority]\n#\n# Sud"..., 4096) = 477
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+getpid()                                = 2969
+getppid()                               = 2966
+getpgid(0)                              = 2966
+openat(AT_FDCWD, "/dev/tty", O_RDWR)    = 3
+ioctl(3, TIOCGPGRP, [2966])             = 0
+close(3)                                = 0
+getsid(0)                               = 2965
+getuid()                                = 0
+geteuid()                               = 0
+getgid()                                = 0
+getegid()                               = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+read(3, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 510
+read(3, "", 4096)                       = 0
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+close(3)                                = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(3)                                = 0
+openat(AT_FDCWD, "/proc/sys/kernel/ngroups_max", O_RDONLY|O_CLOEXEC) = 3
+read(3, "65536\n", 31)                  = 6
+close(3)                                = 0
+getgroups(0, NULL)                      = 1
+getgroups(1, [0])                       = 1
+umask(000)                              = 022
+umask(022)                              = 000
+getcwd("/home/xilinx/jorge/dma2udp/build", 4096) = 33
+openat(AT_FDCWD, "/proc/self/stat", O_RDONLY|O_NOFOLLOW) = 3
+read(3, "2969 (sudo) R 2966 2966 2965 348"..., 1024) = 318
+read(3, "", 706)                        = 0
+newfstatat(AT_FDCWD, "/dev/console", {st_mode=S_IFCHR|0600, st_rdev=makedev(0x5, 0x1), ...}, 0) = 0
+newfstatat(AT_FDCWD, "/dev/pts/2", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}, 0) = 0
+close(3)                                = 0
+uname({sysname="Linux", nodename="pynq", ...}) = 0
+ioctl(2, TIOCGWINSZ, {ws_row=51, ws_col=177, ws_xpixel=0, ws_ypixel=0}) = 0
+prlimit64(0, RLIMIT_CORE, NULL, {rlim_cur=0, rlim_max=0}) = 0
+prlimit64(0, RLIMIT_CORE, {rlim_cur=0, rlim_max=0}, NULL) = 0
+prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+prctl(PR_SET_DUMPABLE, SUID_DUMP_DISABLE) = 0
+socket(AF_NETLINK, SOCK_RAW|SOCK_CLOEXEC, NETLINK_ROUTE) = 3
+bind(3, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 0
+getsockname(3, {sa_family=AF_NETLINK, nl_pid=2969, nl_groups=00000000}, [12]) = 0
+sendto(3, [{nlmsg_len=20, nlmsg_type=0x12 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|0x300, nlmsg_seq=1725030005, nlmsg_pid=0}, "\x00\x00\x00\x00"], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1336, nlmsg_type=0x10 /* NLMSG_??? */, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030005, nlmsg_pid=2969}, "\x00\x00\x04\x03\x01\x00\x00\x00\x49\x00\x01\x00\x00\x00\x00\x00\x07\x00\x03\x00\x6c\x6f\x00\x00\x08\x00\x0d\x00\xe8\x03\x00\x00"...], [{nlmsg_len=1356, nlmsg_type=0x10 /* NLMSG_??? */, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030005, nlmsg_pid=2969}, "\x00\x00\x01\x00\x02\x00\x00\x00\x82\x00\x00\x00\x00\x00\x00\x00\x0b\x00\x03\x00\x64\x75\x6d\x6d\x79\x30\x00\x00\x08\x00\x0d\x00"...]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 2692
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=1460, nlmsg_type=0x10 /* NLMSG_??? */, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030005, nlmsg_pid=2969}, "\x00\x00\x08\x03\x03\x00\x00\x00\x80\x00\x00\x00\x00\x00\x00\x00\x09\x00\x03\x00\x73\x69\x74\x30\x00\x00\x00\x00\x08\x00\x0d\x00"...], [{nlmsg_len=1388, nlmsg_type=0x10 /* NLMSG_??? */, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030005, nlmsg_pid=2969}, "\x00\x00\x01\x00\x04\x00\x00\x00\x43\x10\x01\x00\x00\x00\x00\x00\x09\x00\x03\x00\x65\x74\x68\x30\x00\x00\x00\x00\x08\x00\x0d\x00"...]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 2848
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030005, nlmsg_pid=2969}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+sendto(3, [{nlmsg_len=20, nlmsg_type=0x16 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|0x300, nlmsg_seq=1725030006, nlmsg_pid=0}, "\x00\x00\x00\x00"], 20, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 20
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=76, nlmsg_type=0x14 /* NLMSG_??? */, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030006, nlmsg_pid=2969}, "\x02\x08\x80\xfe\x01\x00\x00\x00\x08\x00\x01\x00\x7f\x00\x00\x01\x08\x00\x02\x00\x7f\x00\x00\x01\x07\x00\x03\x00\x6c\x6f\x00\x00"...], [{nlmsg_len=88, nlmsg_type=0x14 /* NLMSG_??? */, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030006, nlmsg_pid=2969}, "\x02\x18\x80\x00\x04\x00\x00\x00\x08\x00\x01\x00\x0a\x01\x03\xa4\x08\x00\x02\x00\x0a\x01\x03\xa4\x08\x00\x04\x00\x0a\x01\x03\xff"...]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 164
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[[{nlmsg_len=72, nlmsg_type=0x14 /* NLMSG_??? */, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030006, nlmsg_pid=2969}, "\x0a\x80\x80\xfe\x01\x00\x00\x00\x14\x00\x01\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x01\x14\x00\x06\x00"...], [{nlmsg_len=72, nlmsg_type=0x14 /* NLMSG_??? */, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030006, nlmsg_pid=2969}, "\x0a\x40\x80\xfd\x04\x00\x00\x00\x14\x00\x01\x00\xfe\x80\x00\x00\x00\x00\x00\x00\xd4\xb2\xa6\xff\xfe\x06\x7d\xd0\x14\x00\x06\x00"...]], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 144
+recvmsg(3, {msg_name={sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, msg_namelen=12, msg_iov=[{iov_base=[{nlmsg_len=20, nlmsg_type=NLMSG_DONE, nlmsg_flags=NLM_F_MULTI, nlmsg_seq=1725030006, nlmsg_pid=2969}, 0], iov_len=4096}], msg_iovlen=1, msg_controllen=0, msg_flags=0}, 0) = 20
+close(3)                                = 0
+newfstatat(AT_FDCWD, "/usr/libexec/sudo/sudoers.so", {st_mode=S_IFREG|0644, st_size=483968, ...}, 0) = 0
+openat(AT_FDCWD, "/usr/libexec/sudo/sudoers.so", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=483968, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 614872, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadce6000
+mmap(0xffffadcf0000, 549336, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffadcf0000
+munmap(0xffffadce6000, 40960)           = 0
+munmap(0xffffadd77000, 20952)           = 0
+mprotect(0xffffadd60000, 65536, PROT_NONE) = 0
+mmap(0xffffadd70000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x70000) = 0xffffadd70000
+mmap(0xffffadd76000, 472, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffadd76000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/libexec/sudo/libpam.so.0", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=85973, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 85973, PROT_READ, MAP_PRIVATE, 3, 0) = 0xffffae613000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libpam.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=59320, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 188432, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadcc1000
+mmap(0xffffadcd0000, 122896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffadcd0000
+munmap(0xffffadcc1000, 61440)           = 0
+munmap(0xffffadcef000, 16)              = 0
+mprotect(0xffffadcde000, 61440, PROT_NONE) = 0
+mmap(0xffffadced000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xd000) = 0xffffadced000
+close(3)                                = 0
+openat(AT_FDCWD, "/usr/libexec/sudo/libz.so.1", O_RDONLY|O_CLOEXEC) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libz.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=104608, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 233648, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadc96000
+mmap(0xffffadca0000, 168112, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xffffadca0000
+munmap(0xffffadc96000, 40960)           = 0
+munmap(0xffffadcca000, 20656)           = 0
+mprotect(0xffffadcb8000, 65536, PROT_NONE) = 0
+mmap(0xffffadcc8000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x18000) = 0xffffadcc8000
+close(3)                                = 0
+mprotect(0xffffadcc8000, 4096, PROT_READ) = 0
+mprotect(0xffffadced000, 4096, PROT_READ) = 0
+mprotect(0xffffadd70000, 12288, PROT_READ) = 0
+munmap(0xffffae613000, 85973)           = 0
+newfstatat(AT_FDCWD, "/usr/libexec/sudo/sudoers.so", {st_mode=S_IFREG|0644, st_size=483968, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/usr/libexec/sudo/sudoers.so", {st_mode=S_IFREG|0644, st_size=483968, ...}, 0) = 0
+pipe2([3, 4], O_NONBLOCK|O_CLOEXEC)     = 0
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 5
+newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=2996, ...}, AT_EMPTY_PATH) = 0
+read(5, "# Locale name alias data base.\n#"..., 4096) = 2996
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+openat(AT_FDCWD, "/usr/share/locale/en_US.UTF-8/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en_US.utf8/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en_US/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en.UTF-8/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en.utf8/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en_US.UTF-8/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en_US.utf8/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en_US/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en.UTF-8/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en.utf8/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale-langpack/en/LC_MESSAGES/sudoers.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+getpid()                                = 2969
+getrandom("\x2b\xdf\xab\xe8\xfd\x41\x02\x93\x12\xe1\x3f\x0d\x18\xc5\x50\x77\x5c\x85\x2d\xbe\x58\x71\x1e\x00\xb5\x21\xb7\x79\x4d\x27\x3d\xc6"..., 40, GRND_NONBLOCK) = 40
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 5
+newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(5, 0, SEEK_SET)                   = 0
+read(5, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(5)                                = 0
+getresuid([0], [0], [0])                = 0
+getresgid([0], [0], [0])                = 0
+openat(AT_FDCWD, "/etc/nsswitch.conf", O_RDONLY) = 5
+newfstatat(5, "", {st_mode=S_IFREG|0644, st_size=510, ...}, AT_EMPTY_PATH) = 0
+read(5, "# /etc/nsswitch.conf\n#\n# Example"..., 4096) = 510
+read(5, "", 4096)                       = 0
+close(5)                                = 0
+setresuid(-1, 1, -1)                    = 0
+newfstatat(AT_FDCWD, "/etc/sudoers", {st_mode=S_IFREG|0440, st_size=1584, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/sudoers", O_RDONLY) = 5
+newfstatat(5, "", {st_mode=S_IFREG|0440, st_size=1584, ...}, AT_EMPTY_PATH) = 0
+read(5, "#\n# This file MUST be edited wit"..., 4096) = 1584
+lseek(5, 0, SEEK_SET)                   = 0
+fcntl(5, F_SETFD, FD_CLOEXEC)           = 0
+setresuid(-1, 0, -1)                    = 0
+setresgid(-1, -1, -1)                   = 0
+setresuid(-1, 0, -1)                    = 0
+ioctl(5, TCGETS, 0xffffd92303e0)        = -1 ENOTTY (Inappropriate ioctl for device)
+read(5, "#\n# This file MUST be edited wit"..., 4096) = 1584
+newfstatat(AT_FDCWD, "/etc/sudoers.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/sudoers.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0xaaaadb56c620 /* 3 entries */, 32768) = 80
+newfstatat(AT_FDCWD, "/etc/sudoers.d/README", {st_mode=S_IFREG|0440, st_size=1096, ...}, 0) = 0
+getdents64(6, 0xaaaadb56c620 /* 0 entries */, 32768) = 0
+close(6)                                = 0
+setresuid(-1, 1, -1)                    = 0
+newfstatat(AT_FDCWD, "/etc/sudoers.d/README", {st_mode=S_IFREG|0440, st_size=1096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/sudoers.d/README", O_RDONLY) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0440, st_size=1096, ...}, AT_EMPTY_PATH) = 0
+read(6, "#\n# The default /etc/sudoers fil"..., 4096) = 1096
+lseek(6, 0, SEEK_SET)                   = 0
+fcntl(6, F_SETFD, FD_CLOEXEC)           = 0
+setresuid(-1, 0, -1)                    = 0
+setresgid(-1, -1, -1)                   = 0
+setresuid(-1, 0, -1)                    = 0
+ioctl(6, TCGETS, 0xffffd9230220)        = -1 ENOTTY (Inappropriate ioctl for device)
+read(6, "#\n# The default /etc/sudoers fil"..., 4096) = 1096
+read(6, "", 4096)                       = 0
+ioctl(6, TCGETS, 0xffffd9230400)        = -1 ENOTTY (Inappropriate ioctl for device)
+close(6)                                = 0
+read(5, "", 4096)                       = 0
+ioctl(5, TCGETS, 0xffffd9230400)        = -1 ENOTTY (Inappropriate ioctl for device)
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 6
+connect(6, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 6
+connect(6, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/resolv.conf", {st_mode=S_IFREG|0644, st_size=926, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/host.conf", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=92, ...}, AT_EMPTY_PATH) = 0
+read(6, "# The \"order\" line is only used "..., 4096) = 92
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+futex(0xffffae554400, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+openat(AT_FDCWD, "/etc/resolv.conf", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=926, ...}, AT_EMPTY_PATH) = 0
+read(6, "# This is /run/systemd/resolve/s"..., 4096) = 926
+read(6, "", 4096)                       = 0
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=926, ...}, AT_EMPTY_PATH) = 0
+close(6)                                = 0
+openat(AT_FDCWD, "/etc/hosts", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=41, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "127.0.0.1    localhost\n127.0.1.1"..., 4096) = 41
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+setresgid(-1, -1, -1)                   = 0
+setresuid(-1, -1, -1)                   = 0
+prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_NPROC, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+getresuid([0], [0], [0])                = 0
+getresgid([0], [0], [0])                = 0
+openat(AT_FDCWD, "/proc/sys/kernel/ngroups_max", O_RDONLY|O_CLOEXEC) = 6
+read(6, "65536\n", 31)                  = 6
+close(6)                                = 0
+mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadc5f000
+mmap(NULL, 266240, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadc1e000
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 6
+connect(6, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 6
+connect(6, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=85973, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 85973, PROT_READ, MAP_PRIVATE, 6, 0) = 0xffffae613000
+close(6)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libnss_systemd.so.2", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=309792, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 441264, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadbb2000
+mmap(0xffffadbc0000, 375728, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0) = 0xffffadbc0000
+munmap(0xffffadbb2000, 57344)           = 0
+munmap(0xffffadc1c000, 7088)            = 0
+mprotect(0xffffadc08000, 61440, PROT_NONE) = 0
+mmap(0xffffadc17000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x47000) = 0xffffadc17000
+close(6)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 6
+read(6, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=551064, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 680048, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadb19000
+mmap(0xffffadb20000, 614512, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0) = 0xffffadb20000
+munmap(0xffffadb19000, 28672)           = 0
+munmap(0xffffadbb7000, 32880)           = 0
+mprotect(0xffffadba6000, 61440, PROT_NONE) = 0
+mmap(0xffffadbb5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 6, 0x85000) = 0xffffadbb5000
+close(6)                                = 0
+mprotect(0xffffadbb5000, 4096, PROT_READ) = 0
+mprotect(0xffffadc17000, 16384, PROT_READ) = 0
+munmap(0xffffae613000, 85973)           = 0
+rt_sigprocmask(SIG_BLOCK, [HUP USR1 USR2 PIPE ALRM CHLD TSTP URG VTALRM PROF WINCH IO], [], 8) = 0
+futex(0xffffadc1ba48, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+munmap(0xffffadc1e000, 266240)          = 0
+munmap(0xffffadc5f000, 266240)          = 0
+setgroups(1, [0])                       = 0
+newfstatat(AT_FDCWD, "./dma2udp", {st_mode=S_IFREG|0775, st_size=26304, ...}, 0) = 0
+setresgid(-1, -1, -1)                   = 0
+setgroups(1, [0])                       = 0
+setresuid(-1, -1, -1)                   = 0
+setgroups(1, [0])                       = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+close(6)                                = 0
+setresgid(-1, -1, -1)                   = 0
+setgroups(1, [0])                       = 0
+setresuid(-1, -1, -1)                   = 0
+newfstatat(AT_FDCWD, "/etc/pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/pam.d/sudo", O_RDONLY) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=330, ...}, AT_EMPTY_PATH) = 0
+read(6, "#%PAM-1.0\n\n# Set up user limits "..., 4096) = 330
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/security/pam_limits.so", O_RDONLY|O_CLOEXEC) = 7
+read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=22376, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 151568, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadc7a000
+mmap(0xffffadc80000, 86032, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 7, 0) = 0xffffadc80000
+munmap(0xffffadc7a000, 24576)           = 0
+munmap(0xffffadc96000, 36880)           = 0
+mprotect(0xffffadc84000, 65536, PROT_NONE) = 0
+mmap(0xffffadc94000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 7, 0x4000) = 0xffffadc94000
+close(7)                                = 0
+mprotect(0xffffadc94000, 4096, PROT_READ) = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/security/pam_env.so", O_RDONLY|O_CLOEXEC) = 7
+read(7, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=18200, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 147472, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadc5b000
+mmap(0xffffadc60000, 81936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 7, 0) = 0xffffadc60000
+munmap(0xffffadc5b000, 20480)           = 0
+munmap(0xffffadc75000, 40976)           = 0
+mprotect(0xffffadc63000, 65536, PROT_NONE) = 0
+mmap(0xffffadc73000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 7, 0x3000) = 0xffffadc73000
+close(7)                                = 0
+mprotect(0xffffadc73000, 4096, PROT_READ) = 0
+newfstatat(AT_FDCWD, "/etc/pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/pam.d/common-auth", O_RDONLY) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=1242, ...}, AT_EMPTY_PATH) = 0
+read(7, "#\n# /etc/pam.d/common-auth - aut"..., 4096) = 1242
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/security/pam_unix.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=51048, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 229424, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadc27000
+mmap(0xffffadc30000, 163888, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffadc30000
+munmap(0xffffadc27000, 36864)           = 0
+munmap(0xffffadc59000, 24624)           = 0
+mprotect(0xffffadc3b000, 65536, PROT_NONE) = 0
+mmap(0xffffadc4b000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0xb000) = 0xffffadc4b000
+mmap(0xffffadc4d000, 45104, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffadc4d000
+close(8)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 8
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=85973, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 85973, PROT_READ, MAP_PRIVATE, 8, 0) = 0xffffae613000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libcrypt.so.1", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=186296, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 348512, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffadaca000
+mmap(0xffffadad0000, 282976, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffadad0000
+munmap(0xffffadaca000, 24576)           = 0
+munmap(0xffffadb16000, 37216)           = 0
+mprotect(0xffffadafd000, 61440, PROT_NONE) = 0
+mmap(0xffffadb0c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x2c000) = 0xffffadb0c000
+mmap(0xffffadb0e000, 29024, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffadb0e000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libnsl.so.2", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=88976, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 227656, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffada98000
+mmap(0xffffadaa0000, 162120, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffadaa0000
+munmap(0xffffada98000, 32768)           = 0
+munmap(0xffffadac8000, 31048)           = 0
+mprotect(0xffffadab4000, 65536, PROT_NONE) = 0
+mmap(0xffffadac4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x14000) = 0xffffadac4000
+mmap(0xffffadac6000, 6472, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffadac6000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libtirpc.so.3", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=174376, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 305640, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffada55000
+mmap(0xffffada60000, 240104, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffada60000
+munmap(0xffffada55000, 45056)           = 0
+munmap(0xffffada9b000, 18920)           = 0
+mprotect(0xffffada8a000, 61440, PROT_NONE) = 0
+mmap(0xffffada99000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x29000) = 0xffffada99000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libgssapi_krb5.so.2", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=317880, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 447344, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad9f2000
+mmap(0xffffada00000, 381808, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffada00000
+munmap(0xffffad9f2000, 57344)           = 0
+munmap(0xffffada5e000, 4976)            = 0
+mprotect(0xffffada4b000, 61440, PROT_NONE) = 0
+mmap(0xffffada5a000, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x4a000) = 0xffffada5a000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libkrb5.so.3", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=798528, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 928224, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad91d000
+mmap(0xffffad920000, 862688, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad920000
+munmap(0xffffad91d000, 12288)           = 0
+munmap(0xffffad9f3000, 51680)           = 0
+mprotect(0xffffad9d7000, 61440, PROT_NONE) = 0
+mmap(0xffffad9e6000, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0xb6000) = 0xffffad9e6000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libk5crypto.so.3", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=174424, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 307184, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad8d5000
+mmap(0xffffad8e0000, 241648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad8e0000
+munmap(0xffffad8d5000, 45056)           = 0
+munmap(0xffffad91b000, 20464)           = 0
+mprotect(0xffffad909000, 65536, PROT_NONE) = 0
+mmap(0xffffad919000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x29000) = 0xffffad919000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libcom_err.so.2", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=14184, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 143432, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad8bc000
+mmap(0xffffad8c0000, 77896, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad8c0000
+munmap(0xffffad8bc000, 16384)           = 0
+munmap(0xffffad8d4000, 45128)           = 0
+mprotect(0xffffad8c3000, 61440, PROT_NONE) = 0
+mmap(0xffffad8d2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x2000) = 0xffffad8d2000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libkrb5support.so.0", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=47712, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 177016, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad894000
+mmap(0xffffad8a0000, 111480, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad8a0000
+munmap(0xffffad894000, 49152)           = 0
+munmap(0xffffad8bc000, 13176)           = 0
+mprotect(0xffffad8ab000, 61440, PROT_NONE) = 0
+mmap(0xffffad8ba000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0xa000) = 0xffffad8ba000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libkeyutils.so.1", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=18280, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 147472, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad87b000
+mmap(0xffffad880000, 81936, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad880000
+munmap(0xffffad87b000, 20480)           = 0
+munmap(0xffffad895000, 40976)           = 0
+mprotect(0xffffad884000, 61440, PROT_NONE) = 0
+mmap(0xffffad893000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x3000) = 0xffffad893000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libresolv.so.2", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=60104, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 199104, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad84f000
+mmap(0xffffad850000, 133568, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad850000
+munmap(0xffffad84f000, 4096)            = 0
+munmap(0xffffad871000, 59840)           = 0
+mprotect(0xffffad85d000, 65536, PROT_NONE) = 0
+mmap(0xffffad86d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0xd000) = 0xffffad86d000
+mmap(0xffffad86f000, 6592, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffad86f000
+close(8)                                = 0
+mprotect(0xffffad86d000, 4096, PROT_READ) = 0
+mprotect(0xffffad893000, 4096, PROT_READ) = 0
+mprotect(0xffffad8ba000, 4096, PROT_READ) = 0
+mprotect(0xffffad8d2000, 4096, PROT_READ) = 0
+mprotect(0xffffad919000, 4096, PROT_READ) = 0
+mprotect(0xffffad9e6000, 45056, PROT_READ) = 0
+mprotect(0xffffada5a000, 8192, PROT_READ) = 0
+mprotect(0xffffada99000, 4096, PROT_READ) = 0
+mprotect(0xffffadac4000, 4096, PROT_READ) = 0
+mprotect(0xffffadb0c000, 4096, PROT_READ) = 0
+mprotect(0xffffadc4b000, 4096, PROT_READ) = 0
+munmap(0xffffae613000, 85973)           = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/security/pam_deny.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=5688, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 135184, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad82e000
+mmap(0xffffad830000, 69648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad830000
+munmap(0xffffad82e000, 8192)            = 0
+munmap(0xffffad842000, 53264)           = 0
+mprotect(0xffffad831000, 61440, PROT_NONE) = 0
+mmap(0xffffad840000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad840000
+close(8)                                = 0
+mprotect(0xffffad840000, 4096, PROT_READ) = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/security/pam_permit.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=5912, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 135184, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad80e000
+mmap(0xffffad810000, 69648, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad810000
+munmap(0xffffad80e000, 8192)            = 0
+munmap(0xffffad822000, 53264)           = 0
+mprotect(0xffffad811000, 61440, PROT_NONE) = 0
+mmap(0xffffad820000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad820000
+close(8)                                = 0
+mprotect(0xffffad820000, 4096, PROT_READ) = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/security/pam_cap.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=10008, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 139280, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad7ed000
+mmap(0xffffad7f0000, 73744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad7f0000
+munmap(0xffffad7ed000, 12288)           = 0
+munmap(0xffffad803000, 49168)           = 0
+mprotect(0xffffad7f2000, 61440, PROT_NONE) = 0
+mmap(0xffffad801000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1000) = 0xffffad801000
+close(8)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 8
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=85973, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 85973, PROT_READ, MAP_PRIVATE, 8, 0) = 0xffffae613000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libcap.so.2", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=34712, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 163904, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad7c7000
+mmap(0xffffad7d0000, 98368, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad7d0000
+munmap(0xffffad7c7000, 36864)           = 0
+munmap(0xffffad7e9000, 24640)           = 0
+mprotect(0xffffad7d7000, 65536, PROT_NONE) = 0
+mmap(0xffffad7e7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x7000) = 0xffffad7e7000
+close(8)                                = 0
+mprotect(0xffffad7e7000, 4096, PROT_READ) = 0
+mprotect(0xffffad801000, 4096, PROT_READ) = 0
+prctl(PR_CAPBSET_READ, CAP_MAC_OVERRIDE) = 1
+prctl(PR_CAPBSET_READ, 0x30 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+prctl(PR_CAPBSET_READ, CAP_CHECKPOINT_RESTORE) = 1
+prctl(PR_CAPBSET_READ, 0x2c /* CAP_??? */) = -1 EINVAL (Invalid argument)
+prctl(PR_CAPBSET_READ, 0x2a /* CAP_??? */) = -1 EINVAL (Invalid argument)
+prctl(PR_CAPBSET_READ, 0x29 /* CAP_??? */) = -1 EINVAL (Invalid argument)
+munmap(0xffffae613000, 85973)           = 0
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+newfstatat(AT_FDCWD, "/etc/pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/pam.d/common-account", O_RDONLY) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=1208, ...}, AT_EMPTY_PATH) = 0
+read(7, "#\n# /etc/pam.d/common-account - "..., 4096) = 1208
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+newfstatat(AT_FDCWD, "/etc/pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/pam.d/common-session-noninteractive", O_RDONLY) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=1435, ...}, AT_EMPTY_PATH) = 0
+read(7, "#\n# /etc/pam.d/common-session-no"..., 4096) = 1435
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/security/pam_umask.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=10008, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 139280, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad7ad000
+mmap(0xffffad7b0000, 73744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad7b0000
+munmap(0xffffad7ad000, 12288)           = 0
+munmap(0xffffad7c3000, 49168)           = 0
+mprotect(0xffffad7b2000, 61440, PROT_NONE) = 0
+mmap(0xffffad7c1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x1000) = 0xffffad7c1000
+close(8)                                = 0
+mprotect(0xffffad7c1000, 4096, PROT_READ) = 0
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+openat(AT_FDCWD, "/etc/pam.d/other", O_RDONLY) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=520, ...}, AT_EMPTY_PATH) = 0
+read(6, "#\n# /etc/pam.d/other - specify t"..., 4096) = 520
+newfstatat(AT_FDCWD, "/etc/pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/pam.d/common-auth", O_RDONLY) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=1242, ...}, AT_EMPTY_PATH) = 0
+read(7, "#\n# /etc/pam.d/common-auth - aut"..., 4096) = 1242
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+newfstatat(AT_FDCWD, "/etc/pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/pam.d/common-account", O_RDONLY) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=1208, ...}, AT_EMPTY_PATH) = 0
+read(7, "#\n# /etc/pam.d/common-account - "..., 4096) = 1208
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+newfstatat(AT_FDCWD, "/etc/pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/pam.d/common-password", O_RDONLY) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=1620, ...}, AT_EMPTY_PATH) = 0
+read(7, "#\n# /etc/pam.d/common-password -"..., 4096) = 1620
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+newfstatat(AT_FDCWD, "/etc/pam.d", {st_mode=S_IFDIR|0755, st_size=4096, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/pam.d/common-session", O_RDONLY) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=1427, ...}, AT_EMPTY_PATH) = 0
+read(7, "#\n# /etc/pam.d/common-session - "..., 4096) = 1427
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/security/pam_systemd.so", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=472840, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 603952, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad71c000
+mmap(0xffffad720000, 538416, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad720000
+munmap(0xffffad71c000, 16384)           = 0
+munmap(0xffffad7a4000, 46896)           = 0
+mprotect(0xffffad78d000, 65536, PROT_NONE) = 0
+mmap(0xffffad79d000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x6d000) = 0xffffad79d000
+mmap(0xffffad7a3000, 1840, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xffffad7a3000
+close(8)                                = 0
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 8
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=85973, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 85973, PROT_READ, MAP_PRIVATE, 8, 0) = 0xffffae613000
+close(8)                                = 0
+openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libpam_misc.so.0", O_RDONLY|O_CLOEXEC) = 8
+read(8, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=14208, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 143440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xffffad6fc000
+mmap(0xffffad700000, 77904, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0) = 0xffffad700000
+munmap(0xffffad6fc000, 16384)           = 0
+munmap(0xffffad714000, 45136)           = 0
+mprotect(0xffffad703000, 61440, PROT_NONE) = 0
+mmap(0xffffad712000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 8, 0x2000) = 0xffffad712000
+close(8)                                = 0
+mprotect(0xffffad712000, 4096, PROT_READ) = 0
+mprotect(0xffffad79d000, 20480, PROT_READ) = 0
+munmap(0xffffae613000, 85973)           = 0
+read(7, "", 4096)                       = 0
+close(7)                                = 0
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+getuid()                                = 0
+openat(AT_FDCWD, "/etc/login.defs", O_RDONLY) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=10734, ...}, AT_EMPTY_PATH) = 0
+read(6, "#\n# /etc/login.defs - Configurat"..., 4096) = 4096
+read(6, " issuing \n# the \"mesg y\" command"..., 4096) = 4096
+read(6, "exercise for the reader...\n#\n# T"..., 4096) = 2542
+close(6)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(6)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/shadow", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0640, st_size=925, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:$y$j9T$WQz0Bas184BdKXLzPuVm"..., 4096) = 925
+close(6)                                = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 6
+fcntl(6, F_SETFD, FD_CLOEXEC)           = 0
+readlinkat(AT_FDCWD, "/proc/self/exe", "/usr/bin/sudo", 4096) = 13
+sendto(6, [{nlmsg_len=136, nlmsg_type=0x44d /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=1, nlmsg_pid=0}, "\x6f\x70\x3d\x50\x41\x4d\x3a\x61\x63\x63\x6f\x75\x6e\x74\x69\x6e\x67\x20\x67\x72\x61\x6e\x74\x6f\x72\x73\x3d\x70\x61\x6d\x5f\x70"...], 136, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 136
+ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=500000000}, NULL, 0) = 1 ([{fd=6, revents=POLLIN}], left {tv_sec=0, tv_nsec=499993700})
+recvfrom(6, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=1, nlmsg_pid=2969}, {error=0, msg={nlmsg_len=136, nlmsg_type=0x44d /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=1, nlmsg_pid=0}}], 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+recvfrom(6, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=1, nlmsg_pid=2969}, {error=0, msg={nlmsg_len=136, nlmsg_type=0x44d /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=1, nlmsg_pid=0}}], 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+close(6)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(6)                                = 0
+openat(AT_FDCWD, "/proc/sys/kernel/ngroups_max", O_RDONLY|O_CLOEXEC) = 6
+read(6, "65536\n", 31)                  = 6
+close(6)                                = 0
+brk(0xaaaadb5de000)                     = 0xaaaadb5de000
+brk(0xaaaadb61e000)                     = 0xaaaadb61e000
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+read(6, "", 4096)                       = 0
+close(6)                                = 0
+rt_sigprocmask(SIG_BLOCK, [HUP USR1 USR2 PIPE ALRM CHLD TSTP URG VTALRM PROF WINCH IO], [], 8) = 0
+openat(AT_FDCWD, "/run/systemd/userdb/", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=60, ...}, AT_EMPTY_PATH) = 0
+getdents64(6, 0xaaaadb5fd890 /* 3 entries */, 32768) = 96
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 7
+connect(7, {sa_family=AF_UNIX, sun_path="/run/systemd/userdb/io.systemd.DynamicUser"}, 45) = 0
+getpid()                                = 2969
+epoll_create1(EPOLL_CLOEXEC)            = 8
+timerfd_create(CLOCK_MONOTONIC, TFD_CLOEXEC|TFD_NONBLOCK) = 9
+epoll_ctl(8, EPOLL_CTL_ADD, 9, {events=EPOLLIN, data={u32=3679957120, u64=187650801119360}}) = 0
+epoll_ctl(8, EPOLL_CTL_ADD, 7, {events=0, data={u32=3679958784, u64=187650801121024}}) = 0
+gettid()                                = 2969
+getrandom("\xf5\x92\x70\xf6\xc4\x9d\xf0\xdf\x72\xb1\x2b\x23\x54\x97\xba\x38", 16, GRND_NONBLOCK|GRND_INSECURE) = 16
+futex(0xffffadc1bb70, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getdents64(6, 0xaaaadb5fd890 /* 0 entries */, 32768) = 0
+close(6)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 6
+openat(6, "etc", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(6)                                = 0
+openat(10, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+close(10)                               = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 6
+openat(6, "run", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=580, ...}, AT_EMPTY_PATH) = 0
+close(6)                                = 0
+openat(10, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+close(10)                               = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 6
+openat(6, "run", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=580, ...}, AT_EMPTY_PATH) = 0
+close(6)                                = 0
+openat(10, "host", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+close(10)                               = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 6
+openat(6, "usr", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(6)                                = 0
+openat(10, "local", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(10)                               = 0
+openat(6, "lib", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(6)                                = 0
+openat(10, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+close(10)                               = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 6
+openat(6, "usr", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(6)                                = 0
+openat(10, "lib", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(10)                               = 0
+openat(6, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+openat(AT_FDCWD, "/", O_RDONLY|O_CLOEXEC|O_PATH|O_DIRECTORY) = 6
+openat(6, "lib", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 10
+newfstatat(10, "", {st_mode=S_IFLNK|0777, st_size=7, ...}, AT_EMPTY_PATH) = 0
+readlinkat(6, "lib", "usr/lib", 4096)   = 7
+close(10)                               = 0
+openat(6, "usr", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 10
+newfstatat(10, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(6)                                = 0
+openat(10, "lib", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = 6
+newfstatat(6, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+close(10)                               = 0
+openat(6, "userdb", O_RDONLY|O_NOFOLLOW|O_CLOEXEC|O_PATH) = -1 ENOENT (No such file or directory)
+close(6)                                = 0
+openat(AT_FDCWD, "/etc/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/run/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/run/host/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/local/lib/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/lib/userdb", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+epoll_ctl(8, EPOLL_CTL_MOD, 7, {events=EPOLLIN|EPOLLOUT, data={u32=3679958784, u64=187650801121024}}) = 0
+openat(AT_FDCWD, "/proc/sys/kernel/random/boot_id", O_RDONLY|O_NOCTTY|O_CLOEXEC) = 6
+read(6, "0ac933ff-306f-4530-acff-ab353202"..., 38) = 37
+read(6, "", 1)                          = 0
+close(6)                                = 0
+timerfd_settime(9, TFD_TIMER_ABSTIME, {it_interval={tv_sec=0, tv_nsec=0}, it_value={tv_sec=3762, tv_nsec=277238000}}, NULL) = 0
+epoll_pwait(8, [{events=EPOLLOUT, data={u32=3679958784, u64=187650801121024}}], 8, 0, NULL, 8) = 1
+timerfd_create(CLOCK_BOOTTIME, TFD_CLOEXEC|TFD_NONBLOCK) = 6
+close(6)                                = 0
+sendto(7, "{\"method\":\"io.systemd.UserDataba"..., 134, MSG_DONTWAIT|MSG_NOSIGNAL, NULL, 0) = 134
+epoll_ctl(8, EPOLL_CTL_MOD, 7, {events=EPOLLIN, data={u32=3679958784, u64=187650801121024}}) = 0
+epoll_pwait(8, [], 8, 0, NULL, 8)       = 0
+brk(0xaaaadb646000)                     = 0xaaaadb646000
+recvfrom(7, "{\"error\":\"io.systemd.UserDatabas"..., 131080, MSG_DONTWAIT, NULL, NULL) = 66
+epoll_ctl(8, EPOLL_CTL_MOD, 7, {events=0, data={u32=3679958784, u64=187650801121024}}) = 0
+epoll_pwait(8, [], 8, 0, NULL, 8)       = 0
+epoll_pwait(8, [], 8, 0, NULL, 8)       = 0
+epoll_ctl(8, EPOLL_CTL_DEL, 7, NULL)    = 0
+close(7)                                = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+close(8)                                = 0
+close(9)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+close(6)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+close(6)                                = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+close(6)                                = 0
+openat(AT_FDCWD, "/root/.sudo_as_admin_successful", O_WRONLY|O_CREAT|O_EXCL|O_NONBLOCK, 0644) = -1 EEXIST (File exists)
+setresgid(-1, -1, -1)                   = 0
+setresuid(-1, -1, -1)                   = 0
+prlimit64(0, RLIMIT_NPROC, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 6
+newfstatat(6, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(6, 0, SEEK_SET)                   = 0
+read(6, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(6)                                = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 6
+fcntl(6, F_SETFD, FD_CLOEXEC)           = 0
+fcntl(6, F_SETFD, FD_CLOEXEC)           = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+newfstatat(0, "", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}, AT_EMPTY_PATH) = 0
+readlinkat(AT_FDCWD, "/proc/self/fd/0", "/dev/pts/2", 31) = 10
+newfstatat(AT_FDCWD, "/dev/pts/2", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}, 0) = 0
+newfstatat(AT_FDCWD, "/dev/pts/2", {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}, AT_SYMLINK_NOFOLLOW) = 0
+readlinkat(AT_FDCWD, "/proc/self/exe", "/usr/bin/sudo", 4096) = 13
+getcwd("/home/xilinx/jorge/dma2udp/build", 4096) = 33
+sendto(6, [{nlmsg_len=120, nlmsg_type=0x463 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=2, nlmsg_pid=0}, "\x63\x77\x64\x3d\x22\x2f\x68\x6f\x6d\x65\x2f\x78\x69\x6c\x69\x6e\x78\x2f\x6a\x6f\x72\x67\x65\x2f\x64\x6d\x61\x32\x75\x64\x70\x2f"...], 120, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 120
+ppoll([{fd=6, events=POLLIN}], 1, {tv_sec=0, tv_nsec=500000000}, NULL, 0) = 1 ([{fd=6, revents=POLLIN}], left {tv_sec=0, tv_nsec=499993160})
+recvfrom(6, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=2, nlmsg_pid=2969}, {error=0, msg={nlmsg_len=120, nlmsg_type=0x463 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=2, nlmsg_pid=0}}], 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+recvfrom(6, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=2, nlmsg_pid=2969}, {error=0, msg={nlmsg_len=120, nlmsg_type=0x463 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=2, nlmsg_pid=0}}], 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 7
+newfstatat(7, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(7, 0, SEEK_SET)                   = 0
+read(7, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+close(7)                                = 0
+socket(AF_UNIX, SOCK_DGRAM|SOCK_CLOEXEC, 0) = 7
+connect(7, {sa_family=AF_UNIX, sun_path="/dev/log"}, 110) = 0
+sendto(7, "<85>Aug 30 15:00:05 sudo:     ro"..., 117, MSG_NOSIGNAL, NULL, 0) = 117
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 8
+newfstatat(8, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(8, 0, SEEK_SET)                   = 0
+read(8, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(8)                                = 0
+prlimit64(0, RLIMIT_CPU, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_FSIZE, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_NPROC, {rlim_cur=15203, rlim_max=15203}, NULL) = 0
+prlimit64(0, RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_CORE, {rlim_cur=0, rlim_max=0}, NULL) = 0
+prctl(PR_SET_DUMPABLE, SUID_DUMP_USER)  = 0
+openat(AT_FDCWD, "/dev/tty", O_RDWR)    = 8
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 9
+newfstatat(9, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(9, 0, SEEK_SET)                   = 0
+read(9, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+close(9)                                = 0
+openat(AT_FDCWD, "/dev/ptmx", O_RDWR)   = 9
+ioctl(9, TIOCGPTN, [3])                 = 0
+ioctl(9, TIOCSPTLCK, [0])               = 0
+ioctl(9, TIOCGPTPEER, 0x102)            = 10
+ioctl(9, TIOCGPTN, [3])                 = 0
+fchownat(AT_FDCWD, "/dev/pts/3", 0, 5, 0) = 0
+faccessat(AT_FDCWD, "/var/run/utmpx", F_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/var/run/utmp", O_RDONLY|O_CLOEXEC) = 11
+lseek(11, 0, SEEK_SET)                  = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xffffae4daf70, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=10, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+fcntl(11, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=9, tv_usec=999818}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+pread64(11, "\2\0\0\0\0\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 0) = 400
+pread64(11, "\1\0\0\0003\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 400) = 400
+pread64(11, "\6\0\0\0p\2\0\0tty1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 800) = 400
+pread64(11, "\7\0\0\0\366\2\0\0ttyPS0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 1200) = 400
+pread64(11, "\7\0\0\0\3\3\0\0pts/0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 1600) = 400
+pread64(11, "\7\0\0\0[\4\0\0pts/1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2000) = 400
+pread64(11, "\7\0\0\0\224\v\0\0pts/2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2400) = 400
+fcntl(11, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+lseek(11, 0, SEEK_SET)                  = 0
+getpid()                                = 2969
+faccessat(AT_FDCWD, "/var/run/utmpx", F_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/var/run/utmp", O_RDWR|O_CLOEXEC) = 12
+dup3(12, 11, 0)                         = 11
+close(12)                               = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xffffae4daf70, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=10, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+fcntl(11, F_SETLKW, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=9, tv_usec=999832}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+pread64(11, "\2\0\0\0\0\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 0) = 400
+pread64(11, "\1\0\0\0003\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 400) = 400
+pread64(11, "\6\0\0\0p\2\0\0tty1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 800) = 400
+pread64(11, "\7\0\0\0\366\2\0\0ttyPS0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 1200) = 400
+pread64(11, "\7\0\0\0\3\3\0\0pts/0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 1600) = 400
+pread64(11, "\7\0\0\0[\4\0\0pts/1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2000) = 400
+pread64(11, "\7\0\0\0\224\v\0\0pts/2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2400) = 400
+pread64(11, "\10\0\0\0t\v\0\0pts/3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2800) = 400
+lseek(11, 2800, SEEK_SET)               = 2800
+write(11, "\7\0\0\0\231\v\0\0pts/3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400) = 400
+fcntl(11, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+close(11)                               = 0
+socketpair(AF_UNIX, SOCK_STREAM, 0, [11, 12]) = 0
+fcntl(11, F_SETFD, FD_CLOEXEC)          = 0
+fcntl(12, F_SETFD, FD_CLOEXEC)          = 0
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+setgroups(1, [0])                       = 0
+setgid(0)                               = 0
+umask(022)                              = 022
+getuid()                                = 0
+openat(AT_FDCWD, "/etc/login.defs", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=10734, ...}, AT_EMPTY_PATH) = 0
+read(13, "#\n# /etc/login.defs - Configurat"..., 4096) = 4096
+read(13, " issuing \n# the \"mesg y\" command"..., 4096) = 4096
+read(13, "exercise for the reader...\n#\n# T"..., 4096) = 2542
+close(13)                               = 0
+capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, NULL) = 0
+capget({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_DAC_READ_SEARCH|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_LINUX_IMMUTABLE|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_BROADCAST|1<<CAP_NET_ADMIN|1<<CAP_NET_RAW|1<<CAP_IPC_LOCK|1<<CAP_IPC_OWNER|1<<CAP_SYS_MODULE|1<<CAP_SYS_RAWIO|1<<CAP_SYS_CHROOT|1<<CAP_SYS_PTRACE|1<<CAP_SYS_PACCT|1<<CAP_SYS_ADMIN|1<<CAP_SYS_BOOT|1<<CAP_SYS_NICE|1<<CAP_SYS_RESOURCE|1<<CAP_SYS_TIME|1<<CAP_SYS_TTY_CONFIG|1<<CAP_MKNOD|1<<CAP_LEASE|1<<CAP_AUDIT_WRITE|1<<CAP_AUDIT_CONTROL|1<<CAP_SETFCAP|1<<CAP_MAC_OVERRIDE|1<<CAP_MAC_ADMIN|1<<CAP_SYSLOG|1<<CAP_WAKE_ALARM|1<<CAP_BLOCK_SUSPEND|1<<CAP_AUDIT_READ|1<<CAP_PERFMON|1<<CAP_BPF|1<<CAP_CHECKPOINT_RESTORE, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_DAC_READ_SEARCH|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_LINUX_IMMUTABLE|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_BROADCAST|1<<CAP_NET_ADMIN|1<<CAP_NET_RAW|1<<CAP_IPC_LOCK|1<<CAP_IPC_OWNER|1<<CAP_SYS_MODULE|1<<CAP_SYS_RAWIO|1<<CAP_SYS_CHROOT|1<<CAP_SYS_PTRACE|1<<CAP_SYS_PACCT|1<<CAP_SYS_ADMIN|1<<CAP_SYS_BOOT|1<<CAP_SYS_NICE|1<<CAP_SYS_RESOURCE|1<<CAP_SYS_TIME|1<<CAP_SYS_TTY_CONFIG|1<<CAP_MKNOD|1<<CAP_LEASE|1<<CAP_AUDIT_WRITE|1<<CAP_AUDIT_CONTROL|1<<CAP_SETFCAP|1<<CAP_MAC_OVERRIDE|1<<CAP_MAC_ADMIN|1<<CAP_SYSLOG|1<<CAP_WAKE_ALARM|1<<CAP_BLOCK_SUSPEND|1<<CAP_AUDIT_READ|1<<CAP_PERFMON|1<<CAP_BPF|1<<CAP_CHECKPOINT_RESTORE, inheritable=0}) = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(13, 0, SEEK_SET)                  = 0
+read(13, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(13)                               = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(13, 0, SEEK_SET)                  = 0
+read(13, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+read(13, "", 4096)                      = 0
+close(13)                               = 0
+rt_sigprocmask(SIG_BLOCK, [HUP USR1 USR2 PIPE ALRM CHLD TSTP URG VTALRM PROF WINCH IO], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/group", O_RDONLY|O_CLOEXEC) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=779, ...}, AT_EMPTY_PATH) = 0
+lseek(13, 0, SEEK_SET)                  = 0
+read(13, "root:x:0:\ndaemon:x:1:\nbin:x:2:\ns"..., 4096) = 779
+close(13)                               = 0
+openat(AT_FDCWD, "/etc/security/capability.conf", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=1793, ...}, AT_EMPTY_PATH) = 0
+read(13, "#\n# /etc/security/capability.con"..., 4096) = 1793
+close(13)                               = 0
+capset({version=_LINUX_CAPABILITY_VERSION_3, pid=0}, {effective=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_DAC_READ_SEARCH|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_LINUX_IMMUTABLE|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_BROADCAST|1<<CAP_NET_ADMIN|1<<CAP_NET_RAW|1<<CAP_IPC_LOCK|1<<CAP_IPC_OWNER|1<<CAP_SYS_MODULE|1<<CAP_SYS_RAWIO|1<<CAP_SYS_CHROOT|1<<CAP_SYS_PTRACE|1<<CAP_SYS_PACCT|1<<CAP_SYS_ADMIN|1<<CAP_SYS_BOOT|1<<CAP_SYS_NICE|1<<CAP_SYS_RESOURCE|1<<CAP_SYS_TIME|1<<CAP_SYS_TTY_CONFIG|1<<CAP_MKNOD|1<<CAP_LEASE|1<<CAP_AUDIT_WRITE|1<<CAP_AUDIT_CONTROL|1<<CAP_SETFCAP|1<<CAP_MAC_OVERRIDE|1<<CAP_MAC_ADMIN|1<<CAP_SYSLOG|1<<CAP_WAKE_ALARM|1<<CAP_BLOCK_SUSPEND|1<<CAP_AUDIT_READ|1<<CAP_PERFMON|1<<CAP_BPF|1<<CAP_CHECKPOINT_RESTORE, permitted=1<<CAP_CHOWN|1<<CAP_DAC_OVERRIDE|1<<CAP_DAC_READ_SEARCH|1<<CAP_FOWNER|1<<CAP_FSETID|1<<CAP_KILL|1<<CAP_SETGID|1<<CAP_SETUID|1<<CAP_SETPCAP|1<<CAP_LINUX_IMMUTABLE|1<<CAP_NET_BIND_SERVICE|1<<CAP_NET_BROADCAST|1<<CAP_NET_ADMIN|1<<CAP_NET_RAW|1<<CAP_IPC_LOCK|1<<CAP_IPC_OWNER|1<<CAP_SYS_MODULE|1<<CAP_SYS_RAWIO|1<<CAP_SYS_CHROOT|1<<CAP_SYS_PTRACE|1<<CAP_SYS_PACCT|1<<CAP_SYS_ADMIN|1<<CAP_SYS_BOOT|1<<CAP_SYS_NICE|1<<CAP_SYS_RESOURCE|1<<CAP_SYS_TIME|1<<CAP_SYS_TTY_CONFIG|1<<CAP_MKNOD|1<<CAP_LEASE|1<<CAP_AUDIT_WRITE|1<<CAP_AUDIT_CONTROL|1<<CAP_SETFCAP|1<<CAP_MAC_OVERRIDE|1<<CAP_MAC_ADMIN|1<<CAP_SYSLOG|1<<CAP_WAKE_ALARM|1<<CAP_BLOCK_SUSPEND|1<<CAP_AUDIT_READ|1<<CAP_PERFMON|1<<CAP_BPF|1<<CAP_CHECKPOINT_RESTORE, inheritable=0}) = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 13
+fcntl(13, F_SETFD, FD_CLOEXEC)          = 0
+sendto(13, [{nlmsg_len=144, nlmsg_type=0x456 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=3, nlmsg_pid=0}, "\x6f\x70\x3d\x50\x41\x4d\x3a\x73\x65\x74\x63\x72\x65\x64\x20\x67\x72\x61\x6e\x74\x6f\x72\x73\x3d\x70\x61\x6d\x5f\x70\x65\x72\x6d"...], 144, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 144
+ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=500000000}, NULL, 0) = 1 ([{fd=13, revents=POLLIN}], left {tv_sec=0, tv_nsec=499993440})
+recvfrom(13, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=3, nlmsg_pid=-1427412266}, {error=0, msg={nlmsg_len=144, nlmsg_type=0x456 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=3, nlmsg_pid=0}}], 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+recvfrom(13, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=3, nlmsg_pid=-1427412266}, {error=0, msg={nlmsg_len=144, nlmsg_type=0x456 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=3, nlmsg_pid=0}}], 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+close(13)                               = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(13, 0, SEEK_SET)                  = 0
+read(13, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(13)                               = 0
+prlimit64(0, RLIMIT_CPU, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_FSIZE, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_DATA, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_CORE, NULL, {rlim_cur=0, rlim_max=0}) = 0
+prlimit64(0, RLIMIT_RSS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_NPROC, NULL, {rlim_cur=15203, rlim_max=15203}) = 0
+prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+prlimit64(0, RLIMIT_MEMLOCK, NULL, {rlim_cur=503176*1024, rlim_max=503176*1024}) = 0
+prlimit64(0, RLIMIT_AS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_LOCKS, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_SIGPENDING, NULL, {rlim_cur=15203, rlim_max=15203}) = 0
+prlimit64(0, RLIMIT_MSGQUEUE, NULL, {rlim_cur=800*1024, rlim_max=800*1024}) = 0
+prlimit64(0, RLIMIT_NICE, NULL, {rlim_cur=0, rlim_max=0}) = 0
+prlimit64(0, RLIMIT_RTPRIO, NULL, {rlim_cur=0, rlim_max=0}) = 0
+prlimit64(0, RLIMIT_RTTIME, NULL, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}) = 0
+openat(AT_FDCWD, "/proc/1/limits", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0444, st_size=0, ...}, AT_EMPTY_PATH) = 0
+read(13, "Limit                     Soft L"..., 1024) = 1024
+read(13, "  \nMax msgqueue size         819"..., 1024) = 299
+read(13, "", 1024)                      = 0
+close(13)                               = 0
+getpriority(PRIO_PROCESS, 0)            = 20
+openat(AT_FDCWD, "/etc/security/limits.conf", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=2161, ...}, AT_EMPTY_PATH) = 0
+read(13, "# /etc/security/limits.conf\n#\n#E"..., 4096) = 2161
+read(13, "", 4096)                      = 0
+close(13)                               = 0
+openat(AT_FDCWD, "/etc/security/limits.d", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 13
+newfstatat(13, "", {st_mode=S_IFDIR|0755, st_size=4096, ...}, AT_EMPTY_PATH) = 0
+getdents64(13, 0xaaaadb57d870 /* 2 entries */, 32768) = 48
+openat(AT_FDCWD, "/usr/lib/aarch64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 14
+newfstatat(14, "", {st_mode=S_IFREG|0644, st_size=27004, ...}, AT_EMPTY_PATH) = 0
+mmap(NULL, 27004, PROT_READ, MAP_SHARED, 14, 0) = 0xffffae621000
+close(14)                               = 0
+futex(0xffffae54d89c, FUTEX_WAKE_PRIVATE, 2147483647) = 0
+getdents64(13, 0xaaaadb57d870 /* 0 entries */, 32768) = 0
+close(13)                               = 0
+prlimit64(0, RLIMIT_CPU, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_FSIZE, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_DATA, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_STACK, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_CORE, {rlim_cur=0, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_RSS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_NPROC, {rlim_cur=15203, rlim_max=15203}, NULL) = 0
+prlimit64(0, RLIMIT_NOFILE, {rlim_cur=1024, rlim_max=1024*1024}, NULL) = 0
+prlimit64(0, RLIMIT_MEMLOCK, {rlim_cur=503176*1024, rlim_max=503176*1024}, NULL) = 0
+prlimit64(0, RLIMIT_AS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_LOCKS, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+prlimit64(0, RLIMIT_SIGPENDING, {rlim_cur=15203, rlim_max=15203}, NULL) = 0
+prlimit64(0, RLIMIT_MSGQUEUE, {rlim_cur=800*1024, rlim_max=800*1024}, NULL) = 0
+prlimit64(0, RLIMIT_NICE, {rlim_cur=0, rlim_max=0}, NULL) = 0
+prlimit64(0, RLIMIT_RTPRIO, {rlim_cur=0, rlim_max=0}, NULL) = 0
+prlimit64(0, RLIMIT_RTTIME, {rlim_cur=RLIM64_INFINITY, rlim_max=RLIM64_INFINITY}, NULL) = 0
+setpriority(PRIO_PROCESS, 0, 0)         = 0
+openat(AT_FDCWD, "/etc/security/pam_env.conf", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=2971, ...}, AT_EMPTY_PATH) = 0
+read(13, "#\n# This is the configuration fi"..., 4096) = 2971
+read(13, "", 4096)                      = 0
+close(13)                               = 0
+openat(AT_FDCWD, "/etc/environment", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=288, ...}, AT_EMPTY_PATH) = 0
+read(13, "PATH=\"/opt/sigrok/bin:/opt/micro"..., 4096) = 288
+read(13, "", 4096)                      = 0
+close(13)                               = 0
+openat(AT_FDCWD, "/etc/security/pam_env.conf", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=2971, ...}, AT_EMPTY_PATH) = 0
+read(13, "#\n# This is the configuration fi"..., 4096) = 2971
+read(13, "", 4096)                      = 0
+close(13)                               = 0
+openat(AT_FDCWD, "/etc/default/locale", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=35, ...}, AT_EMPTY_PATH) = 0
+read(13, "#  File generated by update-loca"..., 4096) = 35
+read(13, "", 4096)                      = 0
+close(13)                               = 0
+openat(AT_FDCWD, "/etc/login.defs", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=10734, ...}, AT_EMPTY_PATH) = 0
+read(13, "#\n# /etc/login.defs - Configurat"..., 4096) = 4096
+read(13, " issuing \n# the \"mesg y\" command"..., 4096) = 4096
+close(13)                               = 0
+openat(AT_FDCWD, "/etc/login.defs", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=10734, ...}, AT_EMPTY_PATH) = 0
+read(13, "#\n# /etc/login.defs - Configurat"..., 4096) = 4096
+read(13, " issuing \n# the \"mesg y\" command"..., 4096) = 4096
+close(13)                               = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(13, 0, SEEK_SET)                  = 0
+read(13, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(13)                               = 0
+umask(022)                              = 022
+getuid()                                = 0
+openat(AT_FDCWD, "/etc/login.defs", O_RDONLY) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=10734, ...}, AT_EMPTY_PATH) = 0
+read(13, "#\n# /etc/login.defs - Configurat"..., 4096) = 4096
+read(13, " issuing \n# the \"mesg y\" command"..., 4096) = 4096
+read(13, "exercise for the reader...\n#\n# T"..., 4096) = 2542
+close(13)                               = 0
+faccessat(AT_FDCWD, "/var/run/utmpx", F_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/var/run/utmp", O_RDONLY|O_CLOEXEC) = 13
+lseek(13, 0, SEEK_SET)                  = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xffffae4daf70, sa_mask=[], sa_flags=0}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=10, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+fcntl(13, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=9, tv_usec=999804}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+pread64(13, "\2\0\0\0\0\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 0) = 400
+pread64(13, "\1\0\0\0003\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 400) = 400
+pread64(13, "\6\0\0\0p\2\0\0tty1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 800) = 400
+pread64(13, "\7\0\0\0\366\2\0\0ttyPS0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 1200) = 400
+pread64(13, "\7\0\0\0\3\3\0\0pts/0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 1600) = 400
+pread64(13, "\7\0\0\0[\4\0\0pts/1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2000) = 400
+pread64(13, "\7\0\0\0\224\v\0\0pts/2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2400) = 400
+fcntl(13, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+close(13)                               = 0
+newfstatat(AT_FDCWD, "/etc/nsswitch.conf", {st_mode=S_IFREG|0644, st_size=510, ...}, 0) = 0
+openat(AT_FDCWD, "/etc/passwd", O_RDONLY|O_CLOEXEC) = 13
+newfstatat(13, "", {st_mode=S_IFREG|0644, st_size=1471, ...}, AT_EMPTY_PATH) = 0
+lseek(13, 0, SEEK_SET)                  = 0
+read(13, "root:x:0:0:root:/root:/bin/bash\n"..., 4096) = 1471
+close(13)                               = 0
+getuid()                                = 0
+sendto(7, "<86>Aug 30 15:00:05 sudo: pam_un"..., 102, MSG_NOSIGNAL, NULL, 0) = 102
+socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 13
+fcntl(13, F_SETFD, FD_CLOEXEC)          = 0
+sendto(13, [{nlmsg_len=184, nlmsg_type=0x451 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=4, nlmsg_pid=0}, "\x6f\x70\x3d\x50\x41\x4d\x3a\x73\x65\x73\x73\x69\x6f\x6e\x5f\x6f\x70\x65\x6e\x20\x67\x72\x61\x6e\x74\x6f\x72\x73\x3d\x70\x61\x6d"...], 184, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 184
+ppoll([{fd=13, events=POLLIN}], 1, {tv_sec=0, tv_nsec=500000000}, NULL, 0) = 1 ([{fd=13, revents=POLLIN}], left {tv_sec=0, tv_nsec=499993709})
+recvfrom(13, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=4, nlmsg_pid=-1559563387}, {error=0, msg={nlmsg_len=184, nlmsg_type=0x451 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=4, nlmsg_pid=0}}], 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+recvfrom(13, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=4, nlmsg_pid=-1559563387}, {error=0, msg={nlmsg_len=184, nlmsg_type=0x451 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=4, nlmsg_pid=0}}], 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+close(13)                               = 0
+getpgid(0)                              = 2966
+fcntl(8, F_GETFL)                       = 0x20002 (flags O_RDWR|O_LARGEFILE)
+fcntl(8, F_SETFL, O_RDWR|O_NONBLOCK|O_LARGEFILE) = 0
+fcntl(9, F_GETFL)                       = 0x20002 (flags O_RDWR|O_LARGEFILE)
+fcntl(9, F_SETFL, O_RDWR|O_NONBLOCK|O_LARGEFILE) = 0
+fcntl(9, F_GETFL)                       = 0x20802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+fcntl(8, F_GETFL)                       = 0x20802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+ioctl(8, TIOCGPGRP, [2966])             = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(2, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(8, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(10, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigaction(SIGTTOU, {sa_handler=0xffffae565790, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+ioctl(10, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(10, SNDCTL_TMR_CONTINUE or TCSETSF, {B38400 opost isig icanon echo ...}) = 0
+ioctl(10, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+ioctl(8, TIOCGWINSZ, {ws_row=51, ws_col=177, ws_xpixel=0, ws_ypixel=0}) = 0
+ioctl(10, TIOCSWINSZ, {ws_row=51, ws_col=177, ws_xpixel=0, ws_ypixel=0}) = 0
+ioctl(8, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigaction(SIGTTOU, {sa_handler=0xffffae565790, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+ioctl(8, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(8, SNDCTL_TMR_STOP or TCSETSW, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(8, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1], [], 8) = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0xffffae6580f0) = 2990
+close(10)                               = 0
+sendto(11, "\3\0\0\0\0\0\0\0", 8, 0, NULL, 0) = 8
+close(12)                               = 0
+prlimit64(0, RLIMIT_NOFILE, NULL, {rlim_cur=1024, rlim_max=1024*1024}) = 0
+rt_sigaction(SIGINT, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGUSR1, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGUSR2, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGCHLD, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0xffffae565980, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=8, events=POLLIN}], 4, NULL, NULL, 8) = 1 ([{fd=11, revents=POLLIN}])
+recvfrom(11, "\4\0\0\0\257\v\0\0", 8, MSG_WAITALL, NULL, NULL) = 8
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=9, events=POLLIN}, {fd=8, events=POLLIN}], 4, NULL, NULL, 8) = 1 ([{fd=9, revents=POLLIN}])
+rt_sigaction(SIGTTIN, {sa_handler=0xaaaad3459620, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+read(9, "Allocating memory..\r\n", 65536) = 21
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT QUIT TSTP TTIN TTOU], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=8, events=POLLOUT}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 2 ([{fd=8, revents=POLLOUT}, {fd=9, revents=POLLIN}])
+rt_sigaction(SIGTTOU, {sa_handler=0xaaaad3459630, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+write(8, "Allocating memory..\r\n", 21) = 21
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGTTIN, {sa_handler=0xaaaad3459620, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+read(9, "Starting send_to_udp_from_mem th"..., 65536) = 42
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT QUIT TSTP TTIN TTOU], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=8, events=POLLOUT}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=8, revents=POLLOUT}])
+rt_sigaction(SIGTTOU, {sa_handler=0xaaaad3459630, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+write(8, "Starting send_to_udp_from_mem th"..., 42) = 42
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=-1}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=9, revents=POLLIN}])
+rt_sigaction(SIGTTIN, {sa_handler=0xaaaad3459620, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+read(9, "Running AXI DMA to UDP...\r\n", 65536) = 27
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT QUIT TSTP TTIN TTOU], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=8, events=POLLOUT}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=8, revents=POLLOUT}])
+rt_sigaction(SIGTTOU, {sa_handler=0xaaaad3459630, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+write(8, "Running AXI DMA to UDP...\r\n", 27) = 27
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=-1}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=8, revents=POLLIN}])
+rt_sigaction(SIGTTIN, {sa_handler=0xaaaad3459620, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+read(8, "\34", 65536)                   = 1
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT QUIT TSTP TTIN TTOU], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=9, events=POLLOUT}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=9, revents=POLLOUT}])
+rt_sigaction(SIGTTOU, {sa_handler=0xaaaad3459630, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+write(9, "\34", 1)                      = 1
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=-1}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=9, revents=POLLIN}])
+rt_sigaction(SIGTTIN, {sa_handler=0xaaaad3459620, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+read(9, "^\\", 65536)                   = 2
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT QUIT TSTP TTIN TTOU], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=8, events=POLLOUT}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=8, revents=POLLOUT}])
+rt_sigaction(SIGTTOU, {sa_handler=0xaaaad3459630, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+write(8, "^\\", 2)                      = 2
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=-1}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=8, revents=POLLIN}])
+rt_sigaction(SIGTTIN, {sa_handler=0xaaaad3459620, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+read(8, "\34", 65536)                   = 1
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT QUIT TSTP TTIN TTOU], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=9, events=POLLOUT}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=9, revents=POLLOUT}])
+rt_sigaction(SIGTTOU, {sa_handler=0xaaaad3459630, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+write(9, "\34", 1)                      = 1
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=-1}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=9, revents=POLLIN}])
+rt_sigaction(SIGTTIN, {sa_handler=0xaaaad3459620, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+read(9, "^\\", 65536)                   = 2
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT QUIT TSTP TTIN TTOU], [], 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=8, events=POLLOUT}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=8, revents=POLLOUT}])
+rt_sigaction(SIGTTOU, {sa_handler=0xaaaad3459630, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+write(8, "^\\", 2)                      = 2
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+ppoll([{fd=11, events=POLLIN}, {fd=3, events=POLLIN}, {fd=-1}, {fd=8, events=POLLIN}, {fd=9, events=POLLIN}], 5, NULL, NULL, 8) = 1 ([{fd=11, revents=POLLIN}])
+recvfrom(11, "\2\0\0\0\203\0\0\0", 8, MSG_WAITALL, NULL, NULL) = 8
+fcntl(8, F_GETFL)                       = 0x20802 (flags O_RDWR|O_NONBLOCK|O_LARGEFILE)
+fcntl(8, F_SETFL, O_RDWR|O_LARGEFILE)   = 0
+pipe2([10, 12], O_NONBLOCK|O_CLOEXEC)   = 0
+ppoll([{fd=9, events=POLLIN}], 1, {tv_sec=0, tv_nsec=0}, NULL, 8) = 0 (Timeout)
+close(10)                               = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=2990, si_uid=0, si_status=1, si_utime=0, si_stime=0} ---
+write(4, "\21", 1)                      = 1
+rt_sigreturn({mask=[]})                 = 0
+close(12)                               = 0
+rt_sigaction(SIGTTOU, {sa_handler=0xffffae565790, sa_mask=[], sa_flags=0}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, 8) = 0
+ioctl(8, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(8, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+ioctl(8, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTART}, NULL, 8) = 0
+faccessat(AT_FDCWD, "/var/run/utmpx", F_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/var/run/utmp", O_RDONLY|O_CLOEXEC) = 10
+lseek(10, 0, SEEK_SET)                  = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xffffae4daf70, sa_mask=[], sa_flags=0}, {sa_handler=0xffffae565980, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, 8) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=10, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+fcntl(10, F_SETLKW, {l_type=F_RDLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=9, tv_usec=999806}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xffffae565980, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+pread64(10, "\2\0\0\0\0\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 0) = 400
+pread64(10, "\1\0\0\0003\0\0\0~\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 400) = 400
+pread64(10, "\6\0\0\0p\2\0\0tty1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 800) = 400
+pread64(10, "\7\0\0\0\366\2\0\0ttyPS0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 1200) = 400
+pread64(10, "\7\0\0\0\3\3\0\0pts/0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 1600) = 400
+pread64(10, "\7\0\0\0[\4\0\0pts/1\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2000) = 400
+pread64(10, "\7\0\0\0\224\v\0\0pts/2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2400) = 400
+pread64(10, "\7\0\0\0\231\v\0\0pts/3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2800) = 400
+fcntl(10, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+faccessat(AT_FDCWD, "/var/run/utmpx", F_OK) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/var/run/utmp", O_RDWR|O_CLOEXEC) = 12
+dup3(12, 10, 0)                         = 10
+close(12)                               = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xffffae4daf70, sa_mask=[], sa_flags=0}, {sa_handler=0xffffae565980, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, 8) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=10, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}) = 0
+fcntl(10, F_SETLKW, {l_type=F_WRLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+setitimer(ITIMER_REAL, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=0, tv_usec=0}}, {it_interval={tv_sec=0, tv_usec=0}, it_value={tv_sec=9, tv_usec=999817}}) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xffffae565980, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+pread64(10, "\7\0\0\0\231\v\0\0pts/3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400, 2800) = 400
+lseek(10, 2800, SEEK_SET)               = 2800
+write(10, "\10\0\0\0\231\v\0\0pts/3\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"..., 400) = 400
+fcntl(10, F_SETLKW, {l_type=F_UNLCK, l_whence=SEEK_SET, l_start=0, l_len=0}) = 0
+rt_sigaction(SIGHUP, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGUSR1, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGUSR2, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGCHLD, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0xaaaad3459644, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTART}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, NULL, 8) = 0
+close(3)                                = 0
+close(4)                                = 0
+getuid()                                = 0
+openat(AT_FDCWD, "/etc/login.defs", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10734, ...}, AT_EMPTY_PATH) = 0
+read(3, "#\n# /etc/login.defs - Configurat"..., 4096) = 4096
+read(3, " issuing \n# the \"mesg y\" command"..., 4096) = 4096
+read(3, "exercise for the reader...\n#\n# T"..., 4096) = 2542
+close(3)                                = 0
+sendto(7, "<86>Aug 30 15:00:12 sudo: pam_un"..., 78, MSG_NOSIGNAL, NULL, 0) = 78
+socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+sendto(3, [{nlmsg_len=188, nlmsg_type=0x452 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=5, nlmsg_pid=0}, "\x6f\x70\x3d\x50\x41\x4d\x3a\x73\x65\x73\x73\x69\x6f\x6e\x5f\x63\x6c\x6f\x73\x65\x20\x67\x72\x61\x6e\x74\x6f\x72\x73\x3d\x70\x61"...], 188, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 188
+ppoll([{fd=3, events=POLLIN}], 1, {tv_sec=0, tv_nsec=500000000}, NULL, 0) = 1 ([{fd=3, revents=POLLIN}], left {tv_sec=0, tv_nsec=499993230})
+recvfrom(3, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=5, nlmsg_pid=-2092212457}, {error=0, msg={nlmsg_len=188, nlmsg_type=0x452 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=5, nlmsg_pid=0}}], 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+recvfrom(3, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=5, nlmsg_pid=-2092212457}, {error=0, msg={nlmsg_len=188, nlmsg_type=0x452 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=5, nlmsg_pid=0}}], 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+close(3)                                = 0
+getuid()                                = 0
+openat(AT_FDCWD, "/etc/login.defs", O_RDONLY) = 3
+newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=10734, ...}, AT_EMPTY_PATH) = 0
+read(3, "#\n# /etc/login.defs - Configurat"..., 4096) = 4096
+read(3, " issuing \n# the \"mesg y\" command"..., 4096) = 4096
+read(3, "exercise for the reader...\n#\n# T"..., 4096) = 2542
+close(3)                                = 0
+socket(AF_NETLINK, SOCK_RAW, NETLINK_AUDIT) = 3
+fcntl(3, F_SETFD, FD_CLOEXEC)           = 0
+sendto(3, [{nlmsg_len=136, nlmsg_type=0x450 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=6, nlmsg_pid=0}, "\x6f\x70\x3d\x50\x41\x4d\x3a\x73\x65\x74\x63\x72\x65\x64\x20\x67\x72\x61\x6e\x74\x6f\x72\x73\x3d\x70\x61\x6d\x5f\x70\x65\x72\x6d"...], 136, 0, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, 12) = 136
+ppoll([{fd=3, events=POLLIN}], 1, {tv_sec=0, tv_nsec=500000000}, NULL, 0) = 1 ([{fd=3, revents=POLLIN}], left {tv_sec=0, tv_nsec=499993600})
+recvfrom(3, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=6, nlmsg_pid=-1385531573}, {error=0, msg={nlmsg_len=136, nlmsg_type=0x450 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=6, nlmsg_pid=0}}], 8988, MSG_PEEK|MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+recvfrom(3, [{nlmsg_len=36, nlmsg_type=NLMSG_ERROR, nlmsg_flags=NLM_F_CAPPED, nlmsg_seq=6, nlmsg_pid=-1385531573}, {error=0, msg={nlmsg_len=136, nlmsg_type=0x450 /* NLMSG_??? */, nlmsg_flags=NLM_F_REQUEST|NLM_F_ACK, nlmsg_seq=6, nlmsg_pid=0}}], 8988, MSG_DONTWAIT, {sa_family=AF_NETLINK, nl_pid=0, nl_groups=00000000}, [12]) = 36
+close(3)                                = 0
+munmap(0xffffadc80000, 86032)           = 0
+munmap(0xffffadc60000, 81936)           = 0
+munmap(0xffffadc30000, 163888)          = 0
+munmap(0xffffadad0000, 282976)          = 0
+munmap(0xffffadaa0000, 162120)          = 0
+munmap(0xffffada60000, 240104)          = 0
+munmap(0xffffada00000, 381808)          = 0
+munmap(0xffffad920000, 862688)          = 0
+munmap(0xffffad8e0000, 241648)          = 0
+munmap(0xffffad8c0000, 77896)           = 0
+munmap(0xffffad8a0000, 111480)          = 0
+munmap(0xffffad880000, 81936)           = 0
+munmap(0xffffad850000, 133568)          = 0
+munmap(0xffffad830000, 69648)           = 0
+munmap(0xffffad810000, 69648)           = 0
+munmap(0xffffad7f0000, 73744)           = 0
+munmap(0xffffad7b0000, 73744)           = 0
+munmap(0xffffad720000, 538416)          = 0
+munmap(0xffffad7d0000, 98368)           = 0
+munmap(0xffffad700000, 77904)           = 0
+close(5)                                = 0
+prlimit64(0, RLIMIT_CORE, NULL, {rlim_cur=0, rlim_max=RLIM64_INFINITY}) = 0
+prlimit64(0, RLIMIT_CORE, {rlim_cur=0, rlim_max=0}, NULL) = 0
+prctl(PR_GET_DUMPABLE)                  = 1 (SUID_DUMP_USER)
+prctl(PR_SET_DUMPABLE, SUID_DUMP_DISABLE) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, NULL, 8) = 0
+getpid()                                = 2969
+kill(2969, SIGQUIT)                     = 0
+--- SIGQUIT {si_signo=SIGQUIT, si_code=SI_USER, si_pid=2969, si_uid=0} ---
++++ killed by SIGQUIT +++
