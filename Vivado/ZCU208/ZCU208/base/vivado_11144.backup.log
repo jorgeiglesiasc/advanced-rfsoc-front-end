@@ -1,0 +1,1537 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Aug  5 11:25:50 2024
+# Process ID: 11144
+# Current directory: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base
+# Command line: vivado
+# Log file: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/vivado.log
+# Journal file: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/vivado.jou
+# Running On: o-51904, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 6, Host memory: 33506 MB
+#-----------------------------------------------------------
+start_gui
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /tools/Xilinx/Vivado/2022.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_0/base_xbar_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_0/base_xbar_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_0/base_xbar_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_0/base_xbar_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_0/base_xbar_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_5/base_s00_data_fifo_5.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_5/base_s00_data_fifo_5_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_5/base_s00_data_fifo_5_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_5/base_s00_data_fifo_5_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s00_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_5/base_s00_data_fifo_5_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_5/base_s01_data_fifo_5.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_5/base_s01_data_fifo_5_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_5/base_s01_data_fifo_5_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_5/base_s01_data_fifo_5_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_data_fifo_5' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_5/base_s01_data_fifo_5_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_us_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_us_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_us_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_us_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_us_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m00_data_fifo_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m00_data_fifo_2/base_m00_data_fifo_2.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m00_data_fifo_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m00_data_fifo_2/base_m00_data_fifo_2_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m00_data_fifo_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m00_data_fifo_2/base_m00_data_fifo_2_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m00_data_fifo_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m00_data_fifo_2/base_m00_data_fifo_2_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m00_data_fifo_2' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m00_data_fifo_2/base_m00_data_fifo_2_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m01_data_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m01_data_fifo_0/base_m01_data_fifo_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m01_data_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m01_data_fifo_0/base_m01_data_fifo_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m01_data_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m01_data_fifo_0/base_m01_data_fifo_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m01_data_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m01_data_fifo_0/base_m01_data_fifo_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_m01_data_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m01_data_fifo_0/base_m01_data_fifo_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_cc_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_ds_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_ds_0/base_auto_ds_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_ds_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_ds_0/base_auto_ds_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_ds_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_ds_0/base_auto_ds_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_ds_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_ds_0/base_auto_ds_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_ds_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_ds_0/base_auto_ds_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_mmu_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_mmu_0/base_s01_mmu_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_mmu_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_mmu_0/base_s01_mmu_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_mmu_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_mmu_0/base_s01_mmu_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_mmu_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_mmu_0/base_s01_mmu_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_s01_mmu_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_mmu_0/base_s01_mmu_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_DSPddr4_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_DSPddr4_0/base_DSPddr4_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_DSPddr4_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_DSPddr4_0/base_DSPddr4_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_DSPddr4_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_DSPddr4_0/base_DSPddr4_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_DSPddr4_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_DSPddr4_0/base_DSPddr4_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_DSPddr4_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_DSPddr4_0/base_DSPddr4_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ddr4_0_sys_reset_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_ddr4_0_sys_reset_0/base_ddr4_0_sys_reset_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ddr4_0_sys_reset_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_ddr4_0_sys_reset_0/base_ddr4_0_sys_reset_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ddr4_0_sys_reset_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_ddr4_0_sys_reset_0/base_ddr4_0_sys_reset_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ddr4_0_sys_reset_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_ddr4_0_sys_reset_0/base_ddr4_0_sys_reset_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_ddr4_0_sys_reset_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_ddr4_0_sys_reset_0/base_ddr4_0_sys_reset_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_0_0/base_util_ds_buf_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_0_0/base_util_ds_buf_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_0_0/base_util_ds_buf_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_0_0/base_util_ds_buf_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_0_0/base_util_ds_buf_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_1_0/base_util_ds_buf_1_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_1_0/base_util_ds_buf_1_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_1_0/base_util_ds_buf_1_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_1_0/base_util_ds_buf_1_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_util_ds_buf_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_util_ds_buf_1_0/base_util_ds_buf_1_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xpm_cdc_gen_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xpm_cdc_gen_1_0/base_xpm_cdc_gen_1_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xpm_cdc_gen_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xpm_cdc_gen_1_0/base_xpm_cdc_gen_1_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xpm_cdc_gen_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xpm_cdc_gen_1_0/base_xpm_cdc_gen_1_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xpm_cdc_gen_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xpm_cdc_gen_1_0/base_xpm_cdc_gen_1_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xpm_cdc_gen_1_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xpm_cdc_gen_1_0/base_xpm_cdc_gen_1_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_axi_dma_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_axi_dma_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_axi_dma_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_axi_dma_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_axi_dma_0_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axi_dma_0_0/base_axi_dma_0_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_1/base_xbar_1.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_1/base_xbar_1_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_1/base_xbar_1_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_1/base_xbar_1_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_xbar_1' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_xbar_1/base_xbar_1_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_auto_pc_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_sim_netlist.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_rx_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_rx_fifo_0/base_rx_fifo_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_rx_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_rx_fifo_0/base_rx_fifo_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_rx_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_rx_fifo_0/base_rx_fifo_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_rx_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_rx_fifo_0/base_rx_fifo_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'base_rx_fifo_0' generated file not found '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_rx_fifo_0/base_rx_fifo_0_sim_netlist.vhdl'. Please regenerate to continue.
+INFO: [Common 17-14] Message 'IP_Flow 19-3664' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+open_project: Time (s): cpu = 00:00:25 ; elapsed = 00:00:15 . Memory (MB): peak = 8279.793 ; gain = 713.543 ; free physical = 922 ; free virtual = 28980
+update_compile_order -fileset sources_1
+open_bd_design {/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd}
+Reading block design file </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd>...
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - DSPinterconnect
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - m01_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_ds
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding component instance block -- xilinx.com:ip:ddr4:2.2 - DSPddr4
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - ddr4_0_sys_reset
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_1
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_1
+Adding component instance block -- xilinx.com:ip:xpm_cdc_gen:1.0 - xpm_cdc_gen_1
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_cmac
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - irq_concat
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - rx_fifo
+Adding component instance block -- xilinx.com:ip:axis_data_fifo:2.0 - tx_fifo
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant1
+Adding component instance block -- xilinx.com:ip:xpm_cdc_gen:1.0 - xpm_cdc_gen_0
+Adding component instance block -- xilinx.com:ip:xxv_ethernet:4.1 - xxv_ethernet_0
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_hpm0_lpd
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_intc:4.1 - axi_intc_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - btns_gpio
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_310MHz
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - leds_gpio
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_2
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_ps
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hpm
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hps
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - m00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_imag
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_real
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hpm
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hps
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_im
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_re
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_irq
+Adding component instance block -- xilinx.com:ip:packet_generator:1.0 - packet_generator
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_imag
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_real
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hpm
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hps
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_im
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_re
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_irq
+Adding component instance block -- xilinx.com:ip:packet_generator:1.0 - packet_generator
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_imag
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_real
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hpm
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hps
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_im
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_re
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_irq
+Adding component instance block -- xilinx.com:ip:packet_generator:1.0 - packet_generator
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_imag
+Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_real
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hpm
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect_hps
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s00_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_data_fifo:2.1 - s01_data_fifo
+Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s00_mmu
+Adding component instance block -- xilinx.com:ip:axi_mmu:2.1 - s01_mmu
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_im
+Adding component instance block -- xilinx.com:ip:axis_clock_converter:1.1 - axis_clock_converter_re
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_irq
+Adding component instance block -- xilinx.com:ip:packet_generator:1.0 - packet_generator
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - concat_irq
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_adc0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_adc1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_adc2
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_adc3
+Adding component instance block -- xilinx.com:ip:usp_rf_data_converter:2.6 - rfdc
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc1_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc2_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc3_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac1_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac2_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac3_clk' frequency is set to 307200000
+Adding component instance block -- xilinx.com:ip:axi_interconnect:2.1 - axi_interconnect
+Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding component instance block -- xilinx.com:ip:amplitude_controller:1.0 - amplitude_controller
+Adding component instance block -- xilinx.com:ip:amplitude_controller:1.0 - amplitude_controller
+Adding component instance block -- xilinx.com:ip:amplitude_controller:1.0 - amplitude_controller
+Adding component instance block -- xilinx.com:ip:amplitude_controller:1.0 - amplitude_controller
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_dac0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_dac1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_dac2
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_dac3
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:axi_gpio:2.0 - sws_gpio
+Adding component instance block -- xilinx.com:ip:system_management_wiz:1.3 - system_management_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xpm_cdc_gen:1.0 - xpm_cdc_gen_0
+Adding component instance block -- xilinx.com:ip:zynq_ultra_ps_e:3.4 - zynq_ultra_ps_e_0
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH from address space /OffloadEngine/axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /OffloadEngine/axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_QSPI from address space /OffloadEngine/axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /OffloadEngine/axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /OffloadEngine/axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_QSPI from address space /OffloadEngine/axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_00/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_00/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_00/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_00/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_10/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_10/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_10/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_10/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_20/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_20/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_20/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_20/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_30/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_30/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_30/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_30/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /zynq_ultra_ps_e_0/Data.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW from address space /zynq_ultra_ps_e_0/Data.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /zynq_ultra_ps_e_0/Data.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /zynq_ultra_ps_e_0/Data.
+Successfully read diagram <base> from block design file </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 9672.473 ; gain = 0.000 ; free physical = 278 ; free virtual = 28748
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+reset_run synth_1
+reset_run base_axi_dma_0_0_synth_1
+reset_run base_xbar_1_synth_1
+reset_run base_auto_pc_0_synth_1
+reset_run base_rx_fifo_0_synth_1
+reset_run base_tx_fifo_0_synth_1
+reset_run base_xpm_cdc_gen_0_0_synth_1
+reset_run base_xxv_ethernet_0_0_synth_1
+reset_run base_xbar_2_synth_1
+reset_run base_auto_pc_1_synth_1
+reset_run base_auto_pc_2_synth_1
+reset_run base_auto_pc_3_synth_1
+reset_run base_auto_pc_4_synth_1
+reset_run base_axi_intc_0_0_synth_1
+reset_run base_btns_gpio_0_synth_1
+reset_run base_clk_wiz_310MHz_0_synth_1
+reset_run base_leds_gpio_0_synth_1
+reset_run base_proc_sys_reset_0_0_synth_1
+reset_run base_proc_sys_reset_1_0_synth_1
+reset_run base_proc_sys_reset_2_0_synth_1
+reset_run base_xbar_3_synth_1
+reset_run base_auto_pc_5_synth_1
+reset_run base_auto_pc_6_synth_1
+reset_run base_auto_pc_7_synth_1
+reset_run base_auto_pc_8_synth_1
+reset_run base_xbar_4_synth_1
+reset_run base_xbar_5_synth_1
+reset_run base_m00_data_fifo_3_synth_1
+reset_run base_xpm_cdc_gen_1_0_synth_1
+reset_run base_util_ds_buf_1_0_synth_1
+reset_run base_util_ds_buf_0_0_synth_1
+reset_run base_ddr4_0_sys_reset_0_synth_1
+reset_run base_DSPddr4_0_synth_1
+reset_run base_s01_mmu_0_synth_1
+reset_run base_auto_ds_0_synth_1
+reset_run base_xbar_0_synth_1
+reset_run base_s00_data_fifo_5_synth_1
+reset_run base_auto_cc_2_synth_1
+reset_run base_s01_data_fifo_5_synth_1
+reset_run base_auto_us_0_synth_1
+reset_run base_m00_data_fifo_2_synth_1
+reset_run base_auto_cc_0_synth_1
+reset_run base_m01_data_fifo_0_synth_1
+reset_run base_auto_cc_1_synth_1
+reset_run base_s01_data_fifo_9_synth_1
+reset_run base_auto_us_8_synth_1
+reset_run base_s00_mmu_3_synth_1
+reset_run base_s01_mmu_4_synth_1
+reset_run base_axis_clock_converter_im_3_synth_1
+reset_run base_axis_clock_converter_re_3_synth_1
+reset_run base_packet_generator_3_synth_1
+reset_run base_proc_sys_reset_adc0_0_synth_1
+reset_run base_proc_sys_reset_adc1_0_synth_1
+reset_run base_proc_sys_reset_adc2_0_synth_1
+reset_run base_proc_sys_reset_adc3_0_synth_1
+reset_run base_rfdc_0_synth_1
+reset_run base_xbar_14_synth_1
+reset_run base_auto_cc_15_synth_1
+reset_run base_auto_cc_16_synth_1
+reset_run base_auto_cc_17_synth_1
+reset_run base_auto_cc_18_synth_1
+reset_run base_amplitude_controller_0_synth_1
+reset_run base_amplitude_controller_1_synth_1
+reset_run base_amplitude_controller_2_synth_1
+reset_run base_amplitude_controller_3_synth_1
+reset_run base_proc_sys_reset_dac0_0_synth_1
+reset_run base_proc_sys_reset_dac1_0_synth_1
+reset_run base_proc_sys_reset_dac2_0_synth_1
+reset_run base_proc_sys_reset_dac3_0_synth_1
+reset_run base_sws_gpio_0_synth_1
+reset_run base_system_management_wiz_0_0_synth_1
+reset_run base_xpm_cdc_gen_0_1_synth_1
+reset_run base_zynq_ultra_ps_e_0_0_synth_1
+reset_run base_axis_clock_converter_im_1_synth_1
+reset_run base_axis_clock_converter_re_1_synth_1
+reset_run base_packet_generator_1_synth_1
+reset_run base_axi_dma_imag_2_synth_1
+reset_run base_axi_dma_real_2_synth_1
+reset_run base_xbar_10_synth_1
+reset_run base_auto_cc_9_synth_1
+reset_run base_auto_cc_10_synth_1
+reset_run base_auto_cc_11_synth_1
+reset_run base_xbar_11_synth_1
+reset_run base_s00_data_fifo_8_synth_1
+reset_run base_auto_us_5_synth_1
+reset_run base_s01_data_fifo_8_synth_1
+reset_run base_auto_us_6_synth_1
+reset_run base_s00_mmu_2_synth_1
+reset_run base_s01_mmu_3_synth_1
+reset_run base_axis_clock_converter_im_2_synth_1
+reset_run base_axis_clock_converter_re_2_synth_1
+reset_run base_packet_generator_2_synth_1
+reset_run base_axi_dma_imag_3_synth_1
+reset_run base_axi_dma_real_3_synth_1
+reset_run base_xbar_12_synth_1
+reset_run base_auto_cc_12_synth_1
+reset_run base_auto_cc_13_synth_1
+reset_run base_auto_cc_14_synth_1
+reset_run base_xbar_13_synth_1
+reset_run base_s00_data_fifo_9_synth_1
+reset_run base_auto_us_7_synth_1
+reset_run base_axi_dma_imag_0_synth_1
+reset_run base_axi_dma_real_0_synth_1
+reset_run base_xbar_6_synth_1
+reset_run base_auto_cc_3_synth_1
+reset_run base_auto_cc_4_synth_1
+reset_run base_auto_cc_5_synth_1
+reset_run base_xbar_7_synth_1
+reset_run base_s00_data_fifo_6_synth_1
+reset_run base_auto_us_1_synth_1
+reset_run base_s01_data_fifo_6_synth_1
+reset_run base_auto_us_2_synth_1
+reset_run base_s00_mmu_0_synth_1
+reset_run base_s01_mmu_1_synth_1
+reset_run base_axis_clock_converter_im_0_synth_1
+reset_run base_axis_clock_converter_re_0_synth_1
+reset_run base_packet_generator_0_synth_1
+reset_run base_axi_dma_imag_1_synth_1
+reset_run base_axi_dma_real_1_synth_1
+reset_run base_xbar_8_synth_1
+reset_run base_auto_cc_6_synth_1
+reset_run base_auto_cc_7_synth_1
+reset_run base_auto_cc_8_synth_1
+reset_run base_xbar_9_synth_1
+reset_run base_s00_data_fifo_7_synth_1
+reset_run base_auto_us_3_synth_1
+reset_run base_s01_data_fifo_7_synth_1
+reset_run base_auto_us_4_synth_1
+reset_run base_s00_mmu_1_synth_1
+reset_run base_s01_mmu_2_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Mon Aug  5 11:31:42 2024] Launched base_axi_dma_0_0_synth_1, base_xbar_1_synth_1, base_auto_pc_0_synth_1, base_rx_fifo_0_synth_1, base_tx_fifo_0_synth_1, base_xpm_cdc_gen_0_0_synth_1, base_xxv_ethernet_0_0_synth_1, base_xbar_2_synth_1, base_auto_pc_1_synth_1, base_auto_pc_2_synth_1, base_auto_pc_3_synth_1, base_auto_pc_4_synth_1, base_axi_intc_0_0_synth_1, base_btns_gpio_0_synth_1, base_clk_wiz_310MHz_0_synth_1, base_leds_gpio_0_synth_1, base_proc_sys_reset_0_0_synth_1, base_proc_sys_reset_1_0_synth_1, base_proc_sys_reset_2_0_synth_1, base_xbar_3_synth_1, base_auto_pc_5_synth_1, base_auto_pc_6_synth_1, base_auto_pc_7_synth_1, base_auto_pc_8_synth_1, base_xbar_4_synth_1, base_xbar_5_synth_1, base_m00_data_fifo_3_synth_1, base_xpm_cdc_gen_1_0_synth_1, base_util_ds_buf_1_0_synth_1, base_util_ds_buf_0_0_synth_1, base_ddr4_0_sys_reset_0_synth_1, base_DSPddr4_0_synth_1, base_s01_mmu_0_synth_1, base_auto_ds_0_synth_1, base_xbar_0_synth_1, base_s00_data_fifo_5_synth_1, base_auto_cc_2_synth_1, base_s01_data_fifo_5_synth_1, base_auto_us_0_synth_1, base_m00_data_fifo_2_synth_1, base_auto_cc_0_synth_1, base_m01_data_fifo_0_synth_1, base_auto_cc_1_synth_1, base_s01_data_fifo_9_synth_1, base_auto_us_8_synth_1, base_s00_mmu_3_synth_1, base_s01_mmu_4_synth_1, base_axis_clock_converter_im_3_synth_1, base_axis_clock_converter_re_3_synth_1, base_packet_generator_3_synth_1, base_proc_sys_reset_adc0_0_synth_1, base_proc_sys_reset_adc1_0_synth_1, base_proc_sys_reset_adc2_0_synth_1, base_proc_sys_reset_adc3_0_synth_1, base_rfdc_0_synth_1, base_xbar_14_synth_1, base_auto_cc_15_synth_1, base_auto_cc_16_synth_1, base_auto_cc_17_synth_1, base_auto_cc_18_synth_1, base_amplitude_controller_0_synth_1, base_amplitude_controller_1_synth_1, base_amplitude_controller_2_synth_1, base_amplitude_controller_3_synth_1, base_proc_sys_reset_dac0_0_synth_1, base_proc_sys_reset_dac1_0_synth_1, base_proc_sys_reset_dac2_0_synth_1, base_proc_sys_reset_dac3_0_synth_1, base_sws_gpio_0_synth_1, base_system_management_wiz_0_0_synth_1, base_xpm_cdc_gen_0_1_synth_1, base_zynq_ultra_ps_e_0_0_synth_1, base_axis_clock_converter_im_1_synth_1, base_axis_clock_converter_re_1_synth_1, base_packet_generator_1_synth_1, base_axi_dma_imag_2_synth_1, base_axi_dma_real_2_synth_1, base_xbar_10_synth_1, base_auto_cc_9_synth_1, base_auto_cc_10_synth_1, base_auto_cc_11_synth_1, base_xbar_11_synth_1, base_s00_data_fifo_8_synth_1, base_auto_us_5_synth_1, base_s01_data_fifo_8_synth_1, base_auto_us_6_synth_1, base_s00_mmu_2_synth_1, base_s01_mmu_3_synth_1, base_axis_clock_converter_im_2_synth_1, base_axis_clock_converter_re_2_synth_1, base_packet_generator_2_synth_1, base_axi_dma_imag_3_synth_1, base_axi_dma_real_3_synth_1, base_xbar_12_synth_1, base_auto_cc_12_synth_1, base_auto_cc_13_synth_1, base_auto_cc_14_synth_1, base_xbar_13_synth_1, base_s00_data_fifo_9_synth_1, base_auto_us_7_synth_1, base_axi_dma_imag_0_synth_1, base_axi_dma_real_0_synth_1, base_xbar_6_synth_1, base_auto_cc_3_synth_1, base_auto_cc_4_synth_1, base_auto_cc_5_synth_1, base_xbar_7_synth_1, base_s00_data_fifo_6_synth_1, base_auto_us_1_synth_1, base_s01_data_fifo_6_synth_1, base_auto_us_2_synth_1, base_s00_mmu_0_synth_1, base_s01_mmu_1_synth_1, base_axis_clock_converter_im_0_synth_1, base_axis_clock_converter_re_0_synth_1, base_packet_generator_0_synth_1, base_axi_dma_imag_1_synth_1, base_axi_dma_real_1_synth_1, base_xbar_8_synth_1, base_auto_cc_6_synth_1, base_auto_cc_7_synth_1, base_auto_cc_8_synth_1, base_xbar_9_synth_1, base_s00_data_fifo_7_synth_1, base_auto_us_3_synth_1, base_s01_data_fifo_7_synth_1, base_auto_us_4_synth_1, base_s00_mmu_1_synth_1, base_s01_mmu_2_synth_1, synth_1...
+Run output will be captured here:
+base_axi_dma_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_0_0_synth_1/runme.log
+base_xbar_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_1_synth_1/runme.log
+base_auto_pc_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_0_synth_1/runme.log
+base_rx_fifo_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_rx_fifo_0_synth_1/runme.log
+base_tx_fifo_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_tx_fifo_0_synth_1/runme.log
+base_xpm_cdc_gen_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xpm_cdc_gen_0_0_synth_1/runme.log
+base_xxv_ethernet_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xxv_ethernet_0_0_synth_1/runme.log
+base_xbar_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_2_synth_1/runme.log
+base_auto_pc_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_1_synth_1/runme.log
+base_auto_pc_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_2_synth_1/runme.log
+base_auto_pc_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_3_synth_1/runme.log
+base_auto_pc_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_4_synth_1/runme.log
+base_axi_intc_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_intc_0_0_synth_1/runme.log
+base_btns_gpio_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_btns_gpio_0_synth_1/runme.log
+base_clk_wiz_310MHz_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_clk_wiz_310MHz_0_synth_1/runme.log
+base_leds_gpio_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_leds_gpio_0_synth_1/runme.log
+base_proc_sys_reset_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_0_0_synth_1/runme.log
+base_proc_sys_reset_1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_1_0_synth_1/runme.log
+base_proc_sys_reset_2_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_2_0_synth_1/runme.log
+base_xbar_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_3_synth_1/runme.log
+base_auto_pc_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_5_synth_1/runme.log
+base_auto_pc_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_6_synth_1/runme.log
+base_auto_pc_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_7_synth_1/runme.log
+base_auto_pc_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_8_synth_1/runme.log
+base_xbar_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_4_synth_1/runme.log
+base_xbar_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_5_synth_1/runme.log
+base_m00_data_fifo_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_m00_data_fifo_3_synth_1/runme.log
+base_xpm_cdc_gen_1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xpm_cdc_gen_1_0_synth_1/runme.log
+base_util_ds_buf_1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_util_ds_buf_1_0_synth_1/runme.log
+base_util_ds_buf_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_util_ds_buf_0_0_synth_1/runme.log
+base_ddr4_0_sys_reset_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_ddr4_0_sys_reset_0_synth_1/runme.log
+base_DSPddr4_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_DSPddr4_0_synth_1/runme.log
+base_s01_mmu_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_0_synth_1/runme.log
+base_auto_ds_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_ds_0_synth_1/runme.log
+base_xbar_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_0_synth_1/runme.log
+base_s00_data_fifo_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_5_synth_1/runme.log
+base_auto_cc_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_2_synth_1/runme.log
+base_s01_data_fifo_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_5_synth_1/runme.log
+base_auto_us_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_0_synth_1/runme.log
+base_m00_data_fifo_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_m00_data_fifo_2_synth_1/runme.log
+base_auto_cc_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_0_synth_1/runme.log
+base_m01_data_fifo_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_m01_data_fifo_0_synth_1/runme.log
+base_auto_cc_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_1_synth_1/runme.log
+base_s01_data_fifo_9_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_9_synth_1/runme.log
+base_auto_us_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_8_synth_1/runme.log
+base_s00_mmu_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_mmu_3_synth_1/runme.log
+base_s01_mmu_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_4_synth_1/runme.log
+base_axis_clock_converter_im_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_im_3_synth_1/runme.log
+base_axis_clock_converter_re_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_re_3_synth_1/runme.log
+base_packet_generator_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_packet_generator_3_synth_1/runme.log
+base_proc_sys_reset_adc0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_adc0_0_synth_1/runme.log
+base_proc_sys_reset_adc1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_adc1_0_synth_1/runme.log
+base_proc_sys_reset_adc2_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_adc2_0_synth_1/runme.log
+base_proc_sys_reset_adc3_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_adc3_0_synth_1/runme.log
+base_rfdc_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_rfdc_0_synth_1/runme.log
+base_xbar_14_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_14_synth_1/runme.log
+base_auto_cc_15_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_15_synth_1/runme.log
+base_auto_cc_16_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_16_synth_1/runme.log
+base_auto_cc_17_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_17_synth_1/runme.log
+base_auto_cc_18_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_18_synth_1/runme.log
+base_amplitude_controller_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_amplitude_controller_0_synth_1/runme.log
+base_amplitude_controller_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_amplitude_controller_1_synth_1/runme.log
+base_amplitude_controller_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_amplitude_controller_2_synth_1/runme.log
+base_amplitude_controller_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_amplitude_controller_3_synth_1/runme.log
+base_proc_sys_reset_dac0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_dac0_0_synth_1/runme.log
+base_proc_sys_reset_dac1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_dac1_0_synth_1/runme.log
+base_proc_sys_reset_dac2_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_dac2_0_synth_1/runme.log
+base_proc_sys_reset_dac3_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_dac3_0_synth_1/runme.log
+base_sws_gpio_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_sws_gpio_0_synth_1/runme.log
+base_system_management_wiz_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_system_management_wiz_0_0_synth_1/runme.log
+base_xpm_cdc_gen_0_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xpm_cdc_gen_0_1_synth_1/runme.log
+base_zynq_ultra_ps_e_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_zynq_ultra_ps_e_0_0_synth_1/runme.log
+base_axis_clock_converter_im_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_im_1_synth_1/runme.log
+base_axis_clock_converter_re_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_re_1_synth_1/runme.log
+base_packet_generator_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_packet_generator_1_synth_1/runme.log
+base_axi_dma_imag_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_imag_2_synth_1/runme.log
+base_axi_dma_real_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_real_2_synth_1/runme.log
+base_xbar_10_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_10_synth_1/runme.log
+base_auto_cc_9_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_9_synth_1/runme.log
+base_auto_cc_10_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_10_synth_1/runme.log
+base_auto_cc_11_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_11_synth_1/runme.log
+base_xbar_11_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_11_synth_1/runme.log
+base_s00_data_fifo_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_8_synth_1/runme.log
+base_auto_us_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_5_synth_1/runme.log
+base_s01_data_fifo_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_8_synth_1/runme.log
+base_auto_us_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_6_synth_1/runme.log
+base_s00_mmu_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_mmu_2_synth_1/runme.log
+base_s01_mmu_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_3_synth_1/runme.log
+base_axis_clock_converter_im_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_im_2_synth_1/runme.log
+base_axis_clock_converter_re_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_re_2_synth_1/runme.log
+base_packet_generator_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_packet_generator_2_synth_1/runme.log
+base_axi_dma_imag_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_imag_3_synth_1/runme.log
+base_axi_dma_real_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_real_3_synth_1/runme.log
+base_xbar_12_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_12_synth_1/runme.log
+base_auto_cc_12_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_12_synth_1/runme.log
+base_auto_cc_13_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_13_synth_1/runme.log
+base_auto_cc_14_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_14_synth_1/runme.log
+base_xbar_13_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_13_synth_1/runme.log
+base_s00_data_fifo_9_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_9_synth_1/runme.log
+base_auto_us_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_7_synth_1/runme.log
+base_axi_dma_imag_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_imag_0_synth_1/runme.log
+base_axi_dma_real_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_real_0_synth_1/runme.log
+base_xbar_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_6_synth_1/runme.log
+base_auto_cc_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_3_synth_1/runme.log
+base_auto_cc_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_4_synth_1/runme.log
+base_auto_cc_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_5_synth_1/runme.log
+base_xbar_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_7_synth_1/runme.log
+base_s00_data_fifo_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_6_synth_1/runme.log
+base_auto_us_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_1_synth_1/runme.log
+base_s01_data_fifo_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_6_synth_1/runme.log
+base_auto_us_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_2_synth_1/runme.log
+base_s00_mmu_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_mmu_0_synth_1/runme.log
+base_s01_mmu_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_1_synth_1/runme.log
+base_axis_clock_converter_im_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_im_0_synth_1/runme.log
+base_axis_clock_converter_re_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_re_0_synth_1/runme.log
+base_packet_generator_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_packet_generator_0_synth_1/runme.log
+base_axi_dma_imag_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_imag_1_synth_1/runme.log
+base_axi_dma_real_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_real_1_synth_1/runme.log
+base_xbar_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_8_synth_1/runme.log
+base_auto_cc_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_6_synth_1/runme.log
+base_auto_cc_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_7_synth_1/runme.log
+base_auto_cc_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_8_synth_1/runme.log
+base_xbar_9_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_9_synth_1/runme.log
+base_s00_data_fifo_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_7_synth_1/runme.log
+base_auto_us_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_3_synth_1/runme.log
+base_s01_data_fifo_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_7_synth_1/runme.log
+base_auto_us_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_4_synth_1/runme.log
+base_s00_mmu_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_mmu_1_synth_1/runme.log
+base_s01_mmu_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_2_synth_1/runme.log
+synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/synth_1/runme.log
+[Mon Aug  5 11:32:00 2024] Launched impl_1...
+Run output will be captured here: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 9900.078 ; gain = 41.797 ; free physical = 3186 ; free virtual = 28137
+open_bd_design {/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd}
+open_bd_design {/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd}
+open_bd_design {/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd}
+open_bd_design {/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd}
+reset_run synth_1
+reset_run base_axi_dma_0_0_synth_1
+reset_run base_xbar_1_synth_1
+reset_run base_auto_pc_0_synth_1
+reset_run base_rx_fifo_0_synth_1
+reset_run base_tx_fifo_0_synth_1
+reset_run base_xpm_cdc_gen_0_0_synth_1
+reset_run base_xxv_ethernet_0_0_synth_1
+reset_run base_xbar_2_synth_1
+reset_run base_auto_pc_1_synth_1
+reset_run base_auto_pc_2_synth_1
+reset_run base_auto_pc_3_synth_1
+reset_run base_auto_pc_4_synth_1
+reset_run base_axi_intc_0_0_synth_1
+reset_run base_btns_gpio_0_synth_1
+reset_run base_clk_wiz_310MHz_0_synth_1
+reset_run base_leds_gpio_0_synth_1
+reset_run base_proc_sys_reset_0_0_synth_1
+reset_run base_proc_sys_reset_1_0_synth_1
+reset_run base_proc_sys_reset_2_0_synth_1
+reset_run base_xbar_3_synth_1
+reset_run base_auto_pc_5_synth_1
+reset_run base_auto_pc_6_synth_1
+reset_run base_auto_pc_7_synth_1
+reset_run base_auto_pc_8_synth_1
+reset_run base_xbar_4_synth_1
+reset_run base_xbar_5_synth_1
+reset_run base_m00_data_fifo_3_synth_1
+reset_run base_xpm_cdc_gen_1_0_synth_1
+reset_run base_util_ds_buf_1_0_synth_1
+reset_run base_util_ds_buf_0_0_synth_1
+reset_run base_ddr4_0_sys_reset_0_synth_1
+reset_run base_DSPddr4_0_synth_1
+reset_run base_s01_mmu_0_synth_1
+reset_run base_auto_ds_0_synth_1
+reset_run base_xbar_0_synth_1
+reset_run base_s00_data_fifo_5_synth_1
+reset_run base_auto_cc_2_synth_1
+reset_run base_s01_data_fifo_5_synth_1
+reset_run base_auto_us_0_synth_1
+reset_run base_m00_data_fifo_2_synth_1
+reset_run base_auto_cc_0_synth_1
+reset_run base_m01_data_fifo_0_synth_1
+reset_run base_auto_cc_1_synth_1
+reset_run base_s01_data_fifo_9_synth_1
+reset_run base_auto_us_8_synth_1
+reset_run base_s00_mmu_3_synth_1
+reset_run base_s01_mmu_4_synth_1
+reset_run base_axis_clock_converter_im_3_synth_1
+reset_run base_axis_clock_converter_re_3_synth_1
+reset_run base_packet_generator_3_synth_1
+reset_run base_proc_sys_reset_adc0_0_synth_1
+reset_run base_proc_sys_reset_adc1_0_synth_1
+reset_run base_proc_sys_reset_adc2_0_synth_1
+reset_run base_proc_sys_reset_adc3_0_synth_1
+reset_run base_rfdc_0_synth_1
+reset_run base_xbar_14_synth_1
+reset_run base_auto_cc_15_synth_1
+reset_run base_auto_cc_16_synth_1
+reset_run base_auto_cc_17_synth_1
+reset_run base_auto_cc_18_synth_1
+reset_run base_amplitude_controller_0_synth_1
+reset_run base_amplitude_controller_1_synth_1
+reset_run base_amplitude_controller_2_synth_1
+reset_run base_amplitude_controller_3_synth_1
+reset_run base_proc_sys_reset_dac0_0_synth_1
+reset_run base_proc_sys_reset_dac1_0_synth_1
+reset_run base_proc_sys_reset_dac2_0_synth_1
+reset_run base_proc_sys_reset_dac3_0_synth_1
+reset_run base_sws_gpio_0_synth_1
+reset_run base_system_management_wiz_0_0_synth_1
+reset_run base_xpm_cdc_gen_0_1_synth_1
+reset_run base_zynq_ultra_ps_e_0_0_synth_1
+reset_run base_axis_clock_converter_im_1_synth_1
+reset_run base_axis_clock_converter_re_1_synth_1
+reset_run base_packet_generator_1_synth_1
+reset_run base_axi_dma_imag_2_synth_1
+reset_run base_axi_dma_real_2_synth_1
+reset_run base_xbar_10_synth_1
+reset_run base_auto_cc_9_synth_1
+reset_run base_auto_cc_10_synth_1
+reset_run base_auto_cc_11_synth_1
+reset_run base_xbar_11_synth_1
+reset_run base_s00_data_fifo_8_synth_1
+reset_run base_auto_us_5_synth_1
+reset_run base_s01_data_fifo_8_synth_1
+reset_run base_auto_us_6_synth_1
+reset_run base_s00_mmu_2_synth_1
+reset_run base_s01_mmu_3_synth_1
+reset_run base_axis_clock_converter_im_2_synth_1
+reset_run base_axis_clock_converter_re_2_synth_1
+reset_run base_packet_generator_2_synth_1
+reset_run base_axi_dma_imag_3_synth_1
+reset_run base_axi_dma_real_3_synth_1
+reset_run base_xbar_12_synth_1
+reset_run base_auto_cc_12_synth_1
+reset_run base_auto_cc_13_synth_1
+reset_run base_auto_cc_14_synth_1
+reset_run base_xbar_13_synth_1
+reset_run base_s00_data_fifo_9_synth_1
+reset_run base_auto_us_7_synth_1
+reset_run base_axi_dma_imag_0_synth_1
+reset_run base_axi_dma_real_0_synth_1
+reset_run base_xbar_6_synth_1
+reset_run base_auto_cc_3_synth_1
+reset_run base_auto_cc_4_synth_1
+reset_run base_auto_cc_5_synth_1
+reset_run base_xbar_7_synth_1
+reset_run base_s00_data_fifo_6_synth_1
+reset_run base_auto_us_1_synth_1
+reset_run base_s01_data_fifo_6_synth_1
+reset_run base_auto_us_2_synth_1
+reset_run base_s00_mmu_0_synth_1
+reset_run base_s01_mmu_1_synth_1
+reset_run base_axis_clock_converter_im_0_synth_1
+reset_run base_axis_clock_converter_re_0_synth_1
+reset_run base_packet_generator_0_synth_1
+reset_run base_axi_dma_imag_1_synth_1
+reset_run base_axi_dma_real_1_synth_1
+reset_run base_xbar_8_synth_1
+reset_run base_auto_cc_6_synth_1
+reset_run base_auto_cc_7_synth_1
+reset_run base_auto_cc_8_synth_1
+reset_run base_xbar_9_synth_1
+reset_run base_s00_data_fifo_7_synth_1
+reset_run base_auto_us_3_synth_1
+reset_run base_s01_data_fifo_7_synth_1
+reset_run base_auto_us_4_synth_1
+reset_run base_s00_mmu_1_synth_1
+reset_run base_s01_mmu_2_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Mon Aug  5 15:18:54 2024] Launched base_axi_dma_0_0_synth_1, base_xbar_1_synth_1, base_auto_pc_0_synth_1, base_rx_fifo_0_synth_1, base_tx_fifo_0_synth_1, base_xpm_cdc_gen_0_0_synth_1, base_xxv_ethernet_0_0_synth_1, base_xbar_2_synth_1, base_auto_pc_1_synth_1, base_auto_pc_2_synth_1, base_auto_pc_3_synth_1, base_auto_pc_4_synth_1, base_axi_intc_0_0_synth_1, base_btns_gpio_0_synth_1, base_clk_wiz_310MHz_0_synth_1, base_leds_gpio_0_synth_1, base_proc_sys_reset_0_0_synth_1, base_proc_sys_reset_1_0_synth_1, base_proc_sys_reset_2_0_synth_1, base_xbar_3_synth_1, base_auto_pc_5_synth_1, base_auto_pc_6_synth_1, base_auto_pc_7_synth_1, base_auto_pc_8_synth_1, base_xbar_4_synth_1, base_xbar_5_synth_1, base_m00_data_fifo_3_synth_1, base_xpm_cdc_gen_1_0_synth_1, base_util_ds_buf_1_0_synth_1, base_util_ds_buf_0_0_synth_1, base_ddr4_0_sys_reset_0_synth_1, base_DSPddr4_0_synth_1, base_s01_mmu_0_synth_1, base_auto_ds_0_synth_1, base_xbar_0_synth_1, base_s00_data_fifo_5_synth_1, base_auto_cc_2_synth_1, base_s01_data_fifo_5_synth_1, base_auto_us_0_synth_1, base_m00_data_fifo_2_synth_1, base_auto_cc_0_synth_1, base_m01_data_fifo_0_synth_1, base_auto_cc_1_synth_1, base_s01_data_fifo_9_synth_1, base_auto_us_8_synth_1, base_s00_mmu_3_synth_1, base_s01_mmu_4_synth_1, base_axis_clock_converter_im_3_synth_1, base_axis_clock_converter_re_3_synth_1, base_packet_generator_3_synth_1, base_proc_sys_reset_adc0_0_synth_1, base_proc_sys_reset_adc1_0_synth_1, base_proc_sys_reset_adc2_0_synth_1, base_proc_sys_reset_adc3_0_synth_1, base_rfdc_0_synth_1, base_xbar_14_synth_1, base_auto_cc_15_synth_1, base_auto_cc_16_synth_1, base_auto_cc_17_synth_1, base_auto_cc_18_synth_1, base_amplitude_controller_0_synth_1, base_amplitude_controller_1_synth_1, base_amplitude_controller_2_synth_1, base_amplitude_controller_3_synth_1, base_proc_sys_reset_dac0_0_synth_1, base_proc_sys_reset_dac1_0_synth_1, base_proc_sys_reset_dac2_0_synth_1, base_proc_sys_reset_dac3_0_synth_1, base_sws_gpio_0_synth_1, base_system_management_wiz_0_0_synth_1, base_xpm_cdc_gen_0_1_synth_1, base_zynq_ultra_ps_e_0_0_synth_1, base_axis_clock_converter_im_1_synth_1, base_axis_clock_converter_re_1_synth_1, base_packet_generator_1_synth_1, base_axi_dma_imag_2_synth_1, base_axi_dma_real_2_synth_1, base_xbar_10_synth_1, base_auto_cc_9_synth_1, base_auto_cc_10_synth_1, base_auto_cc_11_synth_1, base_xbar_11_synth_1, base_s00_data_fifo_8_synth_1, base_auto_us_5_synth_1, base_s01_data_fifo_8_synth_1, base_auto_us_6_synth_1, base_s00_mmu_2_synth_1, base_s01_mmu_3_synth_1, base_axis_clock_converter_im_2_synth_1, base_axis_clock_converter_re_2_synth_1, base_packet_generator_2_synth_1, base_axi_dma_imag_3_synth_1, base_axi_dma_real_3_synth_1, base_xbar_12_synth_1, base_auto_cc_12_synth_1, base_auto_cc_13_synth_1, base_auto_cc_14_synth_1, base_xbar_13_synth_1, base_s00_data_fifo_9_synth_1, base_auto_us_7_synth_1, base_axi_dma_imag_0_synth_1, base_axi_dma_real_0_synth_1, base_xbar_6_synth_1, base_auto_cc_3_synth_1, base_auto_cc_4_synth_1, base_auto_cc_5_synth_1, base_xbar_7_synth_1, base_s00_data_fifo_6_synth_1, base_auto_us_1_synth_1, base_s01_data_fifo_6_synth_1, base_auto_us_2_synth_1, base_s00_mmu_0_synth_1, base_s01_mmu_1_synth_1, base_axis_clock_converter_im_0_synth_1, base_axis_clock_converter_re_0_synth_1, base_packet_generator_0_synth_1, base_axi_dma_imag_1_synth_1, base_axi_dma_real_1_synth_1, base_xbar_8_synth_1, base_auto_cc_6_synth_1, base_auto_cc_7_synth_1, base_auto_cc_8_synth_1, base_xbar_9_synth_1, base_s00_data_fifo_7_synth_1, base_auto_us_3_synth_1, base_s01_data_fifo_7_synth_1, base_auto_us_4_synth_1, base_s00_mmu_1_synth_1, base_s01_mmu_2_synth_1, synth_1...
+Run output will be captured here:
+base_axi_dma_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_0_0_synth_1/runme.log
+base_xbar_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_1_synth_1/runme.log
+base_auto_pc_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_0_synth_1/runme.log
+base_rx_fifo_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_rx_fifo_0_synth_1/runme.log
+base_tx_fifo_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_tx_fifo_0_synth_1/runme.log
+base_xpm_cdc_gen_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xpm_cdc_gen_0_0_synth_1/runme.log
+base_xxv_ethernet_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xxv_ethernet_0_0_synth_1/runme.log
+base_xbar_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_2_synth_1/runme.log
+base_auto_pc_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_1_synth_1/runme.log
+base_auto_pc_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_2_synth_1/runme.log
+base_auto_pc_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_3_synth_1/runme.log
+base_auto_pc_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_4_synth_1/runme.log
+base_axi_intc_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_intc_0_0_synth_1/runme.log
+base_btns_gpio_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_btns_gpio_0_synth_1/runme.log
+base_clk_wiz_310MHz_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_clk_wiz_310MHz_0_synth_1/runme.log
+base_leds_gpio_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_leds_gpio_0_synth_1/runme.log
+base_proc_sys_reset_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_0_0_synth_1/runme.log
+base_proc_sys_reset_1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_1_0_synth_1/runme.log
+base_proc_sys_reset_2_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_2_0_synth_1/runme.log
+base_xbar_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_3_synth_1/runme.log
+base_auto_pc_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_5_synth_1/runme.log
+base_auto_pc_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_6_synth_1/runme.log
+base_auto_pc_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_7_synth_1/runme.log
+base_auto_pc_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_pc_8_synth_1/runme.log
+base_xbar_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_4_synth_1/runme.log
+base_xbar_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_5_synth_1/runme.log
+base_m00_data_fifo_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_m00_data_fifo_3_synth_1/runme.log
+base_xpm_cdc_gen_1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xpm_cdc_gen_1_0_synth_1/runme.log
+base_util_ds_buf_1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_util_ds_buf_1_0_synth_1/runme.log
+base_util_ds_buf_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_util_ds_buf_0_0_synth_1/runme.log
+base_ddr4_0_sys_reset_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_ddr4_0_sys_reset_0_synth_1/runme.log
+base_DSPddr4_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_DSPddr4_0_synth_1/runme.log
+base_s01_mmu_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_0_synth_1/runme.log
+base_auto_ds_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_ds_0_synth_1/runme.log
+base_xbar_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_0_synth_1/runme.log
+base_s00_data_fifo_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_5_synth_1/runme.log
+base_auto_cc_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_2_synth_1/runme.log
+base_s01_data_fifo_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_5_synth_1/runme.log
+base_auto_us_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_0_synth_1/runme.log
+base_m00_data_fifo_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_m00_data_fifo_2_synth_1/runme.log
+base_auto_cc_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_0_synth_1/runme.log
+base_m01_data_fifo_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_m01_data_fifo_0_synth_1/runme.log
+base_auto_cc_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_1_synth_1/runme.log
+base_s01_data_fifo_9_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_9_synth_1/runme.log
+base_auto_us_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_8_synth_1/runme.log
+base_s00_mmu_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_mmu_3_synth_1/runme.log
+base_s01_mmu_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_4_synth_1/runme.log
+base_axis_clock_converter_im_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_im_3_synth_1/runme.log
+base_axis_clock_converter_re_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_re_3_synth_1/runme.log
+base_packet_generator_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_packet_generator_3_synth_1/runme.log
+base_proc_sys_reset_adc0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_adc0_0_synth_1/runme.log
+base_proc_sys_reset_adc1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_adc1_0_synth_1/runme.log
+base_proc_sys_reset_adc2_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_adc2_0_synth_1/runme.log
+base_proc_sys_reset_adc3_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_adc3_0_synth_1/runme.log
+base_rfdc_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_rfdc_0_synth_1/runme.log
+base_xbar_14_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_14_synth_1/runme.log
+base_auto_cc_15_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_15_synth_1/runme.log
+base_auto_cc_16_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_16_synth_1/runme.log
+base_auto_cc_17_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_17_synth_1/runme.log
+base_auto_cc_18_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_18_synth_1/runme.log
+base_amplitude_controller_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_amplitude_controller_0_synth_1/runme.log
+base_amplitude_controller_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_amplitude_controller_1_synth_1/runme.log
+base_amplitude_controller_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_amplitude_controller_2_synth_1/runme.log
+base_amplitude_controller_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_amplitude_controller_3_synth_1/runme.log
+base_proc_sys_reset_dac0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_dac0_0_synth_1/runme.log
+base_proc_sys_reset_dac1_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_dac1_0_synth_1/runme.log
+base_proc_sys_reset_dac2_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_dac2_0_synth_1/runme.log
+base_proc_sys_reset_dac3_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_proc_sys_reset_dac3_0_synth_1/runme.log
+base_sws_gpio_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_sws_gpio_0_synth_1/runme.log
+base_system_management_wiz_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_system_management_wiz_0_0_synth_1/runme.log
+base_xpm_cdc_gen_0_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xpm_cdc_gen_0_1_synth_1/runme.log
+base_zynq_ultra_ps_e_0_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_zynq_ultra_ps_e_0_0_synth_1/runme.log
+base_axis_clock_converter_im_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_im_1_synth_1/runme.log
+base_axis_clock_converter_re_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_re_1_synth_1/runme.log
+base_packet_generator_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_packet_generator_1_synth_1/runme.log
+base_axi_dma_imag_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_imag_2_synth_1/runme.log
+base_axi_dma_real_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_real_2_synth_1/runme.log
+base_xbar_10_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_10_synth_1/runme.log
+base_auto_cc_9_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_9_synth_1/runme.log
+base_auto_cc_10_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_10_synth_1/runme.log
+base_auto_cc_11_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_11_synth_1/runme.log
+base_xbar_11_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_11_synth_1/runme.log
+base_s00_data_fifo_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_8_synth_1/runme.log
+base_auto_us_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_5_synth_1/runme.log
+base_s01_data_fifo_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_8_synth_1/runme.log
+base_auto_us_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_6_synth_1/runme.log
+base_s00_mmu_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_mmu_2_synth_1/runme.log
+base_s01_mmu_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_3_synth_1/runme.log
+base_axis_clock_converter_im_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_im_2_synth_1/runme.log
+base_axis_clock_converter_re_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_re_2_synth_1/runme.log
+base_packet_generator_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_packet_generator_2_synth_1/runme.log
+base_axi_dma_imag_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_imag_3_synth_1/runme.log
+base_axi_dma_real_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_real_3_synth_1/runme.log
+base_xbar_12_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_12_synth_1/runme.log
+base_auto_cc_12_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_12_synth_1/runme.log
+base_auto_cc_13_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_13_synth_1/runme.log
+base_auto_cc_14_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_14_synth_1/runme.log
+base_xbar_13_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_13_synth_1/runme.log
+base_s00_data_fifo_9_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_9_synth_1/runme.log
+base_auto_us_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_7_synth_1/runme.log
+base_axi_dma_imag_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_imag_0_synth_1/runme.log
+base_axi_dma_real_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_real_0_synth_1/runme.log
+base_xbar_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_6_synth_1/runme.log
+base_auto_cc_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_3_synth_1/runme.log
+base_auto_cc_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_4_synth_1/runme.log
+base_auto_cc_5_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_5_synth_1/runme.log
+base_xbar_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_7_synth_1/runme.log
+base_s00_data_fifo_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_6_synth_1/runme.log
+base_auto_us_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_1_synth_1/runme.log
+base_s01_data_fifo_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_6_synth_1/runme.log
+base_auto_us_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_2_synth_1/runme.log
+base_s00_mmu_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_mmu_0_synth_1/runme.log
+base_s01_mmu_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_1_synth_1/runme.log
+base_axis_clock_converter_im_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_im_0_synth_1/runme.log
+base_axis_clock_converter_re_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axis_clock_converter_re_0_synth_1/runme.log
+base_packet_generator_0_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_packet_generator_0_synth_1/runme.log
+base_axi_dma_imag_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_imag_1_synth_1/runme.log
+base_axi_dma_real_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_axi_dma_real_1_synth_1/runme.log
+base_xbar_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_8_synth_1/runme.log
+base_auto_cc_6_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_6_synth_1/runme.log
+base_auto_cc_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_7_synth_1/runme.log
+base_auto_cc_8_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_cc_8_synth_1/runme.log
+base_xbar_9_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_xbar_9_synth_1/runme.log
+base_s00_data_fifo_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_data_fifo_7_synth_1/runme.log
+base_auto_us_3_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_3_synth_1/runme.log
+base_s01_data_fifo_7_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_data_fifo_7_synth_1/runme.log
+base_auto_us_4_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_auto_us_4_synth_1/runme.log
+base_s00_mmu_1_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s00_mmu_1_synth_1/runme.log
+base_s01_mmu_2_synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/base_s01_mmu_2_synth_1/runme.log
+synth_1: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/synth_1/runme.log
+[Mon Aug  5 15:19:22 2024] Launched impl_1...
+Run output will be captured here: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:46 ; elapsed = 00:00:41 . Memory (MB): peak = 10076.344 ; gain = 24.680 ; free physical = 6049 ; free virtual = 18296
+open_bd_design {/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd}
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Mon Aug  5 16:26:19 2024] Launched impl_1...
+Run output will be captured here: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/impl_1/runme.log
+report_ip_status -name ip_status 
+reset_target all [get_files  /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd]
+reset_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 10249.238 ; gain = 0.000 ; free physical = 5487 ; free virtual = 21454
+export_ip_user_files -of_objects  [get_files  /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd] -sync -no_script -force -quiet
+delete_ip_run [get_files -of_objects [get_fileset sources_1] /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd]
+delete_ip_run: Time (s): cpu = 00:01:39 ; elapsed = 00:01:22 . Memory (MB): peak = 11563.051 ; gain = 0.000 ; free physical = 5487 ; free virtual = 21414
+generate_target all [get_files  /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd]
+INFO: [BD 41-1662] The design 'base.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_311ea886.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_18eff3ca.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_176a28b4.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_92cc0734.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DSPinterconnect/s00_couplers/s00_data_fifo/m_axi_bid'(3) to pin: '/DSPinterconnect/s00_couplers/M_AXI_bid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DSPinterconnect/s00_couplers/s00_data_fifo/m_axi_rid'(3) to pin: '/DSPinterconnect/s00_couplers/M_AXI_rid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DSPinterconnect/xbar/s_axi_awid'(4) to pin: '/DSPinterconnect/s00_couplers/M_AXI_awid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DSPinterconnect/xbar/s_axi_arid'(4) to pin: '/DSPinterconnect/s00_couplers/M_AXI_arid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_arid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s00_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_awid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s00_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_arid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s01_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_awid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s01_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_arid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s02_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_awid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s02_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_arid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s03_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_awid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s03_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_00/axi_interconnect_hps/xbar/m_axi_bid'(1) to pin: '/radio/receiver/channel_00/axi_interconnect_hps/m00_couplers/S_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_00/axi_interconnect_hps/xbar/m_axi_rid'(1) to pin: '/radio/receiver/channel_00/axi_interconnect_hps/m00_couplers/S_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_10/axi_interconnect_hps/xbar/m_axi_bid'(1) to pin: '/radio/receiver/channel_10/axi_interconnect_hps/m00_couplers/S_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_10/axi_interconnect_hps/xbar/m_axi_rid'(1) to pin: '/radio/receiver/channel_10/axi_interconnect_hps/m00_couplers/S_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_20/axi_interconnect_hps/xbar/m_axi_bid'(1) to pin: '/radio/receiver/channel_20/axi_interconnect_hps/m00_couplers/S_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_20/axi_interconnect_hps/xbar/m_axi_rid'(1) to pin: '/radio/receiver/channel_20/axi_interconnect_hps/m00_couplers/S_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_30/axi_interconnect_hps/xbar/m_axi_bid'(1) to pin: '/radio/receiver/channel_30/axi_interconnect_hps/m00_couplers/S_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_30/axi_interconnect_hps/xbar/m_axi_rid'(1) to pin: '/radio/receiver/channel_30/axi_interconnect_hps/m00_couplers/S_AXI_rid'(3) - Only lower order bits will be connected.
+Verilog Output written to : /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/synth/base.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DSPinterconnect/s00_couplers/s00_data_fifo/m_axi_bid'(3) to pin: '/DSPinterconnect/s00_couplers/M_AXI_bid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DSPinterconnect/s00_couplers/s00_data_fifo/m_axi_rid'(3) to pin: '/DSPinterconnect/s00_couplers/M_AXI_rid'(4) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DSPinterconnect/xbar/s_axi_awid'(4) to pin: '/DSPinterconnect/s00_couplers/M_AXI_awid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/DSPinterconnect/xbar/s_axi_arid'(4) to pin: '/DSPinterconnect/s00_couplers/M_AXI_arid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_arid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s00_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_awid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s00_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_arid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s01_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_awid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s01_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_arid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s02_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_awid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s02_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_arid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s03_couplers/M_AXI_arid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/axi_interconnect_hps/xbar/s_axi_awid'(3) to pin: '/radio/receiver/axi_interconnect_hps/s03_couplers/M_AXI_awid'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_00/axi_interconnect_hps/xbar/m_axi_bid'(1) to pin: '/radio/receiver/channel_00/axi_interconnect_hps/m00_couplers/S_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_00/axi_interconnect_hps/xbar/m_axi_rid'(1) to pin: '/radio/receiver/channel_00/axi_interconnect_hps/m00_couplers/S_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_10/axi_interconnect_hps/xbar/m_axi_bid'(1) to pin: '/radio/receiver/channel_10/axi_interconnect_hps/m00_couplers/S_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_10/axi_interconnect_hps/xbar/m_axi_rid'(1) to pin: '/radio/receiver/channel_10/axi_interconnect_hps/m00_couplers/S_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_20/axi_interconnect_hps/xbar/m_axi_bid'(1) to pin: '/radio/receiver/channel_20/axi_interconnect_hps/m00_couplers/S_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_20/axi_interconnect_hps/xbar/m_axi_rid'(1) to pin: '/radio/receiver/channel_20/axi_interconnect_hps/m00_couplers/S_AXI_rid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_30/axi_interconnect_hps/xbar/m_axi_bid'(1) to pin: '/radio/receiver/channel_30/axi_interconnect_hps/m00_couplers/S_AXI_bid'(3) - Only lower order bits will be connected.
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/radio/receiver/channel_30/axi_interconnect_hps/xbar/m_axi_rid'(1) to pin: '/radio/receiver/channel_30/axi_interconnect_hps/m00_couplers/S_AXI_rid'(3) - Only lower order bits will be connected.
+Verilog Output written to : /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/sim/base.v
+Verilog Output written to : /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/hdl/base_wrapper.v
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_311ea886.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_18eff3ca.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_176a28b4.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_92cc0734.ui> 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_5/base_s00_data_fifo_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/s00_couplers/s00_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_2/base_auto_cc_2_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/s00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_5/base_s01_data_fifo_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/s01_couplers/s01_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_0/base_auto_us_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m00_data_fifo_2/base_m00_data_fifo_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/m00_couplers/m00_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_0/base_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m01_data_fifo_0/base_m01_data_fifo_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/m01_couplers/m01_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_1/base_auto_cc_1_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_ds_0/base_auto_ds_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/m01_couplers/auto_ds .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPinterconnect/s01_mmu .
+INFO: [Device 21-403] Loading part xczu48dr-fsvg1517-2-e
+Exporting to file /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_DSPddr4_0/bd_0/hw_handoff/base_DSPddr4_0_microblaze_mcs.hwh
+Generated Hardware Definition File /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_DSPddr4_0/bd_0/synth/base_DSPddr4_0_microblaze_mcs.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPmemory/DSPddr4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPmemory/ddr4_0_sys_reset .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPmemory/util_ds_buf_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPmemory/util_ds_buf_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPmemory/xlconcat_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DSPmemory/xpm_cdc_gen_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/axi_interconnect_cmac/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_0/base_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/axi_interconnect_cmac/s00_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/irq_concat .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/rx_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/tx_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/xlconstant .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/xlconstant1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/xpm_cdc_gen_0 .
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'x_eth_mac@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_mac_pcs@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_tsn_802d1cm@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+WARNING: [IP_Flow 19-650] IP license key 'xxv_eth_basekr@2022.04' is enabled with a Design_Linking license.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block OffloadEngine/xxv_ethernet_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hpm0_lpd/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_1/base_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hpm0_lpd/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_2/base_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hpm0_lpd/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_3/base_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hpm0_lpd/m03_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_4/base_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_hpm0_lpd/m04_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_intc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_310MHz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block leds_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/axi_interconnect_ps/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_5/base_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/axi_interconnect_ps/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_6/base_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/axi_interconnect_ps/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_7/base_auto_pc_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/axi_interconnect_ps/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_pc_8/base_auto_pc_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/axi_interconnect_ps/m03_couplers/auto_pc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/axi_interconnect_hpm/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/axi_interconnect_hps/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_m00_data_fifo_3/base_m00_data_fifo_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/axi_interconnect_hps/m00_couplers/m00_data_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_dma_imag .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_dma_real .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hpm/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_3/base_auto_cc_3_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hpm/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_4/base_auto_cc_4_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hpm/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_5/base_auto_cc_5_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hpm/m02_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hps/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_6/base_s00_data_fifo_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hps/s00_couplers/s00_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_1/base_auto_us_1_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hps/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_6/base_s01_data_fifo_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hps/s01_couplers/s01_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_2/base_auto_us_2_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hps/s01_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hps/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axi_interconnect_hps/s01_mmu .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axis_clock_converter_im_0/base_axis_clock_converter_im_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axis_clock_converter_im .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axis_clock_converter_re_0/base_axis_clock_converter_re_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/axis_clock_converter_re .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/concat_irq .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_00/packet_generator .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_dma_imag .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_dma_real .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hpm/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_6/base_auto_cc_6_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hpm/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_7/base_auto_cc_7_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hpm/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_8/base_auto_cc_8_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hpm/m02_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hps/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_7/base_s00_data_fifo_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hps/s00_couplers/s00_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_3/base_auto_us_3_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hps/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_7/base_s01_data_fifo_7_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hps/s01_couplers/s01_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_4/base_auto_us_4_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hps/s01_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hps/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axi_interconnect_hps/s01_mmu .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axis_clock_converter_im_1/base_axis_clock_converter_im_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axis_clock_converter_im .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axis_clock_converter_re_1/base_axis_clock_converter_re_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/axis_clock_converter_re .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/concat_irq .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_10/packet_generator .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_dma_imag .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_dma_real .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hpm/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_9/base_auto_cc_9_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hpm/m00_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_10/base_auto_cc_10_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hpm/m01_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_11/base_auto_cc_11_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hpm/m02_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hps/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_8/base_s00_data_fifo_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hps/s00_couplers/s00_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_5/base_auto_us_5_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hps/s00_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_8/base_s01_data_fifo_8_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hps/s01_couplers/s01_data_fifo .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_6/base_auto_us_6_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hps/s01_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hps/s00_mmu .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axi_interconnect_hps/s01_mmu .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axis_clock_converter_im_2/base_axis_clock_converter_im_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axis_clock_converter_im .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axis_clock_converter_re_2/base_axis_clock_converter_re_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/axis_clock_converter_re .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/concat_irq .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_20/packet_generator .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_30/axi_dma_imag .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block radio/receiver/channel_30/axi_dma_real .
+INFO: [Common 17-14] Message 'BD 41-1029' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_12/base_auto_cc_12_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_13/base_auto_cc_13_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_14/base_auto_cc_14_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s00_data_fifo_9/base_s00_data_fifo_9_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_7/base_auto_us_7_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_s01_data_fifo_9/base_s01_data_fifo_9_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_us_8/base_auto_us_8_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axis_clock_converter_im_3/base_axis_clock_converter_im_3_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_axis_clock_converter_re_3/base_axis_clock_converter_re_3_ooc.xdc'
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_15/base_auto_cc_15_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_16/base_auto_cc_16_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_17/base_auto_cc_17_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/ip/base_auto_cc_18/base_auto_cc_18_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.4-0] base_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_LPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP0_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP1_FPD'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI_HP2_FPD'. A default connection has been created.
+Exporting to file /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/hw_handoff/base.hwh
+Generated Hardware Definition File /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.gen/sources_1/bd/base/synth/base.hwdef
+generate_target: Time (s): cpu = 00:01:23 ; elapsed = 00:01:26 . Memory (MB): peak = 12454.258 ; gain = 867.195 ; free physical = 4242 ; free virtual = 20389
+catch { config_ip_cache -export [get_ips -all base_xbar_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_0, cache-ID = cda5f965ffb5173e; cache size = 153.135 MB.
+catch { config_ip_cache -export [get_ips -all base_s00_data_fifo_5] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_data_fifo_5, cache-ID = af6e0540986ac1be; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_2, cache-ID = db49057be59ccb40; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_s01_data_fifo_5] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s01_data_fifo_5, cache-ID = 539b77a5ee1f45d0; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_us_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_0, cache-ID = 085682db74ceb203; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_m00_data_fifo_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m00_data_fifo_2, cache-ID = 5ce5c324d65a9e14; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_0, cache-ID = fa3cb892d5ff2458; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_m01_data_fifo_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m01_data_fifo_0, cache-ID = 3b94343e9a294b53; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_1, cache-ID = b536dbaaae2510b6; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_ds_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_ds_0, cache-ID = 144ce1e6b135f91d; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_s01_mmu_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s01_mmu_0, cache-ID = 6be64d103ea02a55; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_DSPddr4_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_DSPddr4_0, cache-ID = 656b8b8be12d1f78; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_ddr4_0_sys_reset_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_ddr4_0_sys_reset_0, cache-ID = 437cbbd6ae8a9abc; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_util_ds_buf_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_util_ds_buf_0_0, cache-ID = ee2c4ba07ee6efde; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_util_ds_buf_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_util_ds_buf_1_0, cache-ID = b2fabec66121ad33; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_xpm_cdc_gen_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xpm_cdc_gen_1_0, cache-ID = 7bd44d1db653475b; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_dma_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_dma_0_0, cache-ID = c5e5cbe196ad07f5; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_1, cache-ID = d5da2db7633325d8; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_pc_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_0, cache-ID = 17db9b89107506b2; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_rx_fifo_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_rx_fifo_0, cache-ID = 558b6c152591b53c; cache size = 153.136 MB.
+catch { config_ip_cache -export [get_ips -all base_tx_fifo_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_tx_fifo_0, cache-ID = 144cb63f2755f620; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_xpm_cdc_gen_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xpm_cdc_gen_0_0, cache-ID = b330b976afd66e7b; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_xxv_ethernet_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xxv_ethernet_0_0, cache-ID = 0089b6468cdde4e0; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_2, cache-ID = 0cf385e6f0e75af6; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_pc_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_1, cache-ID = 17db9b89107506b2; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_pc_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_2, cache-ID = 17db9b89107506b2; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_pc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_3, cache-ID = 17db9b89107506b2; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_pc_4] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_4, cache-ID = 101b37bb5451707c; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_intc_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_intc_0_0, cache-ID = 0981965776d85806; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_btns_gpio_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_btns_gpio_0, cache-ID = 9e35f858434b0bfd; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_clk_wiz_310MHz_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_clk_wiz_310MHz_0, cache-ID = e4c34908029618c6; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_leds_gpio_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_leds_gpio_0, cache-ID = 3523ecc6c73b13bc; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_0_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_proc_sys_reset_0_0, cache-ID = 7cf0065cbd1b3b2c; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_1_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_proc_sys_reset_1_0, cache-ID = 4797231319495799; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_2_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_proc_sys_reset_2_0, cache-ID = e71168e574137acb; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_3, cache-ID = 8d639bbf4bb3dc42; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_pc_5] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_5, cache-ID = 17db9b89107506b2; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_pc_6] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_6, cache-ID = 17db9b89107506b2; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_pc_7] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_7, cache-ID = f8fe3313f49fc877; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_pc_8] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_pc_8, cache-ID = 17db9b89107506b2; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_4] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_4, cache-ID = 4e0bf4ef4b81f793; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_5] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_5, cache-ID = 9ede978805c8b337; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_m00_data_fifo_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_m00_data_fifo_3, cache-ID = 6c4b2c5adc2876bf; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_dma_imag_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_dma_imag_0, cache-ID = e60632cc2c34731f; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_dma_real_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_dma_real_0, cache-ID = e60632cc2c34731f; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_6] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_6, cache-ID = b6b86910be788ac4; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_3, cache-ID = 0768b109ec0e775f; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_4] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_4, cache-ID = 0768b109ec0e775f; cache size = 153.137 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_5] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_5, cache-ID = 027424a531807285; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_7] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_7, cache-ID = 985d47d8500316cc; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s00_data_fifo_6] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_data_fifo_6, cache-ID = 911f06c579bbefea; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_us_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_1, cache-ID = fabeabb04f5d9cb9; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s01_data_fifo_6] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s01_data_fifo_6, cache-ID = 911f06c579bbefea; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_us_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_2, cache-ID = fabeabb04f5d9cb9; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s00_mmu_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_mmu_0, cache-ID = e580282bc4141ee3; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s01_mmu_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s01_mmu_1, cache-ID = e580282bc4141ee3; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axis_clock_converter_im_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axis_clock_converter_im_0, cache-ID = 760dc3214ca6254c; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axis_clock_converter_re_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axis_clock_converter_re_0, cache-ID = 760dc3214ca6254c; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_packet_generator_0] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_packet_generator_0, cache-ID = 73301268653fe65b; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_dma_imag_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_dma_imag_1, cache-ID = e60632cc2c34731f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_dma_real_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_dma_real_1, cache-ID = e60632cc2c34731f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_8] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_8, cache-ID = 2b30d7802868348d; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_6] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_6, cache-ID = 0768b109ec0e775f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_7] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_7, cache-ID = 0768b109ec0e775f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_8] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_8, cache-ID = 027424a531807285; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_9] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_9, cache-ID = 985d47d8500316cc; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s00_data_fifo_7] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_data_fifo_7, cache-ID = 911f06c579bbefea; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_us_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_3, cache-ID = fabeabb04f5d9cb9; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s01_data_fifo_7] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s01_data_fifo_7, cache-ID = 911f06c579bbefea; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_us_4] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_4, cache-ID = fabeabb04f5d9cb9; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s00_mmu_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_mmu_1, cache-ID = e580282bc4141ee3; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s01_mmu_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s01_mmu_2, cache-ID = e580282bc4141ee3; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axis_clock_converter_im_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axis_clock_converter_im_1, cache-ID = 760dc3214ca6254c; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axis_clock_converter_re_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axis_clock_converter_re_1, cache-ID = 760dc3214ca6254c; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_packet_generator_1] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_packet_generator_1, cache-ID = 73301268653fe65b; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_dma_imag_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_dma_imag_2, cache-ID = e60632cc2c34731f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_dma_real_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_dma_real_2, cache-ID = e60632cc2c34731f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_10] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_10, cache-ID = b7b447e91e69fe77; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_9] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_9, cache-ID = 0768b109ec0e775f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_10] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_10, cache-ID = 0768b109ec0e775f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_11] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_11, cache-ID = 027424a531807285; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_11] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_11, cache-ID = 985d47d8500316cc; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s00_data_fifo_8] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_data_fifo_8, cache-ID = 911f06c579bbefea; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_us_5] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_5, cache-ID = fabeabb04f5d9cb9; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s01_data_fifo_8] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s01_data_fifo_8, cache-ID = 911f06c579bbefea; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_us_6] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_6, cache-ID = fabeabb04f5d9cb9; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s00_mmu_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_mmu_2, cache-ID = e580282bc4141ee3; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s01_mmu_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s01_mmu_3, cache-ID = e580282bc4141ee3; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axis_clock_converter_im_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axis_clock_converter_im_2, cache-ID = 760dc3214ca6254c; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axis_clock_converter_re_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axis_clock_converter_re_2, cache-ID = 760dc3214ca6254c; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_packet_generator_2] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_packet_generator_2, cache-ID = 73301268653fe65b; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_dma_imag_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_dma_imag_3, cache-ID = e60632cc2c34731f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_axi_dma_real_3] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_axi_dma_real_3, cache-ID = e60632cc2c34731f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_12] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_12, cache-ID = 81263a17802093c5; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_12] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_12, cache-ID = 0768b109ec0e775f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_13] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_13, cache-ID = 0768b109ec0e775f; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_cc_14] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_cc_14, cache-ID = 027424a531807285; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_xbar_13] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_xbar_13, cache-ID = 985d47d8500316cc; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_s00_data_fifo_9] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_s00_data_fifo_9, cache-ID = 911f06c579bbefea; cache size = 153.138 MB.
+catch { config_ip_cache -export [get_ips -all base_auto_us_7] }
+INFO: [IP_Flow 19-4993] Using cached IP synthesis design for IP base_auto_us_7, cache-ID = fabeabb04f5d9cb9; cache size = 153.138 MB.
+INFO: [Common 17-14] Message 'IP_Flow 19-4993' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+catch { config_ip_cache -export [get_ips -all base_s01_data_fifo_9] }
+catch { config_ip_cache -export [get_ips -all base_auto_us_8] }
+catch { config_ip_cache -export [get_ips -all base_s00_mmu_3] }
+catch { config_ip_cache -export [get_ips -all base_s01_mmu_4] }
+catch { config_ip_cache -export [get_ips -all base_axis_clock_converter_im_3] }
+catch { config_ip_cache -export [get_ips -all base_axis_clock_converter_re_3] }
+catch { config_ip_cache -export [get_ips -all base_packet_generator_3] }
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_adc0_0] }
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_adc1_0] }
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_adc2_0] }
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_adc3_0] }
+catch { config_ip_cache -export [get_ips -all base_rfdc_0] }
+catch { config_ip_cache -export [get_ips -all base_xbar_14] }
+catch { config_ip_cache -export [get_ips -all base_auto_cc_15] }
+catch { config_ip_cache -export [get_ips -all base_auto_cc_16] }
+catch { config_ip_cache -export [get_ips -all base_auto_cc_17] }
+catch { config_ip_cache -export [get_ips -all base_auto_cc_18] }
+catch { config_ip_cache -export [get_ips -all base_amplitude_controller_0] }
+catch { config_ip_cache -export [get_ips -all base_amplitude_controller_1] }
+catch { config_ip_cache -export [get_ips -all base_amplitude_controller_2] }
+catch { config_ip_cache -export [get_ips -all base_amplitude_controller_3] }
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_dac0_0] }
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_dac1_0] }
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_dac2_0] }
+catch { config_ip_cache -export [get_ips -all base_proc_sys_reset_dac3_0] }
+catch { config_ip_cache -export [get_ips -all base_sws_gpio_0] }
+catch { config_ip_cache -export [get_ips -all base_system_management_wiz_0_0] }
+catch { config_ip_cache -export [get_ips -all base_xpm_cdc_gen_0_1] }
+catch { config_ip_cache -export [get_ips -all base_zynq_ultra_ps_e_0_0] }
+export_ip_user_files -of_objects [get_files /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd]
+export_simulation -of_objects [get_files /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd] -directory /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.ip_user_files/sim_scripts -ip_user_files_dir /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.ip_user_files -ipstatic_source_dir /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.ip_user_files/ipstatic -lib_map_path [list {modelsim=/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.cache/compile_simlib/modelsim} {questa=/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.cache/compile_simlib/questa} {xcelium=/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.cache/compile_simlib/xcelium} {vcs=/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.cache/compile_simlib/vcs} {riviera=/home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.cache/compile_simlib/riviera}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+INFO: [Project 1-1160] Copying file /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/synth_1/base_wrapper.dcp to /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Mon Aug  5 16:32:56 2024] Launched synth_1...
+Run output will be captured here: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/synth_1/runme.log
+[Mon Aug  5 16:32:56 2024] Launched impl_1...
+Run output will be captured here: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Mon Aug  5 17:02:41 2024] Launched impl_1...
+Run output will be captured here: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.runs/impl_1/runme.log
+validate_bd_design -force
+CRITICAL WARNING: [BD 41-1354] Master segment '/radio/receiver/channel_30/axi_dma_real/Data_S2MM/SEG_DSPddr4_C0_DDR4_ADDRESS_BLOCK' at address <0x8000_0000 [ 1G ]> overlaps with master segment '/zynq_ultra_ps_e_0/Data/SEG_axi_dma_0_Reg' at address <0x8000_0000 [ 64K ]> in the same network.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP3/HP1_QSPI> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_QSPI> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI> is excluded from all addressing paths.
+CRITICAL WARNING: [BD 41-1265] Different slave segments </OffloadEngine/axi_dma_0/S_AXI_LITE/Reg> and </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> are mapped into related address spaces </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_00/axi_dma_imag/Data_S2MM>, at the same offset 0x8000_0000 [ 64K ].
+CRITICAL WARNING: [BD 41-1267] Slave segment </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> is mapped into related masters </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_00/axi_dma_imag/Data_S2MM> at different offsets <0x4_0000_0000 [ 4G ]> and <0x8000_0000 [ 1G ]>. Please ensure that assignments to related address spaces have the same offset.
+CRITICAL WARNING: [BD 41-1265] Different slave segments </OffloadEngine/axi_dma_0/S_AXI_LITE/Reg> and </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> are mapped into related address spaces </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_00/axi_dma_real/Data_S2MM>, at the same offset 0x8000_0000 [ 64K ].
+CRITICAL WARNING: [BD 41-1267] Slave segment </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> is mapped into related masters </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_00/axi_dma_real/Data_S2MM> at different offsets <0x4_0000_0000 [ 4G ]> and <0x8000_0000 [ 1G ]>. Please ensure that assignments to related address spaces have the same offset.
+CRITICAL WARNING: [BD 41-1265] Different slave segments </OffloadEngine/axi_dma_0/S_AXI_LITE/Reg> and </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> are mapped into related address spaces </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_10/axi_dma_imag/Data_S2MM>, at the same offset 0x8000_0000 [ 64K ].
+CRITICAL WARNING: [BD 41-1267] Slave segment </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> is mapped into related masters </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_10/axi_dma_imag/Data_S2MM> at different offsets <0x4_0000_0000 [ 4G ]> and <0x8000_0000 [ 1G ]>. Please ensure that assignments to related address spaces have the same offset.
+CRITICAL WARNING: [BD 41-1265] Different slave segments </OffloadEngine/axi_dma_0/S_AXI_LITE/Reg> and </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> are mapped into related address spaces </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_10/axi_dma_real/Data_S2MM>, at the same offset 0x8000_0000 [ 64K ].
+CRITICAL WARNING: [BD 41-1267] Slave segment </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> is mapped into related masters </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_10/axi_dma_real/Data_S2MM> at different offsets <0x4_0000_0000 [ 4G ]> and <0x8000_0000 [ 1G ]>. Please ensure that assignments to related address spaces have the same offset.
+CRITICAL WARNING: [BD 41-1265] Different slave segments </OffloadEngine/axi_dma_0/S_AXI_LITE/Reg> and </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> are mapped into related address spaces </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_20/axi_dma_imag/Data_S2MM>, at the same offset 0x8000_0000 [ 64K ].
+CRITICAL WARNING: [BD 41-1267] Slave segment </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> is mapped into related masters </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_20/axi_dma_imag/Data_S2MM> at different offsets <0x4_0000_0000 [ 4G ]> and <0x8000_0000 [ 1G ]>. Please ensure that assignments to related address spaces have the same offset.
+CRITICAL WARNING: [BD 41-1265] Different slave segments </OffloadEngine/axi_dma_0/S_AXI_LITE/Reg> and </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> are mapped into related address spaces </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_20/axi_dma_real/Data_S2MM>, at the same offset 0x8000_0000 [ 64K ].
+CRITICAL WARNING: [BD 41-1267] Slave segment </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> is mapped into related masters </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_20/axi_dma_real/Data_S2MM> at different offsets <0x4_0000_0000 [ 4G ]> and <0x8000_0000 [ 1G ]>. Please ensure that assignments to related address spaces have the same offset.
+CRITICAL WARNING: [BD 41-1265] Different slave segments </OffloadEngine/axi_dma_0/S_AXI_LITE/Reg> and </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> are mapped into related address spaces </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_30/axi_dma_imag/Data_S2MM>, at the same offset 0x8000_0000 [ 64K ].
+CRITICAL WARNING: [BD 41-1267] Slave segment </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> is mapped into related masters </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_30/axi_dma_imag/Data_S2MM> at different offsets <0x4_0000_0000 [ 4G ]> and <0x8000_0000 [ 1G ]>. Please ensure that assignments to related address spaces have the same offset.
+CRITICAL WARNING: [BD 41-1265] Different slave segments </OffloadEngine/axi_dma_0/S_AXI_LITE/Reg> and </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> are mapped into related address spaces </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_30/axi_dma_real/Data_S2MM>, at the same offset 0x8000_0000 [ 64K ].
+CRITICAL WARNING: [BD 41-1267] Slave segment </DSPmemory/DSPddr4/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK> is mapped into related masters </zynq_ultra_ps_e_0/Data> and </radio/receiver/channel_30/axi_dma_real/Data_S2MM> at different offsets <0x4_0000_0000 [ 4G ]> and <0x8000_0000 [ 1G ]>. Please ensure that assignments to related address spaces have the same offset.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_HIGH from address space /OffloadEngine/axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_LPS_OCM from address space /OffloadEngine/axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP2/HP0_QSPI from address space /OffloadEngine/axi_dma_0/Data_MM2S.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_DDR_HIGH from address space /OffloadEngine/axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_LPS_OCM from address space /OffloadEngine/axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP3/HP1_QSPI from address space /OffloadEngine/axi_dma_0/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH from address space /zynq_ultra_ps_e_0/Data.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW from address space /zynq_ultra_ps_e_0/Data.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_00/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_00/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_10/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_10/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_20/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_20/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_30/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /radio/receiver/channel_30/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_LPS_OCM from address space /zynq_ultra_ps_e_0/Data.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_00/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_00/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_10/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_10/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_20/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_20/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_30/axi_dma_imag/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /radio/receiver/channel_30/axi_dma_real/Data_S2MM.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP4/HP2_QSPI from address space /zynq_ultra_ps_e_0/Data.
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(128) on '/OffloadEngine/axi_dma_0' with propagated value(64). Command ignored
+INFO: [Common 17-14] Message 'BD 41-1625' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [xilinx.com:ip:axi_dma:7.1-14] /OffloadEngine/axi_dma_0 
+                    ##########################################################################################
+                    Clocks connected to AXI DMA are not same. Configuring AXI DMA in ASYNC mode ..........
+                    ##########################################################################################
+INFO: [xilinx.com:ip:xxv_ethernet:4.1-5910] /OffloadEngine/xxv_ethernet_0 NOTE : INIT CLK of /OffloadEngine/xxv_ethernet_0 has input port frequency configured as 100000000 Hz (100.0 MHz).
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_310MHz clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /DSPinterconnect/s01_couplers/auto_us/S_AXI(0) and /DSPinterconnect/s01_mmu/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /DSPinterconnect/s01_couplers/auto_us/S_AXI(0) and /DSPinterconnect/s01_mmu/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /DSPinterconnect/m01_couplers/auto_ds/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /DSPinterconnect/m01_couplers/auto_ds/M_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /OffloadEngine/axi_dma_0/M_AXI_MM2S(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /OffloadEngine/axi_dma_0/M_AXI_MM2S(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP1_FPD(1) and /OffloadEngine/axi_dma_0/M_AXI_S2MM(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP1_FPD(1) and /OffloadEngine/axi_dma_0/M_AXI_S2MM(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /OffloadEngine/axi_interconnect_cmac/s00_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /OffloadEngine/axi_interconnect_cmac/s00_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m01_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m01_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m02_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m02_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m03_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m03_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m04_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m04_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m05_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M05_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m05_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M05_AXI(16)
+validate_bd_design: Time (s): cpu = 00:02:05 ; elapsed = 00:01:59 . Memory (MB): peak = 13254.656 ; gain = 0.000 ; free physical = 258 ; free virtual = 8677
+apply_bd_automation -rule xilinx.com:bd_rule:rf_converter_usp -config {ADC0_AXIS_SOURCE "ADC 0" ADC1_AXIS_SOURCE "ADC 1" ADC2_AXIS_SOURCE "ADC 2" ADC3_AXIS_SOURCE "ADC 3" DAC0_AXIS_SOURCE "DAC 0" DAC1_AXIS_SOURCE "DAC 1" DAC2_AXIS_SOURCE "DAC 2" DAC3_AXIS_SOURCE "DAC 3" }  [get_bd_cells radio/rfdc]
+save_bd_design
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_520828f1.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_311ea886.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_18eff3ca.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_176a28b4.ui> 
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/ui/bd_92cc0734.ui> 
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug  5 17:08:05 2024...

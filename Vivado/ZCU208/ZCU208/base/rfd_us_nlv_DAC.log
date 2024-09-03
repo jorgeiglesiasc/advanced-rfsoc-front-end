@@ -1,0 +1,911 @@
+# Copyright (C) 1994-2019, Concept Engineering GmbH.
+# All Rights Reserved.  Cmd=logfile.
+# Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+# License cookie [G|T|S|B|*] for HR="Xilinx Inc."
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+property attrfontsize 8
+property fillcolor1
+#R #441133
+property fillcolor5
+#R #651b4d
+property -colorscheme lightblue
+property shadowstyle 1
+property showpinname 5
+property showcellname 1
+property showattribute 1
+property showinstname 1
+property boxminwidth 40
+property boxminheight 40
+#CMD bind stroke-1 -action {}
+#CMD bind stroke-nw-1 -action callback -echo_type line -echo_text {Zoom fit}
+#CMD bind stroke-nw-1 -action zoom_fit -echo_type line -echo_text {Zoom fit}
+#CMD bind stroke-ne-1 -action zoom_out -echo_type line -echo_text {Zoom -%z}
+#CMD bind stroke-se-1 -action zoom_in -echo_type rectangle -autoscroll -echo_text {Zoom area}
+#CMD bind stroke-sw-1 -action zoom_in2 -echo_type line -echo_text {Zoom +%z}
+module new rfconverter -nosplit
+#  * Current module is rfconverter 
+load symbol TILE_SYMBOL v HIERBOX port a in
+increment -const
+load inst Tile_228 TILE_SYMBOL v -pg 1 -y 1 -x 300 -autohide -attr @cell Tile_228 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_228 a } -attr @name {}
+attribute {hierPin Tile_228 a } -attr @name {}
+load symbol s03 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_228.DAC3.s03 s03 v -hier Tile_228 -pg 1 -y 2 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_228.DAC3.s03 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_228.DAC3.s03 TX } -attr @name {}
+load symbol DAC3mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_228.DAC3.mixer DAC3mixer syn -hier Tile_228 -pg 1 -y 2 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_228.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_228.DAC3.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC3.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC3.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC3.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC3.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC3.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_228.DAC3.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC3.mixer RIGHT_I} -attr @name I
+load symbol s02 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_228.DAC2.s02 s02 v -hier Tile_228 -pg 1 -y 102 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_228.DAC2.s02 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_228.DAC2.s02 TX } -attr @name {}
+load symbol DAC2mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_228.DAC2.mixer DAC2mixer syn -hier Tile_228 -pg 1 -y 102 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_228.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_228.DAC2.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC2.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC2.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC2.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC2.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC2.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_228.DAC2.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC2.mixer RIGHT_I} -attr @name I
+load symbol DAC21 syn HIERGEN port TX in
+load inst DAC.Tile_228.DAC2 DAC21 syn -hier Tile_228 -pg 1 -y 102 -x 300 -resize 60 60 -attr @cell DAC2 -autohide
+attribute {inst DAC.Tile_228.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC2} -attr @name {}
+attribute {pin DAC.Tile_228.DAC2 TX } -attr @name {}
+load symbol s01 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_228.DAC1.s01 s01 v -hier Tile_228 -pg 1 -y 202 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_228.DAC1.s01 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_228.DAC1.s01 TX } -attr @name {}
+load symbol DAC1mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_228.DAC1.mixer DAC1mixer syn -hier Tile_228 -pg 1 -y 202 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_228.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_228.DAC1.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC1.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC1.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC1.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC1.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC1.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_228.DAC1.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC1.mixer RIGHT_I} -attr @name I
+load symbol s00 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_228.DAC0.s00 s00 v -hier Tile_228 -pg 1 -y 302 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_228.DAC0.s00 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_228.DAC0.s00 TX } -attr @name {}
+load symbol DAC0mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_228.DAC0.mixer DAC0mixer syn -hier Tile_228 -pg 1 -y 302 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_228.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_228.DAC0.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC0.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC0.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC0.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC0.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC0.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_228.DAC0.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC0.mixer RIGHT_I} -attr @name I
+load symbol DAC03 syn HIERGEN port TX in
+load inst DAC.Tile_228.DAC0 DAC03 syn -hier Tile_228 -pg 1 -y 302 -x 300 -resize 60 60 -attr @cell DAC0 -autohide
+attribute {inst DAC.Tile_228.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC0} -attr @name {}
+attribute {pin DAC.Tile_228.DAC0 TX } -attr @name {}
+load inst Tile_229 TILE_SYMBOL v -pg 1 -y 1 -x 300 -autohide -attr @cell Tile_229 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_229 a } -attr @name {}
+attribute {hierPin Tile_229 a } -attr @name {}
+load symbol s03 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_229.DAC3.s03 s03 v -hier Tile_229 -pg 1 -y 2 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_229.DAC3.s03 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_229.DAC3.s03 TX } -attr @name {}
+load symbol DAC3mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_229.DAC3.mixer DAC3mixer syn -hier Tile_229 -pg 1 -y 2 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_229.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_229.DAC3.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC3.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC3.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC3.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC3.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC3.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_229.DAC3.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC3.mixer RIGHT_I} -attr @name I
+load symbol s02 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_229.DAC2.s02 s02 v -hier Tile_229 -pg 1 -y 102 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_229.DAC2.s02 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_229.DAC2.s02 TX } -attr @name {}
+load symbol DAC2mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_229.DAC2.mixer DAC2mixer syn -hier Tile_229 -pg 1 -y 102 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_229.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_229.DAC2.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC2.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC2.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC2.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC2.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC2.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_229.DAC2.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC2.mixer RIGHT_I} -attr @name I
+load symbol DAC25 syn HIERGEN port TX in
+load inst DAC.Tile_229.DAC2 DAC25 syn -hier Tile_229 -pg 1 -y 102 -x 300 -resize 60 60 -attr @cell DAC2 -autohide
+attribute {inst DAC.Tile_229.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC2} -attr @name {}
+attribute {pin DAC.Tile_229.DAC2 TX } -attr @name {}
+load symbol s01 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_229.DAC1.s01 s01 v -hier Tile_229 -pg 1 -y 202 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_229.DAC1.s01 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_229.DAC1.s01 TX } -attr @name {}
+load symbol DAC1mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_229.DAC1.mixer DAC1mixer syn -hier Tile_229 -pg 1 -y 202 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_229.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_229.DAC1.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC1.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC1.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC1.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC1.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC1.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_229.DAC1.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC1.mixer RIGHT_I} -attr @name I
+load symbol s00 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_229.DAC0.s00 s00 v -hier Tile_229 -pg 1 -y 302 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_229.DAC0.s00 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_229.DAC0.s00 TX } -attr @name {}
+load symbol DAC0mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_229.DAC0.mixer DAC0mixer syn -hier Tile_229 -pg 1 -y 302 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_229.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_229.DAC0.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC0.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC0.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC0.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC0.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC0.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_229.DAC0.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC0.mixer RIGHT_I} -attr @name I
+load symbol DAC07 syn HIERGEN port TX in
+load inst DAC.Tile_229.DAC0 DAC07 syn -hier Tile_229 -pg 1 -y 302 -x 300 -resize 60 60 -attr @cell DAC0 -autohide
+attribute {inst DAC.Tile_229.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC0} -attr @name {}
+attribute {pin DAC.Tile_229.DAC0 TX } -attr @name {}
+load inst Tile_230 TILE_SYMBOL v -pg 1 -y 1 -x 300 -autohide -attr @cell Tile_230 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_230 a } -attr @name {}
+attribute {hierPin Tile_230 a } -attr @name {}
+load symbol s03 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_230.DAC3.s03 s03 v -hier Tile_230 -pg 1 -y 2 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_230.DAC3.s03 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_230.DAC3.s03 TX } -attr @name {}
+load symbol DAC3mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_230.DAC3.mixer DAC3mixer syn -hier Tile_230 -pg 1 -y 2 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_230.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_230.DAC3.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC3.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC3.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC3.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC3.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC3.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_230.DAC3.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC3.mixer RIGHT_I} -attr @name I
+load symbol s02 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_230.DAC2.s02 s02 v -hier Tile_230 -pg 1 -y 102 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_230.DAC2.s02 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_230.DAC2.s02 TX } -attr @name {}
+load symbol DAC2mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_230.DAC2.mixer DAC2mixer syn -hier Tile_230 -pg 1 -y 102 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_230.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_230.DAC2.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC2.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC2.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC2.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC2.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC2.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_230.DAC2.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC2.mixer RIGHT_I} -attr @name I
+load symbol DAC29 syn HIERGEN port TX in
+load inst DAC.Tile_230.DAC2 DAC29 syn -hier Tile_230 -pg 1 -y 102 -x 300 -resize 60 60 -attr @cell DAC2 -autohide
+attribute {inst DAC.Tile_230.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC2} -attr @name {}
+attribute {pin DAC.Tile_230.DAC2 TX } -attr @name {}
+load symbol s01 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_230.DAC1.s01 s01 v -hier Tile_230 -pg 1 -y 202 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_230.DAC1.s01 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_230.DAC1.s01 TX } -attr @name {}
+load symbol DAC1mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_230.DAC1.mixer DAC1mixer syn -hier Tile_230 -pg 1 -y 202 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_230.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_230.DAC1.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC1.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC1.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC1.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC1.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC1.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_230.DAC1.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC1.mixer RIGHT_I} -attr @name I
+load symbol s00 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_230.DAC0.s00 s00 v -hier Tile_230 -pg 1 -y 302 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_230.DAC0.s00 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_230.DAC0.s00 TX } -attr @name {}
+load symbol DAC0mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_230.DAC0.mixer DAC0mixer syn -hier Tile_230 -pg 1 -y 302 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_230.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_230.DAC0.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC0.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC0.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC0.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC0.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC0.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_230.DAC0.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC0.mixer RIGHT_I} -attr @name I
+load symbol DAC011 syn HIERGEN port TX in
+load inst DAC.Tile_230.DAC0 DAC011 syn -hier Tile_230 -pg 1 -y 302 -x 300 -resize 60 60 -attr @cell DAC0 -autohide
+attribute {inst DAC.Tile_230.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC0} -attr @name {}
+attribute {pin DAC.Tile_230.DAC0 TX } -attr @name {}
+load inst Tile_231 TILE_SYMBOL v -pg 1 -y 1 -x 300 -autohide -attr @cell Tile_231 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_231 a } -attr @name {}
+attribute {hierPin Tile_231 a } -attr @name {}
+load symbol s03 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_231.DAC3.s03 s03 v -hier Tile_231 -pg 1 -y 2 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_231.DAC3.s03 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_231.DAC3.s03 TX } -attr @name {}
+load symbol DAC3mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_231.DAC3.mixer DAC3mixer syn -hier Tile_231 -pg 1 -y 2 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_231.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_231.DAC3.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC3.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC3.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC3.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC3.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC3.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_231.DAC3.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC3.mixer RIGHT_I} -attr @name I
+load symbol s02 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_231.DAC2.s02 s02 v -hier Tile_231 -pg 1 -y 102 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_231.DAC2.s02 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_231.DAC2.s02 TX } -attr @name {}
+load symbol DAC2mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_231.DAC2.mixer DAC2mixer syn -hier Tile_231 -pg 1 -y 102 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_231.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_231.DAC2.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC2.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC2.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC2.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC2.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC2.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_231.DAC2.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC2.mixer RIGHT_I} -attr @name I
+load symbol DAC213 syn HIERGEN port TX in
+load inst DAC.Tile_231.DAC2 DAC213 syn -hier Tile_231 -pg 1 -y 102 -x 300 -resize 60 60 -attr @cell DAC2 -autohide
+attribute {inst DAC.Tile_231.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC2} -attr @name {}
+attribute {pin DAC.Tile_231.DAC2 TX } -attr @name {}
+load symbol s01 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_231.DAC1.s01 s01 v -hier Tile_231 -pg 1 -y 202 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_231.DAC1.s01 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_231.DAC1.s01 TX } -attr @name {}
+load symbol DAC1mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_231.DAC1.mixer DAC1mixer syn -hier Tile_231 -pg 1 -y 202 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_231.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_231.DAC1.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC1.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC1.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC1.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC1.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC1.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_231.DAC1.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC1.mixer RIGHT_I} -attr @name I
+load symbol s00 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_231.DAC0.s00 s00 v -hier Tile_231 -pg 1 -y 302 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_231.DAC0.s00 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_231.DAC0.s00 TX } -attr @name {}
+load symbol DAC0mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_231.DAC0.mixer DAC0mixer syn -hier Tile_231 -pg 1 -y 302 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_231.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_231.DAC0.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC0.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC0.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC0.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC0.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC0.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_231.DAC0.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC0.mixer RIGHT_I} -attr @name I
+load symbol DAC015 syn HIERGEN port TX in
+load inst DAC.Tile_231.DAC0 DAC015 syn -hier Tile_231 -pg 1 -y 302 -x 300 -resize 60 60 -attr @cell DAC0 -autohide
+attribute {inst DAC.Tile_231.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC0} -attr @name {}
+attribute {pin DAC.Tile_231.DAC0 TX } -attr @name {}
+show
+# Starting Split Pages                                                  4994.25
+# NoSplit 44 Comps, 0 Nets 0 NetBundles                                 4994.25
+# End of Split Pages                                                    4994.25
+# Generating Regions for Page 1:   44 Comps,    0 Nets                  4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 2 Levels, 4 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# End of Generating Regions for Page 1                                  4994.25
+scrollpos 108 708
+zoom -x 0 -y 0 0.5
+scrollpos 68 443
+#R 0.5
+#CMD scrollpos 0 0
+scrollpos 0 0
+module new rfconverter -nosplit
+#  * Current module is rfconverter 
+load symbol TILE_SYMBOL v HIERBOX port a in
+increment -const
+load inst Tile_228 TILE_SYMBOL v -pg 1 -y 1 -x 300 -autohide -attr @cell Tile_228 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_228 a } -attr @name {}
+attribute {hierPin Tile_228 a } -attr @name {}
+load symbol s03 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_228.DAC3.s03 s03 v -hier Tile_228 -pg 1 -y 2 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_228.DAC3.s03 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_228.DAC3.s03 TX } -attr @name {}
+load symbol DAC3mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_228.DAC3.mixer DAC3mixer syn -hier Tile_228 -pg 1 -y 2 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_228.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_228.DAC3.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC3.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC3.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC3.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC3.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC3.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_228.DAC3.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC3.mixer RIGHT_I} -attr @name I
+load symbol s02 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_228.DAC2.s02 s02 v -hier Tile_228 -pg 1 -y 102 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_228.DAC2.s02 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_228.DAC2.s02 TX } -attr @name {}
+load symbol DAC2mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_228.DAC2.mixer DAC2mixer syn -hier Tile_228 -pg 1 -y 102 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_228.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_228.DAC2.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC2.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC2.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC2.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC2.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC2.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_228.DAC2.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC2.mixer RIGHT_I} -attr @name I
+load symbol DAC21 syn HIERGEN port TX in
+load inst DAC.Tile_228.DAC2 DAC21 syn -hier Tile_228 -pg 1 -y 102 -x 300 -resize 60 60 -attr @cell DAC2 -autohide
+attribute {inst DAC.Tile_228.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC2} -attr @name {}
+attribute {pin DAC.Tile_228.DAC2 TX } -attr @name {}
+load symbol s01 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_228.DAC1.s01 s01 v -hier Tile_228 -pg 1 -y 202 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_228.DAC1.s01 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_228.DAC1.s01 TX } -attr @name {}
+load symbol DAC1mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_228.DAC1.mixer DAC1mixer syn -hier Tile_228 -pg 1 -y 202 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_228.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_228.DAC1.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC1.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC1.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC1.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC1.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC1.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_228.DAC1.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC1.mixer RIGHT_I} -attr @name I
+load symbol s00 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_228.DAC0.s00 s00 v -hier Tile_228 -pg 1 -y 302 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_228.DAC0.s00 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_228.DAC0.s00 TX } -attr @name {}
+load symbol DAC0mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_228.DAC0.mixer DAC0mixer syn -hier Tile_228 -pg 1 -y 302 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_228.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_228.DAC0.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC0.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC0.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC0.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_228.DAC0.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC0.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_228.DAC0.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_228.DAC0.mixer RIGHT_I} -attr @name I
+load symbol DAC03 syn HIERGEN port TX in
+load inst DAC.Tile_228.DAC0 DAC03 syn -hier Tile_228 -pg 1 -y 302 -x 300 -resize 60 60 -attr @cell DAC0 -autohide
+attribute {inst DAC.Tile_228.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC0} -attr @name {}
+attribute {pin DAC.Tile_228.DAC0 TX } -attr @name {}
+load inst Tile_229 TILE_SYMBOL v -pg 1 -y 1 -x 300 -autohide -attr @cell Tile_229 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_229 a } -attr @name {}
+attribute {hierPin Tile_229 a } -attr @name {}
+load symbol s03 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_229.DAC3.s03 s03 v -hier Tile_229 -pg 1 -y 2 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_229.DAC3.s03 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_229.DAC3.s03 TX } -attr @name {}
+load symbol DAC3mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_229.DAC3.mixer DAC3mixer syn -hier Tile_229 -pg 1 -y 2 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_229.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_229.DAC3.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC3.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC3.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC3.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC3.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC3.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_229.DAC3.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC3.mixer RIGHT_I} -attr @name I
+load symbol s02 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_229.DAC2.s02 s02 v -hier Tile_229 -pg 1 -y 102 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_229.DAC2.s02 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_229.DAC2.s02 TX } -attr @name {}
+load symbol DAC2mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_229.DAC2.mixer DAC2mixer syn -hier Tile_229 -pg 1 -y 102 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_229.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_229.DAC2.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC2.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC2.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC2.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC2.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC2.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_229.DAC2.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC2.mixer RIGHT_I} -attr @name I
+load symbol DAC25 syn HIERGEN port TX in
+load inst DAC.Tile_229.DAC2 DAC25 syn -hier Tile_229 -pg 1 -y 102 -x 300 -resize 60 60 -attr @cell DAC2 -autohide
+attribute {inst DAC.Tile_229.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC2} -attr @name {}
+attribute {pin DAC.Tile_229.DAC2 TX } -attr @name {}
+load symbol s01 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_229.DAC1.s01 s01 v -hier Tile_229 -pg 1 -y 202 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_229.DAC1.s01 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_229.DAC1.s01 TX } -attr @name {}
+load symbol DAC1mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_229.DAC1.mixer DAC1mixer syn -hier Tile_229 -pg 1 -y 202 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_229.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_229.DAC1.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC1.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC1.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC1.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC1.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC1.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_229.DAC1.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC1.mixer RIGHT_I} -attr @name I
+load symbol s00 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_229.DAC0.s00 s00 v -hier Tile_229 -pg 1 -y 302 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_229.DAC0.s00 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_229.DAC0.s00 TX } -attr @name {}
+load symbol DAC0mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_229.DAC0.mixer DAC0mixer syn -hier Tile_229 -pg 1 -y 302 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_229.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_229.DAC0.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC0.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC0.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC0.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_229.DAC0.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC0.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_229.DAC0.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_229.DAC0.mixer RIGHT_I} -attr @name I
+load symbol DAC07 syn HIERGEN port TX in
+load inst DAC.Tile_229.DAC0 DAC07 syn -hier Tile_229 -pg 1 -y 302 -x 300 -resize 60 60 -attr @cell DAC0 -autohide
+attribute {inst DAC.Tile_229.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC0} -attr @name {}
+attribute {pin DAC.Tile_229.DAC0 TX } -attr @name {}
+load inst Tile_230 TILE_SYMBOL v -pg 1 -y 1 -x 300 -autohide -attr @cell Tile_230 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_230 a } -attr @name {}
+attribute {hierPin Tile_230 a } -attr @name {}
+load symbol s03 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_230.DAC3.s03 s03 v -hier Tile_230 -pg 1 -y 2 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_230.DAC3.s03 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_230.DAC3.s03 TX } -attr @name {}
+load symbol DAC3mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_230.DAC3.mixer DAC3mixer syn -hier Tile_230 -pg 1 -y 2 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_230.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_230.DAC3.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC3.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC3.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC3.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC3.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC3.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_230.DAC3.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC3.mixer RIGHT_I} -attr @name I
+load symbol s02 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_230.DAC2.s02 s02 v -hier Tile_230 -pg 1 -y 102 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_230.DAC2.s02 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_230.DAC2.s02 TX } -attr @name {}
+load symbol DAC2mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_230.DAC2.mixer DAC2mixer syn -hier Tile_230 -pg 1 -y 102 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_230.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_230.DAC2.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC2.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC2.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC2.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC2.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC2.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_230.DAC2.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC2.mixer RIGHT_I} -attr @name I
+load symbol DAC29 syn HIERGEN port TX in
+load inst DAC.Tile_230.DAC2 DAC29 syn -hier Tile_230 -pg 1 -y 102 -x 300 -resize 60 60 -attr @cell DAC2 -autohide
+attribute {inst DAC.Tile_230.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC2} -attr @name {}
+attribute {pin DAC.Tile_230.DAC2 TX } -attr @name {}
+load symbol s01 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_230.DAC1.s01 s01 v -hier Tile_230 -pg 1 -y 202 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_230.DAC1.s01 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_230.DAC1.s01 TX } -attr @name {}
+load symbol DAC1mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_230.DAC1.mixer DAC1mixer syn -hier Tile_230 -pg 1 -y 202 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_230.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_230.DAC1.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC1.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC1.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC1.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC1.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC1.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_230.DAC1.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC1.mixer RIGHT_I} -attr @name I
+load symbol s00 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_230.DAC0.s00 s00 v -hier Tile_230 -pg 1 -y 302 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_230.DAC0.s00 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_230.DAC0.s00 TX } -attr @name {}
+load symbol DAC0mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_230.DAC0.mixer DAC0mixer syn -hier Tile_230 -pg 1 -y 302 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_230.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_230.DAC0.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC0.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC0.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC0.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_230.DAC0.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC0.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_230.DAC0.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_230.DAC0.mixer RIGHT_I} -attr @name I
+load symbol DAC011 syn HIERGEN port TX in
+load inst DAC.Tile_230.DAC0 DAC011 syn -hier Tile_230 -pg 1 -y 302 -x 300 -resize 60 60 -attr @cell DAC0 -autohide
+attribute {inst DAC.Tile_230.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC0} -attr @name {}
+attribute {pin DAC.Tile_230.DAC0 TX } -attr @name {}
+load inst Tile_231 TILE_SYMBOL v -pg 1 -y 1 -x 300 -autohide -attr @cell Tile_231 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_231 a } -attr @name {}
+attribute {hierPin Tile_231 a } -attr @name {}
+load symbol s03 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_231.DAC3.s03 s03 v -hier Tile_231 -pg 1 -y 2 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_231.DAC3.s03 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_231.DAC3.s03 TX } -attr @name {}
+load symbol DAC3mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_231.DAC3.mixer DAC3mixer syn -hier Tile_231 -pg 1 -y 2 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_231.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_231.DAC3.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC3.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC3.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC3.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC3.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC3.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_231.DAC3.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC3.mixer RIGHT_I} -attr @name I
+load symbol s02 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_231.DAC2.s02 s02 v -hier Tile_231 -pg 1 -y 102 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_231.DAC2.s02 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_231.DAC2.s02 TX } -attr @name {}
+load symbol DAC2mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_231.DAC2.mixer DAC2mixer syn -hier Tile_231 -pg 1 -y 102 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_231.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_231.DAC2.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC2.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC2.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC2.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC2.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC2.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_231.DAC2.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC2.mixer RIGHT_I} -attr @name I
+load symbol DAC213 syn HIERGEN port TX in
+load inst DAC.Tile_231.DAC2 DAC213 syn -hier Tile_231 -pg 1 -y 102 -x 300 -resize 60 60 -attr @cell DAC2 -autohide
+attribute {inst DAC.Tile_231.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC2} -attr @name {}
+attribute {pin DAC.Tile_231.DAC2 TX } -attr @name {}
+load symbol s01 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_231.DAC1.s01 s01 v -hier Tile_231 -pg 1 -y 202 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_231.DAC1.s01 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_231.DAC1.s01 TX } -attr @name {}
+load symbol DAC1mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_231.DAC1.mixer DAC1mixer syn -hier Tile_231 -pg 1 -y 202 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_231.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_231.DAC1.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC1.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC1.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC1.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC1.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC1.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_231.DAC1.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC1.mixer RIGHT_I} -attr @name I
+load symbol s00 v HIERGEN port TX out attrdsp @name -cc 0 0 10
+load inst DAC.Tile_231.DAC0.s00 s00 v -hier Tile_231 -pg 1 -y 302 -x 1 -resize 40 40 -autohide -attr @name {}
+attribute {inst DAC.Tile_231.DAC0.s00 } -attr @fillcolor #aaa7a7
+attribute {pin DAC.Tile_231.DAC0.s00 TX } -attr @name {}
+load symbol DAC0mixer syn HIERGEN port LEFT_Q in.left.sq port LEFT_I in.left.sq port RIGHT_Q out.right.sq port RIGHT_I out.right.sq attrdsp @cell -lc 50 50 14
+load inst DAC.Tile_231.DAC0.mixer DAC0mixer syn -hier Tile_231 -pg 1 -y 302 -x 11 -resize 80 80 -attr @cell Mixer -attr @name {}
+attribute {inst DAC.Tile_231.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {pin DAC.Tile_231.DAC0.mixer LEFT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC0.mixer LEFT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC0.mixer RIGHT_Q} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC0.mixer RIGHT_I} -attr @fillcolor #ffffff
+attribute {pin DAC.Tile_231.DAC0.mixer LEFT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC0.mixer LEFT_I} -attr @name I
+attribute {pin DAC.Tile_231.DAC0.mixer RIGHT_Q} -attr @name Q
+attribute {pin DAC.Tile_231.DAC0.mixer RIGHT_I} -attr @name I
+load symbol DAC015 syn HIERGEN port TX in
+load inst DAC.Tile_231.DAC0 DAC015 syn -hier Tile_231 -pg 1 -y 302 -x 300 -resize 60 60 -attr @cell DAC0 -autohide
+attribute {inst DAC.Tile_231.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC0} -attr @name {}
+attribute {pin DAC.Tile_231.DAC0 TX } -attr @name {}
+show
+# Starting Split Pages                                                  4994.25
+# NoSplit 44 Comps, 0 Nets 0 NetBundles                                 4994.25
+# End of Split Pages                                                    4994.25
+# Generating Regions for Page 1:   44 Comps,    0 Nets                  4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 2 Levels, 4 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# End of Generating Regions for Page 1                                  4994.25
+scrollpos 108 708
+zoom -x 0 -y 0 0.5
+scrollpos 68 443
+#R 0.5
+#CMD scrollpos 0 0
+scrollpos 0 0
+attribute {inst DAC.Tile_228.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC0.s00} -attr @name Real
+attribute {inst DAC.Tile_228.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC1.s01} -attr @name Real
+attribute {inst DAC.Tile_228.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC2.s02} -attr @name Real
+attribute {inst DAC.Tile_228.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_228.DAC3.s03} -attr @name Real
+attribute {inst DAC.Tile_229.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC0.s00} -attr @name Real
+attribute {inst DAC.Tile_229.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC1.s01} -attr @name Real
+attribute {inst DAC.Tile_229.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC2.s02} -attr @name Real
+attribute {inst DAC.Tile_229.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_229.DAC3.s03} -attr @name Real
+attribute {inst DAC.Tile_230.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC0.s00} -attr @name Real
+attribute {inst DAC.Tile_230.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC1.s01} -attr @name Real
+attribute {inst DAC.Tile_230.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC2.s02} -attr @name Real
+attribute {inst DAC.Tile_230.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_230.DAC3.s03} -attr @name Real
+attribute {inst DAC.Tile_231.DAC0} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC0.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC0.s00} -attr @name Real
+attribute {inst DAC.Tile_231.DAC1.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC1.s01} -attr @name Real
+attribute {inst DAC.Tile_231.DAC2} -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC2.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC2.s02} -attr @name Real
+attribute {inst DAC.Tile_231.DAC3.mixer } -attr @fillcolor #e2e0de
+attribute {inst DAC.Tile_231.DAC3.s03} -attr @name Real
+increment -const
+load net net.DAC.Tile_228.DAC0.mixer.Tile_228.DAC0 -pin DAC.Tile_228.DAC0.mixer RIGHT_I -pin DAC.Tile_228.DAC0 TX
+attribute {inst DAC.Tile_228.DAC0} -attr @fillcolor #a7c491
+increment -const
+attribute {inst DAC.Tile_228.DAC0.s00} -attr @name Real
+attribute {inst DAC.Tile_228.DAC0.mixer } -attr @fillcolor #a7c491
+attribute {inst DAC.Tile_228.DAC0.s00} -attr @name IQ
+load net net.DAC.Tile_228.DAC0.mixer.Tile_228.DAC0.s00 -pin DAC.Tile_228.DAC0.s00 TX -pin DAC.Tile_228.DAC0.mixer LEFT_Q
+load net net.DAC.Tile_228.DAC0.mixer.Tile_228.DAC0.s00 -pin DAC.Tile_228.DAC0.s00 TX -pin DAC.Tile_228.DAC0.mixer LEFT_I
+increment -const
+load net net.DAC.Tile_229.DAC0.mixer.Tile_229.DAC0 -pin DAC.Tile_229.DAC0.mixer RIGHT_I -pin DAC.Tile_229.DAC0 TX
+attribute {inst DAC.Tile_229.DAC0} -attr @fillcolor #a7c491
+increment -const
+attribute {inst DAC.Tile_229.DAC0.s00} -attr @name Real
+attribute {inst DAC.Tile_229.DAC0.mixer } -attr @fillcolor #a7c491
+attribute {inst DAC.Tile_229.DAC0.s00} -attr @name IQ
+load net net.DAC.Tile_229.DAC0.mixer.Tile_229.DAC0.s00 -pin DAC.Tile_229.DAC0.s00 TX -pin DAC.Tile_229.DAC0.mixer LEFT_Q
+load net net.DAC.Tile_229.DAC0.mixer.Tile_229.DAC0.s00 -pin DAC.Tile_229.DAC0.s00 TX -pin DAC.Tile_229.DAC0.mixer LEFT_I
+increment -const
+load net net.DAC.Tile_230.DAC0.mixer.Tile_230.DAC0 -pin DAC.Tile_230.DAC0.mixer RIGHT_I -pin DAC.Tile_230.DAC0 TX
+attribute {inst DAC.Tile_230.DAC0} -attr @fillcolor #a7c491
+increment -const
+attribute {inst DAC.Tile_230.DAC0.s00} -attr @name Real
+attribute {inst DAC.Tile_230.DAC0.mixer } -attr @fillcolor #a7c491
+attribute {inst DAC.Tile_230.DAC0.s00} -attr @name IQ
+load net net.DAC.Tile_230.DAC0.mixer.Tile_230.DAC0.s00 -pin DAC.Tile_230.DAC0.s00 TX -pin DAC.Tile_230.DAC0.mixer LEFT_Q
+load net net.DAC.Tile_230.DAC0.mixer.Tile_230.DAC0.s00 -pin DAC.Tile_230.DAC0.s00 TX -pin DAC.Tile_230.DAC0.mixer LEFT_I
+increment -const
+load net net.DAC.Tile_231.DAC0.mixer.Tile_231.DAC0 -pin DAC.Tile_231.DAC0.mixer RIGHT_I -pin DAC.Tile_231.DAC0 TX
+attribute {inst DAC.Tile_231.DAC0} -attr @fillcolor #a7c491
+increment -const
+attribute {inst DAC.Tile_231.DAC0.s00} -attr @name Real
+attribute {inst DAC.Tile_231.DAC0.mixer } -attr @fillcolor #a7c491
+attribute {inst DAC.Tile_231.DAC0.s00} -attr @name IQ
+load net net.DAC.Tile_231.DAC0.mixer.Tile_231.DAC0.s00 -pin DAC.Tile_231.DAC0.s00 TX -pin DAC.Tile_231.DAC0.mixer LEFT_Q
+load net net.DAC.Tile_231.DAC0.mixer.Tile_231.DAC0.s00 -pin DAC.Tile_231.DAC0.s00 TX -pin DAC.Tile_231.DAC0.mixer LEFT_I
+show
+# Starting Split Pages                                                  4994.25
+# NoSplit 44 Comps, 8 Nets 0 NetBundles                                 4994.25
+# End of Split Pages                                                    4994.25
+# Generating Regions for Page 1:   44 Comps,    8 Nets                  4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 2 nets, 2 ch, wire: 12-->12 (0 with wbits)               4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 2 nets, 2 ch, wire: 12-->12 (0 with wbits)               4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 2 nets, 2 ch, wire: 12-->12 (0 with wbits)               4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 4 Levels, 10 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 2 nets, 2 ch, wire: 12-->12 (0 with wbits)               4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 2 Levels, 4 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# End of Generating Regions for Page 1                                  4994.25
+#CMD scrollpos -100 -30
+scrollpos -100 -30
+fullfit
+scrollpos -251 -318
+fullfit
+scrollpos -197 -21
+scrollpos -197 -21
+scrollpos -203 -22

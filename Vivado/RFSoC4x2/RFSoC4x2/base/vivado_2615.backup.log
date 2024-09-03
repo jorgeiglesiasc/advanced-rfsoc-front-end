@@ -1,0 +1,633 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Dec  5 11:36:10 2023
+# Process ID: 2615
+# Current directory: /home/cttc/jorge/RFSoC-PYNQ_base_original/RFSoC-PYNQ/boards/RFSoC4x2/base
+# Command line: vivado -mode batch -source base.tcl -notrace
+# Log file: /home/cttc/jorge/RFSoC-PYNQ_base_original/RFSoC-PYNQ/boards/RFSoC4x2/base/vivado.log
+# Journal file: /home/cttc/jorge/RFSoC-PYNQ_base_original/RFSoC-PYNQ/boards/RFSoC4x2/base/vivado.jou
+# Running On: o-51904, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 6, Host memory: 33505 MB
+#-----------------------------------------------------------
+source base.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/cttc/jorge/RFSoC-PYNQ_base_original/RFSoC-PYNQ/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.1/data/ip'.
+INFO: [BD::TCL 103-2003] Currently there is no design <base> in project, so creating one...
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ_base_original/RFSoC-PYNQ/boards/RFSoC4x2/base/base/base.srcs/sources_1/bd/base/base.bd> 
+INFO: [BD::TCL 103-2004] Making design <base> as current_bd_design.
+INFO: [BD::TCL 103-2005] Currently the variable <design_name> is equal to "base".
+INFO: [BD::TCL 103-2011] Checking if the following IPs exist in the project's IP catalog:  
+user.org:user:address_remap:1.0 xilinx.com:ip:axi_intc:4.1 xilinx.com:ip:xlconcat:2.1 xilinx:user:binary_latch_counter:1.0 xilinx.com:ip:axi_gpio:2.0 xilinx.com:ip:clk_wiz:6.0 xilinx.com:ip:util_vector_logic:2.0 xilinx.com:ip:ddr4:2.2 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:ila:6.2 xilinx.com:ip:xlslice:1.0 xilinx.com:ip:mdm:3.2 xilinx.com:ip:util_ds_buf:2.2 xilinx.com:ip:dfx_axi_shutdown_manager:1.0 xilinx.com:ip:system_management_wiz:1.3 xilinx.com:ip:zynq_ultra_ps_e:3.4 xilinx.com:ip:axi_dma:7.1 xilinx.com:ip:smartconnect:1.0 xilinx.com:ip:cmac_usplus:3.1 xilinx.com:ip:axis_data_fifo:2.0 xilinx.com:ip:xlconstant:1.1 xilinx.com:user:dff_en_reset_vector:1.0 xilinx.com:ip:axi_iic:2.1 xilinx.com:user:io_switch:1.1 xilinx.com:ip:microblaze:11.0 xilinx.com:ip:axi_bram_ctrl:4.1 xilinx.com:ip:axi_quad_spi:3.2 xilinx.com:ip:axi_timer:2.0 xilinx.com:ip:usp_rf_data_converter:2.6 xilinx.com:ip:lmb_v10:3.0 xilinx.com:ip:blk_mem_gen:8.4 xilinx.com:ip:lmb_bram_if_cntlr:4.0 xilinx.com:ip:axis_clock_converter:1.1 xilinx.com:ip:packet_generator:1.0 xilinx.com:ip:amplitude_controller:1.0  .
+INFO: [Device 21-403] Loading part xczu48dr-ffvg1517-2-e
+create_bd_cell: Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 3145.785 ; gain = 224.164 ; free physical = 25856 ; free virtual = 30968
+create_bd_cell: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 3467.723 ; gain = 257.469 ; free physical = 24610 ; free virtual = 30017
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_DIVCLK_DIVIDE' from '10' to '30' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN1_PERIOD' from '10.000' to '3.333' has been ignored for IP 'clk_wiz_0'
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'MMCM_CLKIN2_PERIOD' from '10.000' to '10.0' has been ignored for IP 'clk_wiz_0'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/Reg'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/IO'
+create_bd_cell: Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 3629.004 ; gain = 158.312 ; free physical = 24052 ; free virtual = 29878
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/Reg'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/IO'
+INFO: [xilinx.com:ip:ila:6.2-6] /ila_0: Xilinx recommends using the System ILA IP in IP Integrator. The System ILA IP is functionally equivalent to an ILA and offers additional benefits in debugging interfaces both within IP Integrator and the Hardware Manager. Consult the Programming and Debug User Guide UG908 for further details.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] base_mb_bram_ctrl_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] base_mb_bram_ctrl_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+WARNING: [IP_Flow 19-4052] Unable to find the parameter 'PROJECT_PARAM.ARCHTECTURE' for the proc 'update_PARAM_VALUE.C_S_AXI4_ID_WIDTH'.The proc 'update_PARAM_VALUE.C_S_AXI4_ID_WIDTH' will never be called.Please check and correct the proc
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] base_mb_bram_ctrl_1: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] base_mb_bram_ctrl_1: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+WARNING: [IP_Flow 19-4052] Unable to find the parameter 'PROJECT_PARAM.ARCHTECTURE' for the proc 'update_PARAM_VALUE.C_S_AXI4_ID_WIDTH'.The proc 'update_PARAM_VALUE.C_S_AXI4_ID_WIDTH' will never be called.Please check and correct the proc
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 15625000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc0_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'adc2_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac0_clk' frequency is set to 307200000
+INFO: Ultrascale+ RF Data Converter instance: Clock port 'dac2_clk' frequency is set to 307200000
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+devicepart xczu48dr
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_LOW' is being assigned into address space '/address_remap_0/M_AXI_out' at <0x0000_0000 [ 2G ]>.
+Slave segment '/radio/transmitter/channel_00/amplitude_controller/S_AXI/S_AXI_reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB010_0000 [ 64K ]>.
+Slave segment '/radio/transmitter/channel_20/amplitude_controller/S_AXI/S_AXI_reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB011_0000 [ 64K ]>.
+Slave segment '/CMAC/axi_dma/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA000_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_00/axi_dma_imag/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB000_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_01/axi_dma_imag/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB003_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_20/axi_dma_imag/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB006_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_21/axi_dma_imag/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB009_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_00/axi_dma_real/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB001_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_01/axi_dma_real/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB004_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_20/axi_dma_real/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB007_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_21/axi_dma_real/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB00A_0000 [ 64K ]>.
+Slave segment '/axi_intc_0/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8002_0000 [ 64K ]>.
+Slave segment '/btns_gpio/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8003_0000 [ 64K ]>.
+Slave segment '/CMAC/cmac/s_axi/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xA001_0000 [ 64K ]>.
+Slave segment '/ddr4_0/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x10_0000_0000 [ 8G ]>.
+Slave segment '/leds_gpio/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8004_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/mb_bram_ctrl/S_AXI/Mem0' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8000_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/mb_bram_ctrl/S_AXI/Mem0' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8001_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_00/packet_generator/S_AXI/S_AXI_reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB002_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_01/packet_generator/S_AXI/S_AXI_reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB005_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_20/packet_generator/S_AXI/S_AXI_reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB008_0000 [ 64K ]>.
+Slave segment '/radio/receiver/channel_21/packet_generator/S_AXI/S_AXI_reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB00B_0000 [ 64K ]>.
+Slave segment '/radio/rfdc/s_axi/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB00C_0000 [ 256K ]>.
+Slave segment '/rgbleds_gpio/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8005_0000 [ 64K ]>.
+Slave segment '/shutdown_lpd/S_AXI_CTRL/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8007_0000 [ 64K ]>.
+Slave segment '/sws_gpio/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8008_0000 [ 64K ]>.
+Slave segment '/system_management_wiz_0/S_AXI_LITE/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0xB012_0000 [ 64K ]>.
+Slave segment '/syzygy_std0/S_AXI/Reg' is being assigned into address space '/zynq_ultra_ps_e_0/Data' at <0x8009_0000 [ 64K ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/CMAC/axi_dma/Data_MM2S' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP2/HP0_DDR_LOW' is being assigned into address space '/CMAC/axi_dma/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/address_remap_0/S_AXI_in/memory' is being assigned into address space '/iop_pmod0/mb/Data' at <0x8000_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/gpio/S_AXI/Reg' is being assigned into address space '/iop_pmod0/mb/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/iic/S_AXI/Reg' is being assigned into address space '/iop_pmod0/mb/Data' at <0x4080_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/intc/S_AXI/Reg' is being assigned into address space '/iop_pmod0/mb/Data' at <0x4120_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/intr/S_AXI/Reg' is being assigned into address space '/iop_pmod0/mb/Data' at <0x4001_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/io_switch/S_AXI/S_AXI_reg' is being assigned into address space '/iop_pmod0/mb/Data' at <0x44A2_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/lmb/lmb_bram_if_cntlr/SLMB1/Mem' is being assigned into address space '/iop_pmod0/mb/Data' at <0x0000_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/spi/AXI_LITE/Reg' is being assigned into address space '/iop_pmod0/mb/Data' at <0x44A1_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/timer/S_AXI/Reg' is being assigned into address space '/iop_pmod0/mb/Data' at <0x41C0_0000 [ 64K ]>.
+Slave segment '/iop_pmod0/lmb/lmb_bram_if_cntlr/SLMB/Mem' is being assigned into address space '/iop_pmod0/mb/Instruction' at <0x0000_0000 [ 64K ]>.
+Slave segment '/address_remap_0/S_AXI_in/memory' is being assigned into address space '/iop_pmod1/mb/Data' at <0x8000_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/gpio/S_AXI/Reg' is being assigned into address space '/iop_pmod1/mb/Data' at <0x4000_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/iic/S_AXI/Reg' is being assigned into address space '/iop_pmod1/mb/Data' at <0x4080_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/intc/S_AXI/Reg' is being assigned into address space '/iop_pmod1/mb/Data' at <0x4120_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/intr/S_AXI/Reg' is being assigned into address space '/iop_pmod1/mb/Data' at <0x4001_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/io_switch/S_AXI/S_AXI_reg' is being assigned into address space '/iop_pmod1/mb/Data' at <0x44A2_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/lmb/lmb_bram_if_cntlr/SLMB1/Mem' is being assigned into address space '/iop_pmod1/mb/Data' at <0x0000_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/spi/AXI_LITE/Reg' is being assigned into address space '/iop_pmod1/mb/Data' at <0x44A1_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/timer/S_AXI/Reg' is being assigned into address space '/iop_pmod1/mb/Data' at <0x41C0_0000 [ 64K ]>.
+Slave segment '/iop_pmod1/lmb/lmb_bram_if_cntlr/SLMB/Mem' is being assigned into address space '/iop_pmod1/mb/Instruction' at <0x0000_0000 [ 64K ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' is being assigned into address space '/radio/receiver/channel_00/axi_dma_imag/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/radio/receiver/channel_00/axi_dma_imag/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' is being assigned into address space '/radio/receiver/channel_00/axi_dma_real/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/radio/receiver/channel_00/axi_dma_real/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' is being assigned into address space '/radio/receiver/channel_01/axi_dma_imag/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/radio/receiver/channel_01/axi_dma_imag/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' is being assigned into address space '/radio/receiver/channel_01/axi_dma_real/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/radio/receiver/channel_01/axi_dma_real/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' is being assigned into address space '/radio/receiver/channel_20/axi_dma_imag/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/radio/receiver/channel_20/axi_dma_imag/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' is being assigned into address space '/radio/receiver/channel_20/axi_dma_real/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/radio/receiver/channel_20/axi_dma_real/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' is being assigned into address space '/radio/receiver/channel_21/axi_dma_imag/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/radio/receiver/channel_21/axi_dma_imag/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_HIGH' is being assigned into address space '/radio/receiver/channel_21/axi_dma_real/Data_S2MM' at <0x8_0000_0000 [ 32G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP4/HP2_DDR_LOW' is being assigned into address space '/radio/receiver/channel_21/axi_dma_real/Data_S2MM' at <0x0000_0000 [ 2G ]>.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH' is being assigned into address space '/address_remap_0/M_AXI_out' at <0x8_0000_0000 [ 2G ]>.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Slave segment '/zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM' is being assigned into address space '/address_remap_0/M_AXI_out' at <0xFF00_0000 [ 16M ]>.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM> is excluded from all addressing paths.
+WARNING: [BD 41-1629] Slave segment </zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH> is excluded from all addressing paths.
+srcPin /pmod0_buf/IOBUF_IO_I dstPin /pmod0_buf/IOBUF_IO_O freq 100000000 phase 0.0 clkdomain 
+srcPin /pmod1_buf/IOBUF_IO_I dstPin /pmod1_buf/IOBUF_IO_O freq 100000000 phase 0.0 clkdomain 
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/Reg'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/IO'
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [PSU-2]  DP_VIDEO clock source: DPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_VIDEO PLL source to support runtime resolution change 
+INFO: [xilinx.com:ip:smartconnect:1.0-1] base_axi_smc_cmac_0: SmartConnect base_axi_smc_cmac_0 is in High-performance Mode.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_DDR_HIGH from address space /address_remap_0/M_AXI_out.
+Excluding slave segment /zynq_ultra_ps_e_0/SAXIGP6/LPD_LPS_OCM from address space /address_remap_0/M_AXI_out.
+INFO: [xilinx.com:ip:cmac_usplus:3.1-5910] /CMAC/cmac NOTE : INIT CLK of /CMAC/cmac has input port frequency configured as 99999985 Hz (99.999985 MHz).
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /c_clk_mmcm_200 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_0 clk_wiz propagate
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /axi_intc_0: Property SENSITIVITY = "NULL" for interrupt input 4 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-6] /axi_intc_0: Property SENSITIVITY = "NULL" for interrupt input 3 not recognized - using default interrupt type Rising Edge. Please change this manually if necessary.
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmod0/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmod1/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [BD 41-237] Bus Interface property WUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_LPD(0) and /shutdown_lpd/M_AXI(1)
+WARNING: [BD 41-237] Bus Interface property RUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_LPD(0) and /shutdown_lpd/M_AXI(1)
+WARNING: [BD 41-237] Bus Interface property BUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_LPD(0) and /shutdown_lpd/M_AXI(1)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_fpd/s00_couplers/auto_us_df/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_fpd/s00_couplers/auto_us_df/S_AXI(0) and /zynq_ultra_ps_e_0/M_AXI_HPM0_FPD(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /CMAC/axi_smc_cmac/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP0_FPD(1) and /CMAC/axi_smc_cmac/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m00_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m00_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m01_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m01_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m02_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m02_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m03_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m03_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m04_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m04_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m05_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M05_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m05_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M05_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm0_lpd/m06_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm0_lpd/m06_couplers/auto_pc/S_AXI(0) and /axi_hpm0_lpd/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /iop_pmod0/mb_bram_ctrl/S_AXI(0) and /axi_hpm0_lpd/xbar/M07_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /iop_pmod0/mb_bram_ctrl/S_AXI(0) and /axi_hpm0_lpd/xbar/M07_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /iop_pmod1/mb_bram_ctrl/S_AXI(0) and /axi_hpm0_lpd/xbar/M08_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /iop_pmod1/mb_bram_ctrl/S_AXI(0) and /axi_hpm0_lpd/xbar/M08_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /axi_hpm1_fpd/m00_couplers/auto_ds/S_AXI(0) and /axi_hpm1_fpd/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /axi_hpm1_fpd/m00_couplers/auto_ds/S_AXI(0) and /axi_hpm1_fpd/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /CMAC/axi_interconnect_cmac/s01_couplers/auto_ds/S_AXI(0) and /axi_hpm1_fpd/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /CMAC/axi_interconnect_cmac/s01_couplers/auto_ds/S_AXI(0) and /axi_hpm1_fpd/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /radio/axi_interconnect_ps/m00_couplers/auto_ds/S_AXI(0) and /radio/axi_interconnect_ps/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /radio/axi_interconnect_ps/m00_couplers/auto_ds/S_AXI(0) and /radio/axi_interconnect_ps/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /radio/axi_interconnect_ps/m01_couplers/auto_ds/S_AXI(0) and /radio/axi_interconnect_ps/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /radio/axi_interconnect_ps/m01_couplers/auto_ds/S_AXI(0) and /radio/axi_interconnect_ps/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /radio/axi_interconnect_ps/m02_couplers/auto_ds/S_AXI(0) and /radio/axi_interconnect_ps/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /radio/axi_interconnect_ps/m02_couplers/auto_ds/S_AXI(0) and /radio/axi_interconnect_ps/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /radio/receiver/axi_interconnect_hps/xbar/M00_AXI(0)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_ultra_ps_e_0/S_AXI_HP2_FPD(1) and /radio/receiver/axi_interconnect_hps/xbar/M00_AXI(0)
+WARNING: [BD 41-927] Following properties on pin /system_management_wiz_0/s_axi_aclk have been updated from connected ip, but BD cell '/system_management_wiz_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 99999985 
+Please resolve any mismatches by directly setting properties on BD cell </system_management_wiz_0> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 4336.465 ; gain = 186.398 ; free physical = 23352 ; free virtual = 29213
+Wrote  : </home/cttc/jorge/RFSoC-PYNQ_base_original/RFSoC-PYNQ/boards/RFSoC4x2/base/base/base.srcs/sources_1/bd/base/base.bd> 
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  5 11:38:29 2023...

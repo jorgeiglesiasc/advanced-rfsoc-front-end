@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Tue Dec  5 12:45:39 2023
+# Process ID: 36202
+# Current directory: /home/cttc/jorge/RFSoC-PYNQ_base_original/RFSoC-PYNQ/boards/RFSoC4x2/base
+# Command line: vivado -mode batch -source check_timing.tcl -notrace
+# Log file: /home/cttc/jorge/RFSoC-PYNQ_base_original/RFSoC-PYNQ/boards/RFSoC4x2/base/vivado.log
+# Journal file: /home/cttc/jorge/RFSoC-PYNQ_base_original/RFSoC-PYNQ/boards/RFSoC4x2/base/vivado.jou
+# Running On: o-51904, OS: Linux, CPU Frequency: 3899.999 MHz, CPU Physical cores: 6, Host memory: 33505 MB
+#-----------------------------------------------------------
+source check_timing.tcl -notrace
+Timing constraints are met.
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  5 12:45:43 2023...

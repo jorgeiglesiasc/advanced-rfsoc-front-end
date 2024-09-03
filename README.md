@@ -113,7 +113,7 @@ As a summary, a flowchart is made, shown in Figure 17, which defines the various
 
 ## How to use it
 
-
+This section details how to proceed in order to use the front-end with either a RFSoC4x2 or a ZCU208. It is recommended to use a ZCU208, since the RFSoC4x2 does not allow reaching an optimal data transmission speed with 4 chains. This tutorial assumes that the user have or know how to install Vivado, VitisHLS, MATLAB and GNURadio and is using Linux.
 
 ## Conclusion
 

@@ -1,0 +1,407 @@
+# Copyright (C) 1994-2019, Concept Engineering GmbH.
+# All Rights Reserved.  Cmd=logfile.
+# Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+# License cookie [G|T|S|B|*] for HR="Xilinx Inc."
+# -----------------------------------------------------------------------------
+# -----------------------------------------------------------------------------
+property attrfontsize 8
+property fillcolor1
+#R #441133
+property fillcolor5
+#R #651b4d
+property -colorscheme lightblue
+property shadowstyle 1
+property showpinname 5
+property showcellname 1
+property showattribute 1
+property showinstname 1
+property boxminwidth 40
+property boxminheight 40
+#CMD bind stroke-1 -action {}
+#CMD bind stroke-nw-1 -action callback -echo_type line -echo_text {Zoom fit}
+#CMD bind stroke-nw-1 -action zoom_fit -echo_type line -echo_text {Zoom fit}
+#CMD bind stroke-ne-1 -action zoom_out -echo_type line -echo_text {Zoom -%z}
+#CMD bind stroke-se-1 -action zoom_in -echo_type rectangle -autoscroll -echo_text {Zoom area}
+#CMD bind stroke-sw-1 -action zoom_in2 -echo_type line -echo_text {Zoom +%z}
+module new rfconverter -nosplit
+#  * Current module is rfconverter 
+load symbol TILE_SYMBOL v HIERBOX port tilePin in port pllTilePin in
+increment -const
+load symbol TILE_PLL syn HIERGEN port LEFT in.left.sq port RIGHT out.right.sq attrdsp @cell -lc 50 50 14
+load symbol TILE_TYPE syn HIERGEN port LEFT in.left.sq attrdsp @cell -lc 50 50 14
+load inst Tile_224 TILE_SYMBOL v -pg 1 -y 1 -x 1 -resize 200 200 -autohide -attr @cell Tile_224 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_224 tilePin } -attr @name {}
+attribute {hierPin Tile_224 tilePin } -attr @name {}
+attribute {pin Tile_224 pllTilePin } -attr @name {}
+attribute {hierPin Tile_224 pllTilePin } -attr @name {}
+load port Tile_224_clk in -pg 1 -y 10 -x 1 -attr @fillcolor #3a5fcd
+load inst Tile_224_PLL TILE_PLL syn -hier Tile_224 -pg 1 -y 1 -x 11 -resize 80 80 -attr @cell PLL -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_224_PLL LEFT} -attr @name {}
+attribute {pin Tile_224_PLL RIGHT} -attr @name {}
+attribute {pin Tile_224_PLL LEFT} -attr @fillcolor #ffffff
+attribute {pin Tile_224_PLL RIGHT} -attr @fillcolor #ffffff
+load inst Tile_224_Type TILE_TYPE syn -hier Tile_224 -pg 1 -y 1 -x 100 -resize 80 80 -attr @cell ADC -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_224_Type LEFT} -attr @name {}
+attribute {pin Tile_224_Type LEFT} -attr @fillcolor #ffffff
+load inst Tile_225 TILE_SYMBOL v -pg 1 -y 2 -x 1 -resize 200 200 -autohide -attr @cell Tile_225 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_225 tilePin } -attr @name {}
+attribute {hierPin Tile_225 tilePin } -attr @name {}
+attribute {pin Tile_225 pllTilePin } -attr @name {}
+attribute {hierPin Tile_225 pllTilePin } -attr @name {}
+load port Tile_225_clk in -pg 1 -y 170 -x 1 -attr @fillcolor #3a5fcd
+load inst Tile_225_PLL TILE_PLL syn -hier Tile_225 -pg 1 -y 1 -x 11 -resize 80 80 -attr @cell PLL -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_225_PLL LEFT} -attr @name {}
+attribute {pin Tile_225_PLL RIGHT} -attr @name {}
+attribute {pin Tile_225_PLL LEFT} -attr @fillcolor #ffffff
+attribute {pin Tile_225_PLL RIGHT} -attr @fillcolor #ffffff
+load inst Tile_225_Type TILE_TYPE syn -hier Tile_225 -pg 1 -y 1 -x 100 -resize 80 80 -attr @cell ADC -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_225_Type LEFT} -attr @name {}
+attribute {pin Tile_225_Type LEFT} -attr @fillcolor #ffffff
+load inst Tile_226 TILE_SYMBOL v -pg 1 -y 3 -x 1 -resize 200 200 -autohide -attr @cell Tile_226 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_226 tilePin } -attr @name {}
+attribute {hierPin Tile_226 tilePin } -attr @name {}
+attribute {pin Tile_226 pllTilePin } -attr @name {}
+attribute {hierPin Tile_226 pllTilePin } -attr @name {}
+load port Tile_226_clk in -pg 1 -y 330 -x 1 -attr @fillcolor #3a5fcd
+load inst Tile_226_PLL TILE_PLL syn -hier Tile_226 -pg 1 -y 1 -x 11 -resize 80 80 -attr @cell PLL -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_226_PLL LEFT} -attr @name {}
+attribute {pin Tile_226_PLL RIGHT} -attr @name {}
+attribute {pin Tile_226_PLL LEFT} -attr @fillcolor #ffffff
+attribute {pin Tile_226_PLL RIGHT} -attr @fillcolor #ffffff
+load inst Tile_226_Type TILE_TYPE syn -hier Tile_226 -pg 1 -y 1 -x 100 -resize 80 80 -attr @cell ADC -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_226_Type LEFT} -attr @name {}
+attribute {pin Tile_226_Type LEFT} -attr @fillcolor #ffffff
+load inst Tile_227 TILE_SYMBOL v -pg 1 -y 4 -x 1 -resize 200 200 -autohide -attr @cell Tile_227 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_227 tilePin } -attr @name {}
+attribute {hierPin Tile_227 tilePin } -attr @name {}
+attribute {pin Tile_227 pllTilePin } -attr @name {}
+attribute {hierPin Tile_227 pllTilePin } -attr @name {}
+load port Tile_227_clk in -pg 1 -y 490 -x 1 -attr @fillcolor #3a5fcd
+load inst Tile_227_PLL TILE_PLL syn -hier Tile_227 -pg 1 -y 1 -x 11 -resize 80 80 -attr @cell PLL -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_227_PLL LEFT} -attr @name {}
+attribute {pin Tile_227_PLL RIGHT} -attr @name {}
+attribute {pin Tile_227_PLL LEFT} -attr @fillcolor #ffffff
+attribute {pin Tile_227_PLL RIGHT} -attr @fillcolor #ffffff
+load inst Tile_227_Type TILE_TYPE syn -hier Tile_227 -pg 1 -y 1 -x 100 -resize 80 80 -attr @cell ADC -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_227_Type LEFT} -attr @name {}
+attribute {pin Tile_227_Type LEFT} -attr @fillcolor #ffffff
+load inst Tile_228 TILE_SYMBOL v -pg 1 -y 5 -x 1 -resize 200 200 -autohide -attr @cell Tile_228 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_228 tilePin } -attr @name {}
+attribute {hierPin Tile_228 tilePin } -attr @name {}
+attribute {pin Tile_228 pllTilePin } -attr @name {}
+attribute {hierPin Tile_228 pllTilePin } -attr @name {}
+load port Tile_228_clk in -pg 1 -y 650 -x 1 -attr @fillcolor #3a5fcd
+load inst Tile_228_PLL TILE_PLL syn -hier Tile_228 -pg 1 -y 1 -x 11 -resize 80 80 -attr @cell PLL -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_228_PLL LEFT} -attr @name {}
+attribute {pin Tile_228_PLL RIGHT} -attr @name {}
+attribute {pin Tile_228_PLL LEFT} -attr @fillcolor #ffffff
+attribute {pin Tile_228_PLL RIGHT} -attr @fillcolor #ffffff
+load inst Tile_228_Type TILE_TYPE syn -hier Tile_228 -pg 1 -y 1 -x 100 -resize 80 80 -attr @cell DAC -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_228_Type LEFT} -attr @name {}
+attribute {pin Tile_228_Type LEFT} -attr @fillcolor #ffffff
+load inst Tile_229 TILE_SYMBOL v -pg 1 -y 6 -x 1 -resize 200 200 -autohide -attr @cell Tile_229 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_229 tilePin } -attr @name {}
+attribute {hierPin Tile_229 tilePin } -attr @name {}
+attribute {pin Tile_229 pllTilePin } -attr @name {}
+attribute {hierPin Tile_229 pllTilePin } -attr @name {}
+load port Tile_229_clk in -pg 1 -y 810 -x 1 -attr @fillcolor #3a5fcd
+load inst Tile_229_PLL TILE_PLL syn -hier Tile_229 -pg 1 -y 1 -x 11 -resize 80 80 -attr @cell PLL -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_229_PLL LEFT} -attr @name {}
+attribute {pin Tile_229_PLL RIGHT} -attr @name {}
+attribute {pin Tile_229_PLL LEFT} -attr @fillcolor #ffffff
+attribute {pin Tile_229_PLL RIGHT} -attr @fillcolor #ffffff
+load inst Tile_229_Type TILE_TYPE syn -hier Tile_229 -pg 1 -y 1 -x 100 -resize 80 80 -attr @cell DAC -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_229_Type LEFT} -attr @name {}
+attribute {pin Tile_229_Type LEFT} -attr @fillcolor #ffffff
+load inst Tile_230 TILE_SYMBOL v -pg 1 -y 7 -x 1 -resize 200 200 -autohide -attr @cell Tile_230 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_230 tilePin } -attr @name {}
+attribute {hierPin Tile_230 tilePin } -attr @name {}
+attribute {pin Tile_230 pllTilePin } -attr @name {}
+attribute {hierPin Tile_230 pllTilePin } -attr @name {}
+load port Tile_230_clk in -pg 1 -y 970 -x 1 -attr @fillcolor #3a5fcd
+load inst Tile_230_PLL TILE_PLL syn -hier Tile_230 -pg 1 -y 1 -x 11 -resize 80 80 -attr @cell PLL -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_230_PLL LEFT} -attr @name {}
+attribute {pin Tile_230_PLL RIGHT} -attr @name {}
+attribute {pin Tile_230_PLL LEFT} -attr @fillcolor #ffffff
+attribute {pin Tile_230_PLL RIGHT} -attr @fillcolor #ffffff
+load inst Tile_230_Type TILE_TYPE syn -hier Tile_230 -pg 1 -y 1 -x 100 -resize 80 80 -attr @cell DAC -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_230_Type LEFT} -attr @name {}
+attribute {pin Tile_230_Type LEFT} -attr @fillcolor #ffffff
+load inst Tile_231 TILE_SYMBOL v -pg 1 -y 8 -x 1 -resize 200 200 -autohide -attr @cell Tile_231 -attr @name {} -attr @fillcolor #f9f7f7
+attribute {pin Tile_231 tilePin } -attr @name {}
+attribute {hierPin Tile_231 tilePin } -attr @name {}
+attribute {pin Tile_231 pllTilePin } -attr @name {}
+attribute {hierPin Tile_231 pllTilePin } -attr @name {}
+load port Tile_231_clk in -pg 1 -y 1130 -x 1 -attr @fillcolor #3a5fcd
+load inst Tile_231_PLL TILE_PLL syn -hier Tile_231 -pg 1 -y 1 -x 11 -resize 80 80 -attr @cell PLL -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_231_PLL LEFT} -attr @name {}
+attribute {pin Tile_231_PLL RIGHT} -attr @name {}
+attribute {pin Tile_231_PLL LEFT} -attr @fillcolor #ffffff
+attribute {pin Tile_231_PLL RIGHT} -attr @fillcolor #ffffff
+load inst Tile_231_Type TILE_TYPE syn -hier Tile_231 -pg 1 -y 1 -x 100 -resize 80 80 -attr @cell DAC -attr @name {} -attr @fillcolor #ffffff
+attribute {pin Tile_231_Type LEFT} -attr @name {}
+attribute {pin Tile_231_Type LEFT} -attr @fillcolor #ffffff
+show
+# Starting Split Pages                                                  4994.25
+# NoSplit 32 Comps, 0 Nets 0 NetBundles                                 4994.25
+# End of Split Pages                                                    4994.25
+# Generating Regions for Page 1:   32 Comps,    0 Nets                  4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 3 Levels, 2 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 3 Levels, 2 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 3 Levels, 2 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 3 Levels, 2 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 3 Levels, 2 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 3 Levels, 2 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 3 Levels, 2 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 3 Levels, 2 Comps, limit=30000             4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# Analyze                                                               4994.25
+# Levelize                                                              4994.25
+# End of LevelAssign mode=I, 2 Levels, 16 Comps, limit=30000            4994.25
+# Nets                                                                  4994.25
+# Place                                                                 4994.25
+# PlaceNets                                                             4994.25
+# SpaceY                                                                4994.25
+# Track                                                                 4994.25
+# SpaceX                                                                4994.25
+# Wire                                                                  4994.25
+# End of Wire: 0 nets, 0 ch, wire: 0-->0 (0 with wbits)                 4994.25
+# End of doGenerate                                                     4994.25
+# End of Generating Regions for Page 1                                  4994.25
+scrollpos 44 460
+zoom -x 0 -y 0 0.5
+scrollpos 28 288
+#R 0.5
+#CMD scrollpos 0 0
+scrollpos 0 0
+increment -const
+load net Tile_224.clk.tile.net -port Tile_224_clk -pin Tile_224 tilePin
+load net Tile_224.clk.tile.pll.net -hierPin Tile_224 tilePin -pin Tile_224_PLL LEFT
+load net Tile_224.clk.tile.pll.type.net -pin Tile_224_PLL RIGHT -pin Tile_224_Type LEFT
+load net Tile_225.clk.tile.net -port Tile_225_clk -pin Tile_225 tilePin
+load net Tile_225.clk.tile.pll.net -hierPin Tile_225 tilePin -pin Tile_225_PLL LEFT
+load net Tile_225.clk.tile.pll.type.net -pin Tile_225_PLL RIGHT -pin Tile_225_Type LEFT
+load net Tile_226.clk.tile.net -port Tile_226_clk -pin Tile_226 tilePin
+load net Tile_226.clk.tile.pll.net -hierPin Tile_226 tilePin -pin Tile_226_PLL LEFT
+load net Tile_226.clk.tile.pll.type.net -pin Tile_226_PLL RIGHT -pin Tile_226_Type LEFT
+load net Tile_227.clk.tile.net -port Tile_227_clk -pin Tile_227 tilePin
+load net Tile_227.clk.tile.pll.net -hierPin Tile_227 tilePin -pin Tile_227_PLL LEFT
+load net Tile_227.clk.tile.pll.type.net -pin Tile_227_PLL RIGHT -pin Tile_227_Type LEFT
+load net Tile_230.clk.tile.net -port Tile_230_clk -pin Tile_228 tilePin
+load net Tile_228.clk.tile.pll.net -hierPin Tile_228 tilePin -pin Tile_228_PLL LEFT
+load net Tile_228.clk.tile.pll.type.net -pin Tile_228_PLL RIGHT -pin Tile_228_Type LEFT
+load net Tile_230.clk.tile.net -port Tile_230_clk -pin Tile_229 tilePin
+load net Tile_229.clk.tile.pll.net -hierPin Tile_229 tilePin -pin Tile_229_PLL LEFT
+load net Tile_229.clk.tile.pll.type.net -pin Tile_229_PLL RIGHT -pin Tile_229_Type LEFT
+load net Tile_230.clk.tile.net -port Tile_230_clk -pin Tile_230 tilePin
+load net Tile_230.clk.tile.pll.net -hierPin Tile_230 tilePin -pin Tile_230_PLL LEFT
+load net Tile_230.clk.tile.pll.type.net -pin Tile_230_PLL RIGHT -pin Tile_230_Type LEFT
+load net Tile_230.clk.tile.net -port Tile_230_clk -pin Tile_231 tilePin
+load net Tile_231.clk.tile.pll.net -hierPin Tile_231 tilePin -pin Tile_231_PLL LEFT
+load net Tile_231.clk.tile.pll.type.net -pin Tile_231_PLL RIGHT -pin Tile_231_Type LEFT
+show
+# Starting Split Pages                                                  4994.61
+# NoSplit 32 Comps, 21 Nets 0 NetBundles                                4994.61
+# End of Split Pages                                                    4994.61
+# Generating Regions for Page 1:   32 Comps,   21 Nets                  4994.61
+# Analyze                                                               4994.61
+# Levelize                                                              4994.61
+# End of LevelAssign mode=I, 3 Levels, 3 Comps, limit=30000             4994.61
+# Nets                                                                  4994.61
+# Place                                                                 4994.61
+# PlaceNets                                                             4994.61
+# SpaceY                                                                4994.61
+# Track                                                                 4994.61
+# SpaceX                                                                4994.61
+# Wire                                                                  4994.61
+# End of Wire: 2 nets, 2 ch, wire: 4-->4 (0 with wbits)                 4994.61
+# End of doGenerate                                                     4994.61
+# Analyze                                                               4994.61
+# Levelize                                                              4994.61
+# End of LevelAssign mode=I, 3 Levels, 3 Comps, limit=30000             4994.61
+# Nets                                                                  4994.61
+# Place                                                                 4994.61
+# PlaceNets                                                             4994.61
+# SpaceY                                                                4994.61
+# Track                                                                 4994.61
+# SpaceX                                                                4994.61
+# Wire                                                                  4994.61
+# End of Wire: 2 nets, 2 ch, wire: 4-->4 (0 with wbits)                 4994.61
+# End of doGenerate                                                     4994.61
+# Analyze                                                               4994.61
+# Levelize                                                              4994.61
+# End of LevelAssign mode=I, 3 Levels, 3 Comps, limit=30000             4994.61
+# Nets                                                                  4994.61
+# Place                                                                 4994.61
+# PlaceNets                                                             4994.61
+# SpaceY                                                                4994.61
+# Track                                                                 4994.61
+# SpaceX                                                                4994.61
+# Wire                                                                  4994.61
+# End of Wire: 2 nets, 2 ch, wire: 4-->4 (0 with wbits)                 4994.61
+# End of doGenerate                                                     4994.61
+# Analyze                                                               4994.61
+# Levelize                                                              4994.61
+# End of LevelAssign mode=I, 3 Levels, 3 Comps, limit=30000             4994.61
+# Nets                                                                  4994.61
+# Place                                                                 4994.61
+# PlaceNets                                                             4994.61
+# SpaceY                                                                4994.61
+# Track                                                                 4994.61
+# SpaceX                                                                4994.61
+# Wire                                                                  4994.61
+# End of Wire: 2 nets, 2 ch, wire: 4-->4 (0 with wbits)                 4994.61
+# End of doGenerate                                                     4994.61
+# Analyze                                                               4994.61
+# Levelize                                                              4994.61
+# End of LevelAssign mode=I, 3 Levels, 3 Comps, limit=30000             4994.61
+# Nets                                                                  4994.61
+# Place                                                                 4994.61
+# PlaceNets                                                             4994.61
+# SpaceY                                                                4994.61
+# Track                                                                 4994.61
+# SpaceX                                                                4994.61
+# Wire                                                                  4994.61
+# End of Wire: 2 nets, 2 ch, wire: 4-->4 (0 with wbits)                 4994.61
+# End of doGenerate                                                     4994.61
+# Analyze                                                               4994.61
+# Levelize                                                              4994.61
+# End of LevelAssign mode=I, 3 Levels, 3 Comps, limit=30000             4994.61
+# Nets                                                                  4994.61
+# Place                                                                 4994.61
+# PlaceNets                                                             4994.61
+# SpaceY                                                                4994.61
+# Track                                                                 4994.61
+# SpaceX                                                                4994.61
+# Wire                                                                  4994.61
+# End of Wire: 2 nets, 2 ch, wire: 4-->4 (0 with wbits)                 4994.61
+# End of doGenerate                                                     4994.61
+# Analyze                                                               4994.61
+# Levelize                                                              4994.61
+# End of LevelAssign mode=I, 3 Levels, 3 Comps, limit=30000             4994.61
+# Nets                                                                  4994.61
+# Place                                                                 4994.61
+# PlaceNets                                                             4994.61
+# SpaceY                                                                4994.61
+# Track                                                                 4994.61
+# SpaceX                                                                4994.61
+# Wire                                                                  4994.61
+# End of Wire: 2 nets, 2 ch, wire: 4-->4 (0 with wbits)                 4994.61
+# End of doGenerate                                                     4994.61
+# Analyze                                                               4994.61
+# Levelize                                                              4994.61
+# End of LevelAssign mode=I, 3 Levels, 3 Comps, limit=30000             4994.61
+# Nets                                                                  4994.61
+# Place                                                                 4994.61
+# PlaceNets                                                             4994.61
+# SpaceY                                                                4994.61
+# Track                                                                 4994.61
+# SpaceX                                                                4994.61
+# Wire                                                                  4994.61
+# End of Wire: 2 nets, 2 ch, wire: 4-->4 (0 with wbits)                 4994.61
+# End of doGenerate                                                     4994.61
+# Analyze                                                               4994.61
+# Levelize                                                              4994.61
+# End of LevelAssign mode=I, 2 Levels, 16 Comps, limit=30000            4994.61
+# Nets                                                                  4994.61
+# Place                                                                 4994.61
+# PlaceNets                                                             4994.61
+# SpaceY                                                                4994.61
+# Track                                                                 4994.61
+# SpaceX                                                                4994.61
+# Wire                                                                  4994.61
+# End of Wire: 5 nets, 5 ch, wire: 32-->32 (0 with wbits)               4994.61
+# End of doGenerate                                                     4994.61
+# End of Generating Regions for Page 1                                  4994.62
+scrollpos -143 -330
+fullfit
+scrollpos -128 -33
+scrollpos -128 -33
+scrollpos -134 -33

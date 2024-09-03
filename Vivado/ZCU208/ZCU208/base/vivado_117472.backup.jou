@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:47:01 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Mon Aug  5 17:08:13 2024
+# Process ID: 117472
+# Current directory: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base
+# Command line: vivado
+# Log file: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/vivado.log
+# Journal file: /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/vivado.jou
+# Running On: o-51904, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 6, Host memory: 33506 MB
+#-----------------------------------------------------------
+start_gui
+open_project /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file /home/cttc/jorge/RFSoC-PYNQ/RFSoC-PYNQ/boards/ZCU208/base/base/base_wrapper.xsa
+close_project
+open_project /home/cttc/jorge/vivados/ZCU208/Ago05/boards/ZCU208/base/base/base.xpr
+open_bd_design {/home/cttc/jorge/vivados/ZCU208/Ago05/boards/ZCU208/base/base/base.srcs/sources_1/bd/base/base.bd}
+update_compile_order -fileset sources_1
+startgroup
+set_property -dict [list CONFIG.ADC0_Sampling_Rate {3.600} CONFIG.ADC0_Refclk_Freq {450.000} CONFIG.ADC0_Outclk_Freq {225.000} CONFIG.ADC0_Fabric_Freq {56.250} CONFIG.ADC_Decimation_Mode00 {8} CONFIG.ADC_RESERVED_1_00 {0} CONFIG.ADC_Decimation_Mode01 {8} CONFIG.ADC_RESERVED_1_02 {0} CONFIG.ADC1_Sampling_Rate {3.600} CONFIG.ADC1_Refclk_Freq {450.000} CONFIG.ADC1_Outclk_Freq {225.000} CONFIG.ADC1_Fabric_Freq {56.250} CONFIG.ADC1_Multi_Tile_Sync {false} CONFIG.ADC_Decimation_Mode10 {8} CONFIG.ADC_RESERVED_1_10 {0} CONFIG.ADC_Decimation_Mode11 {8} CONFIG.ADC_RESERVED_1_12 {0} CONFIG.ADC2_Sampling_Rate {3.600} CONFIG.ADC2_Refclk_Freq {450.000} CONFIG.ADC2_Outclk_Freq {56.250} CONFIG.ADC2_Fabric_Freq {56.250} CONFIG.ADC2_Multi_Tile_Sync {false} CONFIG.ADC_Decimation_Mode20 {8} CONFIG.ADC_RESERVED_1_20 {0} CONFIG.ADC_Decimation_Mode21 {8} CONFIG.ADC_RESERVED_1_22 {0} CONFIG.ADC3_Sampling_Rate {3.600} CONFIG.ADC3_Refclk_Freq {450.000} CONFIG.ADC3_Outclk_Freq {225.000} CONFIG.ADC3_Fabric_Freq {56.250} CONFIG.ADC3_Multi_Tile_Sync {false} CONFIG.ADC_Decimation_Mode30 {8} CONFIG.ADC_RESERVED_1_30 {0} CONFIG.ADC_Decimation_Mode31 {8} CONFIG.ADC_RESERVED_1_32 {0}] [get_bd_cells radio/rfdc]
+endgroup
+undo
+startgroup
+set_property -dict [list CONFIG.ADC0_Sampling_Rate {3.600} CONFIG.ADC0_Refclk_Freq {450.000} CONFIG.ADC0_Outclk_Freq {56.250} CONFIG.ADC0_Fabric_Freq {56.250} CONFIG.ADC_Decimation_Mode00 {8} CONFIG.ADC_RESERVED_1_00 {0} CONFIG.ADC_Decimation_Mode01 {8} CONFIG.ADC_RESERVED_1_02 {0} CONFIG.ADC1_Sampling_Rate {3.600} CONFIG.ADC1_Refclk_Freq {450.000} CONFIG.ADC1_Outclk_Freq {56.250} CONFIG.ADC1_Fabric_Freq {56.250} CONFIG.ADC1_Multi_Tile_Sync {false} CONFIG.ADC_Decimation_Mode10 {8} CONFIG.ADC_RESERVED_1_10 {0} CONFIG.ADC_Decimation_Mode11 {8} CONFIG.ADC_RESERVED_1_12 {0} CONFIG.ADC2_Sampling_Rate {3.600} CONFIG.ADC2_Refclk_Freq {450.000} CONFIG.ADC2_Outclk_Freq {56.250} CONFIG.ADC2_Fabric_Freq {56.250} CONFIG.ADC2_Multi_Tile_Sync {false} CONFIG.ADC_Decimation_Mode20 {8} CONFIG.ADC_RESERVED_1_20 {0} CONFIG.ADC_Decimation_Mode21 {8} CONFIG.ADC_RESERVED_1_22 {0} CONFIG.ADC3_Sampling_Rate {3.600} CONFIG.ADC3_Refclk_Freq {450.000} CONFIG.ADC3_Outclk_Freq {56.250} CONFIG.ADC3_Fabric_Freq {56.250} CONFIG.ADC3_Multi_Tile_Sync {false} CONFIG.ADC_Decimation_Mode30 {8} CONFIG.ADC_RESERVED_1_30 {0} CONFIG.ADC_Decimation_Mode31 {8} CONFIG.ADC_RESERVED_1_32 {0}] [get_bd_cells radio/rfdc]
+endgroup
