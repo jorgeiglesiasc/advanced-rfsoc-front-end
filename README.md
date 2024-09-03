@@ -118,11 +118,20 @@ As a summary, a flowchart is made, shown in Figure 17, which defines the various
 ## Conclusion
 
 By analysing in detail the satellite navigation signals and the RFSoC4x2 development board, equipped with a Zynq Ultrascale+ RFSoC processor, a novel flexible multi-band GNSS SDR front-end was designed and implemented. This project demonstrated that:
--   The direct-RF sampling technique allows implementing an 'universal' multi-band front-end for GNSS. It is possible to process a wideband signal with a carrier frequency in the order of 1-2 GHz by sampling it directly with a sampling frequency of 3-4 GSPS, without having an IF stage using an ADC provided by the RFSoC4x2 development board. One DDC can obtain the multiple GNSS bands necessary for the receiver. The front-end receives signals which are downconverted correctly through the RFDC and the Frequency Translator.
--   Adding new bands with this system becomes a simple firmware update. Instead of a conventional analog front-ends, with the implemented front-end, adding a new GNSS band only requires instantiating a new processing chain in the PL in Vivado and, with no hardware modifications.
--   By using high-level implementation tools, a new custom IP core can be designed, implemented, and controlled very quickly. A straightforward process can be followed to implement a new custom IP core, firstly, its behaviour is programmed and exported in Vitis HLS, and it is instantiated and connected in Vivado, then, the files that contain the behaviour of the hardware layer are exported, and the IP core driver is created in the software layer and, finally, the overlay is loaded, and the IP core is configured.
+- The direct-RF sampling technique allows implementing an 'universal' multi-band front-end for GNSS. It is possible to process a wideband signal with a carrier frequency in the order of 1-2 GHz by sampling it directly with a sampling frequency of 3-4 GSPS, without having an IF stage using an ADC provided by the RFSoC4x2 development board. One DDC can obtain the multiple GNSS bands necessary for the receiver. The front-end receives signals which are downconverted correctly through the RFDC and the Frequency Translator.
+- Adding new bands with this system becomes a simple firmware update. Instead of a conventional analog front-ends, with the implemented front-end, adding a new GNSS band only requires instantiating a new processing chain in the PL in Vivado and, with no hardware modifications.
+- By using high-level implementation tools, a new custom IP core can be designed, implemented, and controlled very quickly. A straightforward process can be followed to implement a new custom IP core, firstly, its behaviour is programmed and exported in Vitis HLS, and it is instantiated and connected in Vivado, then, the files that contain the behaviour of the hardware layer are exported, and the IP core driver is created in the software layer and, finally, the overlay is loaded, and the IP core is configured.
+- Performing configuration and control of the device with Python is simpler and allows to perform tests more quickly, but the problem arises when the programmer want to optimize the execution speed of the program, making Python not the best option. For this reason, the samples have been sent to the final device through DMA in C++ language.
 
 ## Future work
+
+The work done in this contribution constitutes the initial seed for several future works, some of them are:
+- Test the project in a real acquisition situation and perform satellite navigation.
+- Change the entire procedure to C++ to make an optimized program.
+- Make the DMA sending part with interrupts.
+- Adapt the front-end to other types of RFSoCs.
+- Create a system with more chains or more ADCs.
+- Test and adapt the project to another type of signal processing objective.
 
 ## Bibliography
 
