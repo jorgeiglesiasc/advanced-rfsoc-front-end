@@ -1,5 +1,6 @@
 ![N|Solid](https://52north.org/wp-content/uploads/2023/05/gsoc-horizontal.png)
 # GNSS-SDR with a RFSoC IC
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ### Contributor: Jorge Iglesias | Mentor: Javier Arribas | Organization: GNSS-SDR
 Google Summer of Code (GSoC) is a global, online program focused on bringing new contributors into open source software development. I have been a contributor to the GNSS-SDR project (https://gnss-sdr.org/) with my **Advanced multi-band GNSS SDR front-end implementation in an RFSoC integrated circuit**. This project has been tested on the RFSoC4x2 as well as the ZCU208. For further information, please do not hesitate to contact me (jorgeiglesiascostas@gmail.com). 
 
@@ -135,7 +136,7 @@ If the user wants to modify the overlay, the project has to be opened with Vivad
 2. Since Vivado stores the absolute path of the FIR coefficients, two _.coe_ files will appear in Sources->Design Sources->Coefficients Files. The one that does not belong to the corresponding path has to be deleted.
 3. Within the design block, the coefficients of the eight FIR filters have to be modified. These are located in radio->receiver->channel_XX, where XX is 20 or 21 depending on the device.
 
-If any modification is made to a custom IP core in Vitis HLS it must be exported to the _*/advanced-rfsoc-front-end/Vivado/ip_ folder
+If any modification is made to a custom IP core in Vitis HLS it has to be exported to the _*/advanced-rfsoc-front-end/Vivado/ip_ folder
 
 ## Conclusion
 
